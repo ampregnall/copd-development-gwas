@@ -1,15 +1,17 @@
 {
     "r.rpath.linux": "${workspaceFolder}/.pixi/envs/default/bin/R",
     "r.rterm.linux": "${workspaceFolder}/.pixi/envs/default/bin/R",
+    "jupyter.notebookFileRoot": "${workspaceFolder}",
     "[r]": {
         "editor.formatOnSave": true,
         "editor.defaultFormatter": "Posit.air-vscode"
     },
     "[python]": {
-    "editor.defaultFormatter": "charliermarsh.ruff",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll": "explicit",
-        "source.organizeImports": "explicit"
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+        }
     }
 }

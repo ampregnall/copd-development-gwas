@@ -14,6 +14,7 @@ r-jsonlite = ">=2.0.0,<3"
 r-rlang = ">=1.3.0,<2"
 r-languageserver = ">=0.3.18,<0.4"
 r-glue = ">=1.8.1,<2"
+r-tidyverse = ">=2.0.0,<3"
 
 [environments]
 prs-clustering = ["prs"]
