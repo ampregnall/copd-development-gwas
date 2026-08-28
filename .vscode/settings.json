@@ -1,6 +1,7 @@
 {
     "r.rpath.linux": "${workspaceFolder}/.pixi/envs/default/bin/R",
     "r.rterm.linux": "${workspaceFolder}/.pixi/envs/default/bin/R",
+    "r.lsp.diagnostics": false,
     "jupyter.notebookFileRoot": "${workspaceFolder}",
     "[r]": {
         "editor.formatOnSave": true,
