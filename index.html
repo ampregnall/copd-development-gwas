@@ -3,193 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Study Results Browser</title>
-    <style>
-        :root {
-            --sidebar-width: 260px;
-            --primary-color: #1e293b;
-            --accent-color: #2563eb;
-            --text-color: #334155;
-            --bg-color: #f8fafc;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-        }
-
-        body {
-            display: flex;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            height: 100vh;
-            overflow: hidden;
-        }
-
-        /* Left Navigation Bar */
-        #sidebar {
-            width: var(--sidebar-width);
-            background-color: var(--primary-color);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            flex-shrink: 0;
-        }
-
-        .sidebar-header {
-            padding: 20px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            border-bottom: 1px solid #334155;
-            text-align: center;
-        }
-
-        #sidebar nav {
-            flex: 1;
-            overflow-y: auto;
-            padding: 15px 0;
-        }
-
-        .nav-link {
-            display: block;
-            padding: 12px 24px;
-            color: #cbd5e1;
-            text-decoration: none;
-            transition: all 0.2s ease;
-            font-size: 0.95rem;
-            cursor: pointer;
-        }
-
-        .nav-link:hover, .nav-link.active {
-            color: white;
-            background-color: var(--accent-color);
-        }
-
-        /* Main Content Area */
-        #main-content {
-            flex: 1;
-            padding: 40px;
-            overflow-y: auto;
-            height: 100%;
-        }
-
-        .content-card {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        h1 {
-            color: var(--primary-color);
-            margin-bottom: 20px;
-        }
-
-        p {
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-    </style>
+    <title>COPD Locus Review Browser</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+<div id="sidebar">
+    <div class="sidebar-header">
+        🧬 Agentic Gene Prioritization Dashboard
+    </div>
+    <div class="sidebar-section">
+        <div class="sidebar-title">Overview</div>
 
-    <!-- Left Navigation Bar -->
-    <div id="sidebar">
-        <div class="sidebar-header">🧬 Study Browser</div>
-        <nav>
-            <a class="nav-link active" onclick="loadPage('home')">Home / Info</a>
-            <!-- Add your locus pages below -->
-            <a class="nav-link" onclick="loadPage('locusA')">Locus A</a>
-            <a class="nav-link" onclick="loadPage('locusB')">Locus B</a>
-            <a class="nav-link" onclick="loadPage('locusC')">Locus C</a>
-        </nav>
+        <!-- FIX #1 & #2: use href="#" and pass 'this' instead of 'event' -->
+        <a class="nav-link active"
+           href="#home"
+           onclick="loadPage('home', this)">
+           Home
+        </a>
+
+        <a class="nav-link"
+           href="#methods"
+           onclick="loadPage('methods', this)">
+           Methods
+        </a>
+
+        <a class="nav-link"
+           href="#repository"
+           onclick="loadPage('repository', this)">
+           Repository Contents
+        </a>
     </div>
 
-    <!-- Main Content Display -->
-    <div id="main-content">
-        <div class="content-card" id="display-area">
-            <!-- Home page content is shown by default -->
-            <h1>Welcome to the Study Results Browser</h1>
-            <p>This portal hosts the output data for our latest genomic/locus mapping study. Use the left navigation panel to browse through individual locus output datasets, statistics, and visualizations.</p>
-            <p>Select any locus from the sidebar to begin analyzing the localized data records.</p>
-        </div>
+    <div class="sidebar-section">
+        <div class="sidebar-title">Chromosomes</div>
+
+        <a class="nav-link"
+           href="CHR1.html">
+           CHR1
+        </a>
+
+        <a class="nav-link"
+           href="#CHR2"
+           onclick="loadPage('CHR2', this)">
+           CHR2
+        </a>
+
+        <a class="nav-link"
+           href="#CHR3"
+           onclick="loadPage('CHR3', this)">
+           CHR3
+        </a>
+
     </div>
 
-    <script>
-        // Dictionary containing content for each page
-        const pages = {
-            home: `
-                <h1>Agentic Gene Prioritization Dashboard</h1>
-                
-                <p>
-                This portal provides interactive access to agent-assisted gene
-                prioritization results generated for COPD GWAS loci.
-                </p>
-                
-                <img src="assets/agentic-gene-prioritization.png" alt="Agentic Review Workflow">
-                
-                <p>
-                Candidate genes are identified from fine-mapping and prioritization
-                methods, evaluated through literature review, independently verified,
-                stress-tested through adversarial critique, and then synthesized into
-                final gene prioritization decisions.
-                </p>
-                
-                <ul>
-                <li><strong>Researcher</strong> searches PubMed, bioRxiv, medRxiv and web sources.</li>
-                <li><strong>Citation Verifier</strong> confirms publication existence and claim validity.</li>
-                <li><strong>Red-Team Skeptic</strong> evaluates contradictory evidence and bias.</li>
-                <li><strong>Synthesis Lead</strong> generates final evidence-based prioritization.</li>
-                <li><strong>Open Targets</strong> contributes L2G, colocalization and constraint evidence.</li>
-                </ul>
-                
-                <h2>Available Outputs</h2>
-                
-                <ul>
-                <li>Evidence Tables</li>
-                <li>Locus Summaries</li>
-                <li>Audit Reports</li>
-                <li>Locus Plots</li>
-                <li>Pipeline Documentation</li>
-                </ul>
-                `,
-            locusA: `
-                <h1>Locus A Output Data</h1>
-                <p><strong>Chromosome Position:</strong> Chr1:104,230-105,890</p>
-                <p>Detailed outputs, variant counts, and statistical significance values for Locus A would be rendered here.</p>
-            `,
-            locusB: `
-                <h1>Locus B Output Data</h1>
-                <p><strong>Chromosome Position:</strong> Chr4:89,120-91,450</p>
-                <p>Detailed outputs, variant counts, and statistical significance values for Locus B would be rendered here.</p>
-            `,
-            locusC: `
-                <h1>Locus C Output Data</h1>
-                <p><strong>Chromosome Position:</strong> Chr12:44,500-46,110</p>
-                <p>Detailed outputs, variant counts, and statistical significance values for Locus C would be rendered here.</p>
-            `
-        };
+</div>
 
-        function loadPage(pageKey) {
-            // Update active link styling
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.classList.remove('active');
-            });
-            event.target.classList.add('active');
+<div id="main-content">
 
-            // Inject the selected content
-            const displayArea = document.getElementById('display-area');
-            if (pages[pageKey]) {
-                displayArea.innerHTML = pages[pageKey];
-            } else {
-                displayArea.innerHTML = "<h1>Error</h1><p>Page not found.</p>";
-            }
-        }
-    </script>
+    <div id="display-area" class="content-card">
+        Loading...
+    </div>
+
+</div>
+
+<script>
+
+const pages = {
+
+home: `
+<h1>COPD GWAS Locus Prioritization Browser</h1>
+
+<p>
+This website hosts the outputs generated from the agentic COPD locus
+review workflow. Each locus undergoes literature review, citation
+verification, adversarial review, and final evidence synthesis.
+</p>
+
+<img class="workflow-image"
+     src="assets/agentic-gene-prioritization.png"
+     alt="Agentic Review Workflow">
+
+<h2>Workflow Overview</h2>
+
+<p>
+Candidate genes are collected from locus definitions and prioritization
+methods. Literature evidence is gathered, verified, stress-tested, and
+combined with Open Targets evidence before creating final rankings.
+</p>
+
+<div class="info-grid">
+
+    <div class="info-card">
+        <h3>Researcher</h3>
+        <p>Searches PubMed, bioRxiv, medRxiv, and web resources.</p>
+    </div>
+
+    <div class="info-card">
+        <h3>Citation Verifier</h3>
+        <p>Confirms publication existence and validates claims.</p>
+    </div>
+
+    <div class="info-card">
+        <h3>Red-Team Skeptic</h3>
+        <p>Evaluates contradictory findings and possible biases.</p>
+    </div>
+
+    <div class="info-card">
+        <h3>Synthesis Lead</h3>
+        <p>Produces final evidence tables and gene prioritization.</p>
+    </div>
+
+</div>
+
+<h2>Available Outputs</h2>
+
+<ul>
+<li>Evidence Tables</li>
+<li>Audit Reports</li>
+<li>Locus Definitions</li>
+<li>Locus Plots</li>
+<li>Pipeline Logs</li>
+<li>Methods Documentation</li>
+</ul>
+`,
+
+methods: `
+<h1>Methods</h1>
+
+<p>
+A multi-agent literature review framework was used to prioritize
+candidate genes at COPD GWAS loci.
+</p>
+
+<h2>Review Stages</h2>
+
+<ol>
+<li>Literature collection</li>
+<li>Citation verification</li>
+<li>Red-team challenge process</li>
+<li>Final synthesis and prioritization</li>
+</ol>
+
+<h2>Data Sources</h2>
+
+<ul>
+<li>PubMed</li>
+<li>bioRxiv</li>
+<li>medRxiv</li>
+<li>Open Targets</li>
+</ul>
+
+<p>
+All accepted citations undergo verification prior to inclusion
+in evidence tables.
+</p>
+
+<p>
+See README_METHODS.md for complete methodological details.
+</p>
+`,
+
+repository: `
+<h1>Repository Structure</h1>
+
+<h2>copd-locus-review</h2>
+
+<ul>
+<li><strong>loci/</strong> – locus definitions</li>
+<li><strong>evidence_tables/</strong> – final evidence summaries</li>
+<li><strong>audits/</strong> – rejected and contested citations</li>
+<li><strong>logs/</strong> – pipeline provenance</li>
+<li><strong>scripts/</strong> – review utilities</li>
+<li><strong>README.md</strong> – project documentation</li>
+<li><strong>README_METHODS.md</strong> – manuscript methods</li>
+</ul>
+
+<h2>locus-plots</h2>
+
+<p>
+Regional association plots and locus visualizations used during review.
+</p>
+
+<h2>Downloads</h2>
+
+<p>Replace these links with your actual files.</p>
+
+<a class="download-link" href="data/README.md">README.md</a><br>
+<a class="download-link" href="data/README_METHODS.md">README_METHODS.md</a>
+`,
+
+CHR2: `
+<h1>Chromosome 2</h1>
+<p>Placeholder for locus review results.</p>
+`,
+
+CHR3: `
+<h1>Chromosome 3</h1>
+<p>Placeholder for locus review results.</p>
+`
+
+};
+
+function loadPage(pageKey, el) {
+    document.querySelectorAll('.nav-link')
+        .forEach(link => link.classList.remove('active'));
+
+    el.classList.add('active');
+
+    document.getElementById('display-area').innerHTML =
+        pages[pageKey] || "<h1>Error</h1><p>Page not found.</p>";
+}
+
+// Render home page on initial load
+document.getElementById('display-area').innerHTML = pages.home;
+
+</script>
+
 </body>
 </html>
