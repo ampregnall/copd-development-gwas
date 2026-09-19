@@ -17,7 +17,6 @@
         <div class="sidebar-section">
             <div class="sidebar-title">Overview</div>
 
-            <!-- FIX #1 & #2: use href="#" and pass 'this' instead of 'event' -->
             <a class="nav-link"
             href="index.html">
             Home
@@ -61,34 +60,12 @@
     <div id="main-content">
         <div id="display-area" class="content-card">
             <h1>Chromosome 1</h1>
-            
-            <p>Lead Variant: rsXXXXXX</p>
-
-            <p>Prioritized Gene: GENE1</p>
-
-            <img class="plot-image"
-                src="plots/locusA.png"
-                alt="Regional association plot for Locus A">
-
-            <div class="image-container">
-                <img id="plotImage" src="" alt="Regional association plot for Chromosome 1" style="display: none;" onerror="handleImageError()">
-                <div id="placeholder" class="placeholder-text">
-                    Select a plot to view.
-                </div>
-            </div>
 
             <div class="controls">
-                <!-- Item Selection (if you have multiple items) -->
-                <div class="control-group">
-                    <label for="itemSelect">Item:</label>
-                    <select id="itemSelect" onchange="updatePlotOptions()">
-                        <option value="Item1">Item 1</option>
-                    </select>
-                </div>
 
                 <!-- Plot Selection Dropdown -->
                 <div class="control-group">
-                    <label for="plotSelect">Select Plot:</label>
+                    <label for="plotSelect">Select Locus:</label>
                     <select id="plotSelect" onchange="displayPlot()">
                         <!-- Populated dynamically via JS -->
                     </select>
@@ -101,8 +78,11 @@
                 </div>
             </div>
 
-            <div class="file-hint">
-                Expecting PNG files named like: <code>item1_plot1.png</code>, <code>item1_plot2.png</code>, etc., located in the same folder as this HTML file.
+            <div class="image-container">
+                <img id="plotImage" src="" alt="Regional Association plot for Chromosome 1" style="display: none;" onerror="handleImageError()">
+                <div id="placeholder" class="placeholder-text">
+                    Select a locus to view.
+                </div>
             </div>
 
             <h2>Files</h2>
@@ -116,6 +96,112 @@
             </a>
         </div>
     </div>
+
+<script>
+    // Configuration of plots available for each item
+    const dataset = {
+        "chr1": [
+            { id: 1, name: "Locus 1: 106900001-107150000", filename: "plots/chr1-106900001-107150000.png" },
+            { id: 2, name: "Locus 2: 113700001-113900000", filename: "plots/chr1-113700001-113900000.png" },
+            { id: 3, name: "Locus 3: 117250001-117650000", filename: "plots/chr1-117250001-117650000.png" },
+            { id: 4, name: "Locus 4: 149850001-150150000", filename: "plots/chr1-149850001-150150000.png" },
+            { id: 5, name: "Locus 5: 154500001-154750000", filename: "plots/chr1-154500001-154750000.png" },
+            { id: 6, name: "Locus 6: 161350001-161650000", filename: "plots/chr1-161350001-161650000.png" },
+            { id: 7, name: "Locus 7: 197300001-197950000", filename: "plots/chr1-197300001-197950000.png" },
+            { id: 8, name: "Locus 8: 209950001-210400000", filename: "plots/chr1-209950001-210400000.png" },
+            { id: 9, name: "Locus 9: 218200001-218700000", filename: "plots/chr1-218200001-218700000.png" },
+            { id: 10, name: "Locus 10: 28200001-28950000", filename: "plots/chr1-28200001-28950000.png" },
+            { id: 11, name: "Locus 11: 31650001-31900000", filename: "plots/chr1-31650001-31900000.png" },
+            { id: 12, name: "Locus 12: 43300001-43850000", filename: "plots/chr1-43300001-43850000.png" },
+            { id: 13, name: "Locus 13: 65800001-66100000", filename: "plots/chr1-65800001-66100000.png" },
+            { id: 14, name: "Locus 14: 72350001-73700000", filename: "plots/chr1-72350001-73700000.png" },
+            { id: 15, name: "Locus 15: 77900001-78050000", filename: "plots/chr1-77900001-78050000.png" },
+            { id: 16, name: "Locus 16: 97750001-98250000", filename: "plots/chr1-97750001-98250000.png" }
+        ]
+    };
+
+    const plotSelect = document.getElementById('plotSelect');
+    const plotImage = document.getElementById('plotImage');
+    const placeholder = document.getElementById('placeholder');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    // Initialize dropdowns on load
+    function init() {
+        updatePlotOptions();
+        
+        // Add keyboard arrow key navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') navigatePlot(-1);
+            if (e.key === 'ArrowRight') navigatePlot(1);
+        });
+    }
+
+    // Populate plot dropdown based on selected item
+    function updatePlotOptions() {
+        const plots = dataset["chr1"] || [];
+        
+        plotSelect.innerHTML = '';
+        plots.forEach((plot, index) => {
+            const option = document.createElement('option');
+            option.value = index;
+            option.textContent = plot.name;
+            plotSelect.appendChild(option);
+        });
+
+        displayPlot();
+    }
+
+    // Load and display the current selected plot image
+    function displayPlot() {
+        const plotIndex = parseInt(plotSelect.value, 10);
+        const plots = dataset["chr1"] || [];
+
+        if (plots && plots[plotIndex]) {
+            const currentPlot = plots[plotIndex];
+            plotImage.src = currentPlot.filename;
+            plotImage.style.display = 'block';
+            placeholder.style.display = 'none';
+        } else {
+            plotImage.style.display = 'none';
+            placeholder.style.display = 'block';
+            placeholder.textContent = 'No plot selected or available.';
+        }
+
+        updateButtonStates();
+    }
+
+    // Navigate using Prev/Next buttons or arrow keys
+    function navigatePlot(direction) {
+        const currentIndex = parseInt(plotSelect.value, 10);
+        const newIndex = currentIndex + direction;
+        
+        if (newIndex >= 0 && newIndex < plotSelect.options.length) {
+            plotSelect.value = newIndex;
+            displayPlot();
+        }
+    }
+
+    // Enable/Disable navigation buttons at boundaries
+    function updateButtonStates() {
+        const currentIndex = parseInt(plotSelect.value, 10);
+        const totalPlots = plotSelect.options.length;
+
+        prevBtn.disabled = currentIndex === 0;
+        nextBtn.disabled = currentIndex === totalPlots - 1;
+    }
+
+    // Fallback if image file is missing or not found
+    function handleImageError() {
+        plotImage.style.display = 'none';
+        placeholder.style.display = 'block';
+        const filename = plotImage.src.split('/').pop();
+        placeholder.innerHTML = `⚠️ Could not load <code>${filename}</code>.<br><br><small>Make sure the image file is placed in the same folder as this HTML page.</small>`;
+    }
+
+    // Run initialization
+    init();
+</script>
 
 </body>
 </html>
