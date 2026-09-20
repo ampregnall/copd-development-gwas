@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidence table — locus 22:42,250,001-42,450,000 (GRCh38)</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br>Dashboard
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-title">Overview</div>
+            <a class="nav-link" href="../index.html">🏠 Home</a>
+            <a class="nav-link" href="../methods.html">🔬 Methods</a>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-title">Chromosomes</div>
+            <a class="nav-link active" href="../CHR1.html">CHR1</a>
+            <a class="nav-link" href="../CHR2.html">CHR2</a>
+            <a class="nav-link" href="../CHR3.html">CHR3</a>
+            <a class="nav-link" href="../CHR4.html">CHR4</a>
+            <a class="nav-link" href="../CHR5.html">CHR5</a>
+            <a class="nav-link" href="../CHR6.html">CHR6</a>
+            <a class="nav-link" href="../CHR7.html">CHR7</a>
+            <a class="nav-link" href="../CHR8.html">CHR8</a>
+            <a class="nav-link" href="../CHR9.html">CHR9</a>
+            <a class="nav-link" href="../CHR10.html">CHR10</a>
+            <a class="nav-link" href="../CHR11.html">CHR11</a>
+            <a class="nav-link" href="../CHR12.html">CHR12</a>
+            <a class="nav-link" href="../CHR13.html">CHR13</a>
+            <a class="nav-link" href="../CHR14.html">CHR14</a>
+            <a class="nav-link" href="../CHR15.html">CHR15</a>
+            <a class="nav-link" href="../CHR16.html">CHR16</a>
+            <a class="nav-link" href="../CHR17.html">CHR17</a>
+            <a class="nav-link" href="../CHR18.html">CHR18</a>
+            <a class="nav-link" href="../CHR19.html">CHR19</a>
+            <a class="nav-link" href="../CHR20.html">CHR20</a>
+            <a class="nav-link" href="../CHR21.html">CHR21</a>
+            <a class="nav-link" href="../CHR22.html">CHR22</a>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div class="content-card">
+            
+
+<h1 id="evidence-table--locus-2242250001-42450000-grch38">Evidence table — locus 22:42,250,001-42,450,000 (GRCh38)</h1><div class="summary"><p><strong>Lead variant:</strong> rs8142378 (22:42,309,085, PIP=0.359, intron_variant, gene=TCF20)
+<strong>Nearest gene:</strong> TCF20 | <strong>PoPS-prioritized:</strong> SHISA8 | FLAMES/MAGMA/ABC: not applicable at this locus.
+<strong>Candidate genes evaluated:</strong> TCF20, SHISA8, NFAM1, LINC01315.</p><p>Cumulative credible-set PIP by gene: TCF20-annotated variants ~86%+ of total mass (all
+intron_variant/upstream_gene_variant, MODIFIER impact, no coding consequence);
+LINC01315-annotated variants ~1.3%; NFAM1 one variant (rs45551335, synonymous,
+PIP=0.003); SHISA8 has zero credible-set variant overlap (PoPS-prioritized only).</p><p>Only citations verified as VERIFIED (or, where noted, verified-but-mismatched and
+consequently excluded from claim-support) by citation-verifier are included below.
+Skeptic verdicts are from red-team-skeptic critique (see audit file for full text and
+caveats about its exhausted search budget).</p></div>
+
+
+
+<div class="evidence-table-wrapper"><table class="evidence-table">
+<thead>
+<tr>
+<th>Candidate gene</th>
+<th>Evidence type</th>
+<th>Claim</th>
+<th>Source (PMID/DOI)</th>
+<th>Skeptic verdict</th>
+<th>Verified date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="gene">TCF20</td>
+<td>Fine-mapping (statgen, internal pipeline, not literature)</td>
+<td>~86%+ of credible-set PIP mass across TCF20-annotated intronic/upstream variants, including the lead variant rs8142378 (PIP=0.359)</td>
+<td>Locus input file (internal ABF fine-mapping)</td>
+<td>Not applicable (not a literature citation; skeptic notes fine-mapping support is genuinely strong)</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td class="gene">TCF20</td>
+<td>Genetic constraint</td>
+<td>Extremely LoF-intolerant (gnomAD oe(lof)=0.019, most constrained bin)</td>
+<td>Open Targets structured lookup (database, not literature)</td>
+<td>Not applicable (database lookup)</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td class="gene">TCF20</td>
+<td>Monogenic disease precedent</td>
+<td>TCF20 loss-of-function variants cause a neurodevelopmental syndrome (developmental delay, intellectual disability, hypotonia, behavioral/movement/sleep abnormalities) with similarities to Smith-Magenis syndrome</td>
+<td>Vetrini et al. 2019, Genome Med 11(1):12. PMID 30819258, DOI 10.1186/s13073-019-0623-0</td>
+<td><span class="tag-warning">WEAKENED</span> — real and accurately represented, but evidence is for a different phenotype (monogenic ID/DD) via a different mechanism (severe LoF haploinsufficiency) than a common noncoding COPD-associated variant; should be read as constraint/precedent evidence only, not mechanistic COPD evidence</td>
+<td><span class="tag">Verified</span> by citation-verifier</td>
+</tr>
+<tr>
+<td class="gene">TCF20</td>
+<td>Tangential structural/inflammatory</td>
+<td>In a mouse LPS-induced sepsis/ARDS acute lung injury model, circRNA-Tcf20 (a circular RNA transcribed from the TCF20 locus, not TCF20 protein) was differentially expressed and enriched in TNF-signaling/necroptosis/PI3K-Akt pathway networks</td>
+<td>Xu et al. 2024, Exp Lung Res 50(1):242-258. PMID 39587404, DOI 10.1080/01902148.2024.2429184</td>
+<td><span class="tag-warning">WEAKENED</span> — acute sepsis/ARDS is mechanistically distinct from chronic COPD, and the finding concerns a circRNA from the gene body, not TCF20 protein function; downgraded to near-irrelevant by skeptic</td>
+<td><span class="tag">Verified</span> by citation-verifier</td>
+</tr>
+<tr>
+<td class="gene">TCF20</td>
+<td>Smoking-behavior mediation (attempted support — EXCLUDED from claim support)</td>
+<td>GSCAN smoking/alcohol-use GWAS (406 loci, 1.2M individuals) proposed as underlying the Open Targets "smoking initiation" trait association for TCF20</td>
+<td>Liu et al. 2019, Nat Genet 51(2):237-244. PMID 30643251, DOI 10.1038/s41588-018-0307-5</td>
+<td>CLAIM_MISMATCH by citation-verifier — paper exists and is a real large smoking-behavior GWAS, but no mention of chromosome 22, TCF20, or this specific locus could be found in the abstract or accessible text; does NOT independently confirm a TCF20-region hit. EXCLUDED as locus-specific evidence (see audit appendix); usable only as general background on GSCAN's existence, not cited as support in synthesis</td>
+<td><span class="tag">Verified</span> (existence) / CLAIM_MISMATCH (locus relevance)</td>
+</tr>
+<tr>
+<td class="gene">TCF20</td>
+<td>Adjacent-locus background (context only)</td>
+<td>Phelan-McDermid syndrome (22q13.3 deletion/SHANK3) review discusses candidate genes across the broader 22q13 region for various phenotypes including immune features; does NOT specifically implicate TCF20 (22q13.2) or NFAM1 (22q13.1) as core Phelan-McDermid genes</td>
+<td>Hao et al. 2022, Front Genet 13:961196. PMID 36118903, DOI 10.3389/fgene.2022.961196</td>
+<td>VERIFIED as background-only context, not locus-specific evidence for either gene</td>
+<td><span class="tag">Verified</span> by citation-verifier</td>
+</tr>
+<tr>
+<td class="gene">SHISA8</td>
+<td>Genetic constraint</td>
+<td>NOT LoF-constrained (tolerant, oe(lof)=1.76); no genetic_association-datatype disease associations in Open Targets</td>
+<td>Open Targets structured lookup (database, not literature)</td>
+<td>Not applicable (database lookup)</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td class="gene">SHISA8</td>
+<td>Established gene biology (neuronal)</td>
+<td>SHISA8 (CKAMP39) is one of four CKAMP-family proteins that modulate AMPA-receptor trafficking/function in neurons</td>
+<td>von Engelhardt 2019, Int J Mol Sci 20(6):1460. PMID 30909450, DOI 10.3390/ijms20061460</td>
+<td><span class="tag-warning">WEAKENED</span> — accurate but exclusively neuronal biology, no lung/immune relevance; researcher already appropriately deflated this gene</td>
+<td><span class="tag">Verified</span> by citation-verifier</td>
+</tr>
+<tr>
+<td class="gene">SHISA8</td>
+<td>Established gene biology (circadian/sleep)</td>
+<td>SHISA8 identified via LASSO regression as a candidate regulatory hub gene for sleep/circadian disruption in Antarctic expeditioners</td>
+<td>Liu et al. 2024, Mol Psychiatry 30(6):2395-2406. PMID 39587296, DOI 10.1038/s41380-024-02844-7</td>
+<td><span class="tag-warning">WEAKENED</span> — accurate but neuroscience/circadian finding, no lung/immune/smoking relevance</td>
+<td><span class="tag">Verified</span> by citation-verifier</td>
+</tr>
+<tr>
+<td class="gene">SHISA8</td>
+<td>Established gene biology (reward circuit)</td>
+<td>In mice, nucleus-accumbens parvalbumin interneurons express high Shisa8; maternal deltamethrin exposure disrupts these interneurons</td>
+<td>Baumgartner et al. 2026, Environ Int 209:110151. PMID 41794014, DOI 10.1016/j.envint.2026.110151</td>
+<td><span class="tag-warning">WEAKENED</span> — accurate but developmental-neuroscience finding, no lung/immune/smoking relevance</td>
+<td><span class="tag">Verified</span> by citation-verifier</td>
+</tr>
+<tr>
+<td class="gene">NFAM1</td>
+<td>Immune biology, airway-disease-adjacent</td>
+<td>NFAM1 identified as one of 9 "key regulatory genes" differentially expressed and qRT-PCR-validated in asthma exacerbation (integrated single-cell/bulk transcriptomics)</td>
+<td>Liu et al. 2025, Front Immunol 16:1512053. PMID 39917297, DOI 10.3389/fimmu.2025.1512053</td>
+<td><span class="tag-warning">WEAKENED</span> — the only airway-disease-adjacent evidence for any gene at this locus, but asthma is a distinct disease from COPD with a different dominant inflammatory program (Th2/eosinophilic vs. COPD's more neutrophilic/CD8+/Th1/Th17 mix per prior #3); non-COPD-specific</td>
+<td><span class="tag">Verified</span> by citation-verifier</td>
+</tr>
+<tr>
+<td class="gene">NFAM1</td>
+<td>Immune biology, non-pulmonary</td>
+<td>NFAM1 signaling promotes osteoclast differentiation and cytokine production (IL-6, TNF-alpha, CXCL-5) via SAPK/JNK/NFATc1 in a Paget's-disease-of-bone model</td>
+<td>Ethiraj et al. 2021, J Cell Biochem 122(10):1534-1543. PMID 34228377, DOI 10.1002/jcb.30076</td>
+<td><span class="tag-warning">WEAKENED</span> — generic immune-adaptor biology, no lung specificity</td>
+<td><span class="tag">Verified</span> by citation-verifier</td>
+</tr>
+<tr>
+<td class="gene">NFAM1</td>
+<td>Immune biology, non-pulmonary</td>
+<td>circITGB1/miR-342-3p axis upregulates NFAM1, regulating dendritic cell maturation and cardiac inflammation in a mouse MI model</td>
+<td>Zhu et al. 2022, Oxid Med Cell Longev 2022:8392313. PMID 35615580, DOI 10.1155/2022/8392313</td>
+<td><span class="tag-warning">WEAKENED</span> — generic immune-adaptor biology, cardiac not pulmonary context</td>
+<td><span class="tag">Verified</span> by citation-verifier</td>
+</tr>
+<tr>
+<td class="gene">NFAM1</td>
+<td>Immune biology, non-pulmonary</td>
+<td>NFAM1 is part of a dendritic-cell/CD4+ T-cell coexpression network responding to yellow fever vaccination</td>
+<td>Hou et al. 2017, J Immunol 199(4):1476-1489. PMID 28687661, DOI 10.4049/jimmunol.1700083</td>
+<td><span class="tag-warning">WEAKENED</span> — generic adaptive-immunity biology, no lung specificity</td>
+<td><span class="tag">Verified</span> by citation-verifier</td>
+</tr>
+<tr>
+<td class="gene">NFAM1</td>
+<td>Locus-level fine-mapping (statgen, internal pipeline, not literature)</td>
+<td>NFAM1's only credible-set variant is rs45551335, a synonymous variant at PIP=0.003 — essentially noise-level relative to TCF20's ~86%+ mass</td>
+<td>Locus input file (internal ABF fine-mapping)</td>
+<td>Skeptic: this must be stated unambiguously as near-noise-level statistical support, not softened</td>
+<td>n/a</td>
+</tr>
+<tr>
+<td class="gene">LINC01315</td>
+<td>Oncology biology (no lung relevance)</td>
+<td>LINC01315 promotes hepatocellular carcinoma via a miR-185-5p/beta-catenin/WNT ceRNA mechanism, m6A-regulated</td>
+<td>Xing et al. 2025, Sci Rep 16(1):2346. PMID 41372390, DOI 10.1038/s41598-025-32019-5</td>
+<td><span class="tag-warning">WEAKENED</span> / effectively ruled out — no lung/immune/smoking relevance</td>
+<td><span class="tag">Verified</span> by citation-verifier</td>
+</tr>
+<tr>
+<td class="gene">LINC01315</td>
+<td>Oncology biology (no lung relevance)</td>
+<td>LINC01315-encoded small protein (YAPer-ORF) drives YAP-dependent cell proliferation, including cardiomyocyte proliferation in mouse knock-in</td>
+<td>Xie et al. 2025, Cell Death Differ 32(8):1428-1440. PMID 39962243, DOI 10.1038/s41418-025-01449-z</td>
+<td><span class="tag-warning">WEAKENED</span> / effectively ruled out — no lung/immune/smoking relevance</td>
+<td><span class="tag">Verified</span> by citation-verifier</td>
+</tr>
+<tr>
+<td class="gene">LINC01315</td>
+<td>Oncology biology (no lung relevance)</td>
+<td>LINC01315 is a component of a lactate-metabolism lncRNA prognostic signature correlated with tumor-immune infiltration in colon adenocarcinoma</td>
+<td>Xiao et al. 2022, Front Immunol 13:881359. PMID 35911752, DOI 10.3389/fimmu.2022.881359</td>
+<td><span class="tag-warning">WEAKENED</span> / effectively ruled out — tumor-immune-microenvironment biology, not airway/COPD immunology; should not be conflated with COPD-relevant immune programs</td>
+<td><span class="tag">Verified</span> by citation-verifier</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="open-targets-summary-structured-database-lookup--not-a-verified-literature-citation-not-reviewed-by-citation-verifier-or-red-team-skeptic">Open Targets summary (structured database lookup — NOT a verified literature citation; not reviewed by citation-verifier or red-team-skeptic)</h2>
+<ul>
+<li><strong>Locus-wide:</strong> Open Targets has ZERO fine-mapped credible sets recorded for
+22:42,250,001-42,450,000, for any study or trait. No L2G score and no colocalization
+evidence is available from Open Targets for any candidate gene at this locus. This is
+a genuine absence of data in the source, not evidence against any gene.</li>
+<li><strong>TCF20</strong> (ENSG00000100207): gnomAD lof oe=0.019 (most constrained bin) — extremely
+LoF-intolerant. Top-50 associated diseases dominated by neurodevelopmental disorders
+(developmental delay, intellectual disability, autism, ADHD). "Smoking initiation"
+(EFO_0005670) appears at score 0.267 (genetic_association datatype 0.439), alongside
+substance abuse, cannabis dependence, opioid use disorder, and risk-taking behaviour.
+COPD (MONDO_0005002) does NOT appear in TCF20's top-50 associated diseases.</li>
+<li><strong>SHISA8</strong> (ENSG00000234965): gnomAD oe(lof)=1.76 — tolerant of LoF, not constrained.
+Only weak associations (non-small cell lung carcinoma, score 0.025, rna_expression
+datatype only; no genetic_association entries at all). No data available for
+COPD/lung function.</li>
+<li><strong>NFAM1</strong> (ENSG00000235568): gnomAD oe(lof)=0.62 (95% CI 0.36-1.12) — weak/inconclusive
+constraint. "Upper respiratory tract disorder" (score 0.178, genetic_association
+datatype 0.293) is the closest respiratory-adjacent signal of any gene at this locus,
+plus a long tail of low-score immune/inflammatory disease associations (Crohn disease,
+ulcerative colitis, asthma at score 0.0074, autoimmune disease). COPD does not appear.</li>
+<li><strong>LINC01315</strong> (ENSG00000229891): lncRNA, no coding constraint metric applies. All
+associated diseases are oncology-related (colorectal, hepatocellular, breast, thyroid,
+gastric cancers), literature-datatype only, no genetic_association entries, no
+respiratory signal of any kind.</li>
+</ul>
+<h2 id="prioritized-gene">Prioritized gene</h2>
+<p><strong>TCF20 — Confidence: LOW.</strong></p>
+<p>TCF20 is the only gene at this locus with meaningful statistical fine-mapping support:
+it is the nearest gene to the lead variant and carries roughly 86%+ of the credible-set
+PIP mass across seven annotated variants, all intronic or upstream (no coding
+consequence), and it is extremely LoF-constrained (gnomAD oe=0.019). By physical/
+statistical overlap alone it is the clear best-supported candidate over SHISA8 (zero
+credible-set variant overlap; PoPS-only, genome-wide-similarity-based), NFAM1 (a single
+synonymous variant at PIP=0.003, essentially noise-level), and LINC01315 (~1.3%
+cumulative PIP, entirely oncology-focused literature with no lung relevance).</p>
+<p>However, confidence cannot be rated higher than LOW because the mechanistic case is
+thin and partly contradicted on closer inspection. No PubMed literature ties TCF20
+directly to COPD, lung function, or the lead variant rs8142378 (zero hits across all
+three targeted searches) — there is no spirometric or pulmonary-function corroboration
+at all, which per prior #2 should raise consideration of an alternative pathway. TCF20's
+best-established disease biology (Vetrini et al. 2019, PMID 30819258, VERIFIED) is a
+monogenic neurodevelopmental syndrome driven by severe loss-of-function
+haploinsufficiency — a different phenotype and mechanism than a common noncoding
+COPD-associated variant, so this should be read as evidence of general dosage
+sensitivity/biological importance, not direct COPD mechanism (per red-team-skeptic).
+The one lead toward a plausible alternative mechanism consistent with prior #1 —
+smoking-behavior mediation via TCF20's neurobehavioral biology, suggested by an Open
+Targets aggregate "smoking initiation" trait score (0.267) — could NOT be substantiated
+in the primary literature: the GSCAN smoking-GWAS citation intended to support it
+returned a CLAIM_MISMATCH verdict from citation-verifier (no mention of chromosome 22 or
+TCF20 found in the accessible text), so this hypothesis remains open and unconfirmed
+rather than a finding.</p>
+<p>The runner-up, NFAM1, offers real immune biology (ITAM-signaling adaptor with a
+key-regulatory-gene role in asthma-exacerbation transcriptomics, PMID 39917297,
+VERIFIED) that is more consistent with prior #3's inflammatory-complexity framing than
+anything found for TCF20 — but its case is undermined by near-zero statistical support
+at this locus (one synonymous variant, PIP=0.003) and the complete absence of
+COPD-specific (as opposed to asthma- or non-pulmonary-immune) evidence. SHISA8 and
+LINC01315 are both effectively ruled out: SHISA8 has zero physical linkage to the
+credible set and exclusively neuronal biology; LINC01315 has minimal PIP and an entirely
+oncology-focused literature footprint (including one retracted paper, excluded).</p>
+<p><strong>What would resolve this call:</strong> (1) direct confirmation (e.g., via GSCAN/GWAS
+Catalog supplementary tables or a newer/larger smoking-initiation GWAS) of whether a
+genome-wide-significant smoking-initiation or related behavioral-trait signal actually
+localizes to chr22:42.25-42.45Mb — this is the single check that would most change this
+locus's prioritization, per red-team-skeptic; (2) any FEV1/FEV1-FVC spirometry GWAS or
+lung-function TWAS/colocalization evidence for TCF20, currently entirely absent; (3) any
+COPD-specific (not asthma-only) transcriptomic or functional evidence for NFAM1 in
+airway epithelium or COPD-relevant immune cell types. Until then, TCF20 is the
+best-supported pick by statistical fine-mapping and constraint, but the causal mechanism
+at this locus — pulmonary-structural, smoking-behavior-mediated, or otherwise — remains
+unresolved, and this recommendation should be weighed accordingly by the study team.</p>
+
+        </div>
+    </div>
+</body>
+</html>
