@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidence table — Locus 14:46,700,001-47,000,000 (GRCh38)</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br>Dashboard
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-title">Overview</div>
+            <a class="nav-link" href="../index.html">🏠 Home</a>
+            <a class="nav-link" href="../methods.html">🔬 Methods</a>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-title">Chromosomes</div>
+            <a class="nav-link active" href="../CHR1.html">CHR1</a>
+            <a class="nav-link" href="../CHR2.html">CHR2</a>
+            <a class="nav-link" href="../CHR3.html">CHR3</a>
+            <a class="nav-link" href="../CHR4.html">CHR4</a>
+            <a class="nav-link" href="../CHR5.html">CHR5</a>
+            <a class="nav-link" href="../CHR6.html">CHR6</a>
+            <a class="nav-link" href="../CHR7.html">CHR7</a>
+            <a class="nav-link" href="../CHR8.html">CHR8</a>
+            <a class="nav-link" href="../CHR9.html">CHR9</a>
+            <a class="nav-link" href="../CHR10.html">CHR10</a>
+            <a class="nav-link" href="../CHR11.html">CHR11</a>
+            <a class="nav-link" href="../CHR12.html">CHR12</a>
+            <a class="nav-link" href="../CHR13.html">CHR13</a>
+            <a class="nav-link" href="../CHR14.html">CHR14</a>
+            <a class="nav-link" href="../CHR15.html">CHR15</a>
+            <a class="nav-link" href="../CHR16.html">CHR16</a>
+            <a class="nav-link" href="../CHR17.html">CHR17</a>
+            <a class="nav-link" href="../CHR18.html">CHR18</a>
+            <a class="nav-link" href="../CHR19.html">CHR19</a>
+            <a class="nav-link" href="../CHR20.html">CHR20</a>
+            <a class="nav-link" href="../CHR21.html">CHR21</a>
+            <a class="nav-link" href="../CHR22.html">CHR22</a>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div class="content-card">
+            
+
+<h1 id="evidence-table--locus-1446700001-47000000-grch38">Evidence table — Locus 14:46,700,001-47,000,000 (GRCh38)</h1><div class="summary"><p><strong>Lead variant:</strong> rs12889080 (PIP=0.086, intergenic, 14:46,822,678)
+<strong>Candidate genes (internal pipeline):</strong> MDGA2 (nearest gene; FLAMES-prioritized). No MAGMA/PoPS/ABC prioritized genes. MDGA2 is a ~430 kb gene that spans essentially the entire locus window (~14:46,691,000-47,036,000); all gene-annotated credible-set variants (intron_variant, 3_prime_UTR_variant, downstream_gene_variant; all impact=MODIFIER) map to MDGA2, and no other protein-coding gene overlaps the credible set. No missense/splice-donor/splice-acceptor variants are present in the credible set.</p><p>Only citations with a citation-verifier verdict of VERIFIED are included below. Excluded (CLAIM_MISMATCH / NOT_FOUND) citations and the full red-team critique are preserved in the audit trail: <code>audits/14_46700001-47000000_audit.md</code>.</p></div>
+
+
+<div class="evidence-table-wrapper"><table class="evidence-table">
+<thead>
+<tr>
+<th>Candidate gene</th>
+<th>Evidence type</th>
+<th>Claim</th>
+<th>Source (PMID/DOI)</th>
+<th>Skeptic verdict</th>
+<th>Verified date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="gene">MDGA2</td>
+<td>Statistical genetics — variant-level, cross-phenotype GWAS (prior #1 relevant)</td>
+<td>Locus lead credible-set variant rs12889080 shows a <strong>suggestive, sub-genome-wide-significant</strong> association (P=4.52x10⁻⁷, i.e. ~9-fold short of the conventional 5x10⁻⁸ threshold) with a pooled cross-substance-use-disorder trait (alcohol/cannabis/opioid/tobacco use disorders combined — not tobacco-specific) in a large multi-ancestry GWAS meta-analysis; the study's gene-level prioritization of 785 SUD-shared genes found them enriched in neuronal cell types across amygdala/cortex/hippocampus/hypothalamus/thalamus.</td>
+<td>Lai et al. 2025, <em>Mol Psychiatry</em>, PMID 41057643, DOI 10.1038/s41380-025-03294-5</td>
+<td><span class="tag-warning">WEAKENED</span>VERIFIED (paper exists, reports rs12889080 at P=4.52x10⁻⁷ and the 785-gene neuronal-enrichment finding); red-team  the researcher's original framing — this is marginal, not genome-wide-significant, and is a pooled addiction-liability signal, not a tobacco/nicotine-specific one. Should not be read as confirmed smoking-mediation.</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">MDGA2</td>
+<td>Statistical genetics — GWAS in a distinct lung disease</td>
+<td>An MDGA2 intronic SNP (rs7144383, 14q21.3) reached genome-wide significance in an idiopathic pulmonary fibrosis (IPF — not COPD) GWAS discovery+stage-2 meta-analysis, but <strong>failed to replicate</strong> in the independent stage-3 cohort (unlike TOLLIP and MUC5B, which did replicate).</td>
+<td>Noth et al. 2013, <em>Lancet Respir Med</em>, PMID 24429156, DOI 10.1016/S2213-2600(13)70045-6</td>
+<td>VERIFIED (failed-replication finding confirmed as reported); red-team notes this is evidentially weak on two counts — non-replication, and IPF is mechanistically distinct fibrotic disease, not COPD/emphysema.</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">MDGA2</td>
+<td>Statistical genetics — GWAS in an unrelated chronic-pain trait</td>
+<td>Large multi-ancestry fibromyalgia GWAS gene-prioritization implicated MDGA2 among "diverse genes with neural roles" (with DCC, DRD2/NCAM1, CELF4); fibromyalgia heritability was exclusively enriched in brain tissues/neural cell types.</td>
+<td>Kerrebijn et al. 2026, <em>Nat Med</em>, PMID 42521817, DOI 10.1038/s41591-026-04492-6</td>
+<td>VERIFIED; not lung-relevant — underscores MDGA2's dominant, reproducible CNS/neural biology rather than any pulmonary role.</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">MDGA2</td>
+<td>Statistical genetics — mQTL, unrelated cancer trait</td>
+<td>A novel MDGA2 methylation-QTL region was newly associated with colorectal cancer risk, not previously reported in prior CRC meta-GWAS.</td>
+<td>Mesa-Eguiagaray et al. 2025, <em>Br J Cancer</em>, PMID 40506516, DOI 10.1038/s41416-025-03064-8</td>
+<td>VERIFIED; not lung/COPD-relevant.</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">MDGA2</td>
+<td>Statistical genetics — rare-variant burden, metabolomic trait</td>
+<td>Rare-variant burden analysis (ARIC cohort, n=1,456) found MDGA2 significantly associated with a serum carnitine-pathway metabolite (cis-4-decenoylcarnitine level).</td>
+<td>Yazdani et al. 2016, <em>Genet Epidemiol</em>, PMID 27256581, DOI 10.1002/gepi.21980</td>
+<td>VERIFIED; unrelated to lung/COPD biology, illustrates broad pleiotropic/multi-trait footprint of this large gene.</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">MDGA2</td>
+<td>Mechanistic/functional — cancer biology, not lung</td>
+<td>MDGA2 promoter is commonly hypermethylated/silenced in gastric cancer (62.4% of 218 tumors); functions as a tumor suppressor via DMAP1 stabilization activating p53/p21 signaling.</td>
+<td>Wang et al. 2015, <em>Gut</em>, PMID 26206665, DOI 10.1136/gutjnl-2015-309276</td>
+<td>VERIFIED; not lung/COPD-relevant.</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">MDGA2</td>
+<td>Immunology/autoimmune genetics (prior #3 relevant)</td>
+<td>MAMDC1 (=MDGA2) intronic SNPs rs961616 (p=0.001, OR=1.29) and rs2297926 (p=0.003, OR=1.35) were associated with systemic lupus erythematosus (SLE) susceptibility in Finnish/UK/Swedish cohorts; MAMDC1 mRNA was upregulated by TNF-alpha and IFN-gamma in THP-1 monocytes (2.5x and 2.4x induction).</td>
+<td>Hellquist et al. 2009, <em>PLoS One</em>, PMID 19997561, DOI 10.1371/journal.pone.0008037</td>
+<td>VERIFIED but modest effect sizes from a single family/case-control study; red-team notes no evidence links this to any COPD-relevant airway inflammatory program (neutrophilic, CD8+ T-cell, Th1, Th17/Tc17, macrophage) or to lung tissue/cell-type specificity — this is a generic systemic-autoimmunity signal only.</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">MDGA2</td>
+<td>Human genetics — rare disease, CNS phenotype</td>
+<td>Seven distinct homozygous loss-of-function MDGA2 variants in 9 individuals from 7 consanguineous families cause autosomal-recessive developmental and epileptic encephalopathy.</td>
+<td>Morsy et al. 2026, <em>Am J Hum Genet</em>, PMID 41570816, DOI 10.1016/j.ajhg.2025.12.015</td>
+<td>VERIFIED; confirms MDGA2 is a genuine dosage-sensitive human disease gene (consistent with its strong gnomAD LoF constraint, see Open Targets summary below), but for a CNS/epilepsy phenotype, not a lung phenotype.</td>
+<td>2026-09-11</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="open-targets-summary-structured-database-lookup--not-a-verified-literature-citation-not-reviewed-by-citation-verifier-or-red-team-skeptic">Open Targets summary (structured database lookup — not a verified literature citation; not reviewed by citation-verifier or red-team-skeptic)</h2>
+<p><strong>MDGA2 (ENSG00000139915):</strong></p>
+<ul>
+<li><strong>Genetic constraint (gnomAD):</strong> LoF observed/expected (oe) = 0.257 (95% CI 0.185-0.362; expected 93.4, observed 24) — strongly constrained against loss-of-function variation, a dosage-sensitivity signal consistent with the Morsy et al. 2026 human LoF-disease finding above. Missense oe = 0.828 (mild constraint); synonymous oe = 1.009 (as expected, no constraint).</li>
+<li><strong>Aggregate COPD association score:</strong> MDGA2 does not rank in the top 500 of 6,323 targets Open Targets associates with chronic obstructive pulmonary disease (MONDO_0005002) — its score is below 0.19, versus established COPD genes such as SCNN1B (0.806), CFTR (0.760), SERPINA1 (0.703), FAM13A (0.631), HHIP (0.485), IREB2 (0.293). This is a weak aggregate genetic-association signal for MDGA2-COPD specifically.</li>
+<li><strong>MDGA2's own top-scored disease/trait associations</strong> (out of 2,927 total): (1) skeletal system abnormality (0.341), (2) alcohol drinking (0.337), (3) <strong>smoking initiation (0.323)</strong>, (4) ADHD (0.315), (5) obesity disorder (0.314), (6) mathematical ability (0.311). COPD does not appear in this top-25 list (score &lt;0.247).</li>
+<li><strong>Lead variant (rs12889080) credible-set/colocalization survey:</strong> this variant is a fine-mapped credible-set member in 122 separate GWAS study-loci in Open Targets (all 122 inspected). The overwhelming majority (&gt;100/122) are anthropometric/body-composition traits (BMI in 15+ cohorts, body weight, fat mass, lean mass, body fat percentage, waist circumference, basal metabolic rate). A minority are type 2 diabetes, HbA1c, sleep apnea, PTSD, pain, blood pressure, and psychiatric/ADHD-obesity composite traits. <strong>None of the 122 credible sets at this exact variant are COPD, lung function (FEV1/FEV1-FVC), or a direct smoking-behavior trait</strong> in Open Targets' own GWAS ingestion.</li>
+<li><strong>Colocalization:</strong> no COPD- or lung-function-specific study locus was found colocalizing with this variant; this absence is itself informative and is noted rather than omitted.</li>
+<li>Interpretation flag (from the orchestrator's step-1 lookup, echoed and investigated in the researcher/skeptic stages): the lead variant's dominant cross-trait signature in Open Targets is adiposity/body-composition, not smoking or lung function directly — an alternative pathway hypothesis not covered by this pipeline's three standard priors. The researcher searched PubMed specifically for MDGA2 + obesity/BMI/adiposity literature and found <strong>zero results</strong>, so this remains an open, literature-unaddressed structured-database observation, not a corroborated mechanism.</li>
+</ul>
+<h2 id="prioritized-gene">Prioritized gene</h2>
+<p><strong>Gene: MDGA2 — Confidence: LOW</strong></p>
+<p>MDGA2 is named as the prioritized gene at this locus by default, not because the evidence is strong, but because it is the <em>only</em> candidate: it is both the nearest gene and the FLAMES-prioritized gene, no MAGMA/PoPS/ABC gene competes with it, MDGA2 physically spans essentially the entire ~300kb locus window, and every gene-annotated credible-set variant sits within MDGA2 itself. There is no gene-identity ambiguity to resolve (unlike loci with multiple genes in LD) — the open question is entirely about <em>mechanism</em>, not <em>which gene</em>.</p>
+<p>The verified evidence, however, does not support a COPD-specific or lung-specific mechanism with any confidence. As the red-team-skeptic's critique concludes (see <code>audits/14_46700001-47000000_audit.md</code> for the full critique), all three of this pipeline's standard priors are, at best, weakly and indirectly touched:</p>
+<ul>
+<li><strong>Prior #1 (smoking-mediation):</strong> the only variant-level evidence (Lai et al. 2025, row 1 above) is a <em>sub-genome-wide-significant</em> (P=4.52x10⁻⁷) association with a <em>pooled, non-tobacco-specific</em> substance-use-disorder trait — weaker than "smoking-mediated" implies, and no smoking-initiation/cessation/heaviness GWAS hit exists for this variant.</li>
+<li><strong>Prior #2 (spirometry):</strong> a clean, genuine absence — no FEV1/FEV1-FVC or COPD literature exists for MDGA2 at all, and the one lung-disease-adjacent finding (Noth et al. 2013 IPF signal) failed replication and concerns a mechanistically distinct fibrotic disease.</li>
+<li><strong>Prior #3 (inflammation):</strong> a modest, single-population SLE/monocyte-cytokine-inducibility signal (Hellquist et al. 2009) with no COPD-relevant airway inflammatory-program specificity (no neutrophilic/CD8+/Th1/Th17/macrophage evidence).</li>
+</ul>
+<p>Two additional, non-prior alternative hypotheses were raised and remain unresolved: (a) an Open Targets-flagged but literature-uncorroborated <strong>adiposity/body-composition mediation pathway</strong> (122/122 of the lead variant's other GWAS credible-set memberships are anthropometric traits), and (b) a <strong>gene-size/pleiotropy artifact</strong> — MDGA2 is one of the largest genes in the genome (~430kb) and its promiscuous appearance across unrelated GWAS (SLE, IPF, depression, fibromyalgia, neuroticism, carnitine metabolites, colorectal cancer, anthropometric traits, substance use) may partly reflect its size rather than true shared biology.</p>
+<p>MDGA2's best-replicated, most robust biology by far is CNS-synaptic/neurodevelopmental (a dosage-sensitive gene whose human loss-of-function causes epileptic encephalopathy, and whose common variants are linked to autism, neuroticism, and fibromyalgia) — mechanistically disconnected from lung pathophysiology as currently understood. The red-team-skeptic explicitly declined to call this locus CONTESTED (there is no competing gene to contest against) but rated the overall evidence base WEAKENED relative to the researcher's original framing.</p>
+<p><strong>What would resolve this:</strong> a direct FEV1/FEV1-FVC or COPD GWAS/fine-mapping hit at this variant or gene; a tobacco/nicotine-specific (not pooled-substance) GWAS association at rs12889080; airway/lung single-cell expression or functional data for MDGA2; or a literature-confirmed adiposity/BMI association for MDGA2 that could be tested for mediation of the COPD signal. Absent any of these, this locus should be treated as low-confidence and mechanistically unresolved — MDGA2 is reported here as the best (and only) candidate gene, not as a well-supported causal mechanism.</p>
+
+        </div>
+    </div>
+</body>
+</html>
