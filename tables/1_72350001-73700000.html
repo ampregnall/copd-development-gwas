@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COPD locus evidence table: 1:72,350,001-73,700,000 (GRCh38)</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br>Dashboard
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-title">Overview</div>
+            <a class="nav-link" href="../index.html">🏠 Home</a>
+            <a class="nav-link" href="../methods.html">🔬 Methods</a>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-title">Chromosomes</div>
+            <a class="nav-link active" href="../CHR1.html">CHR1</a>
+            <a class="nav-link" href="../CHR2.html">CHR2</a>
+            <a class="nav-link" href="../CHR3.html">CHR3</a>
+            <a class="nav-link" href="../CHR4.html">CHR4</a>
+            <a class="nav-link" href="../CHR5.html">CHR5</a>
+            <a class="nav-link" href="../CHR6.html">CHR6</a>
+            <a class="nav-link" href="../CHR7.html">CHR7</a>
+            <a class="nav-link" href="../CHR8.html">CHR8</a>
+            <a class="nav-link" href="../CHR9.html">CHR9</a>
+            <a class="nav-link" href="../CHR10.html">CHR10</a>
+            <a class="nav-link" href="../CHR11.html">CHR11</a>
+            <a class="nav-link" href="../CHR12.html">CHR12</a>
+            <a class="nav-link" href="../CHR13.html">CHR13</a>
+            <a class="nav-link" href="../CHR14.html">CHR14</a>
+            <a class="nav-link" href="../CHR15.html">CHR15</a>
+            <a class="nav-link" href="../CHR16.html">CHR16</a>
+            <a class="nav-link" href="../CHR17.html">CHR17</a>
+            <a class="nav-link" href="../CHR18.html">CHR18</a>
+            <a class="nav-link" href="../CHR19.html">CHR19</a>
+            <a class="nav-link" href="../CHR20.html">CHR20</a>
+            <a class="nav-link" href="../CHR21.html">CHR21</a>
+            <a class="nav-link" href="../CHR22.html">CHR22</a>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div class="content-card">
+            
+
+<h1 id="copd-locus-evidence-table-172350001-73700000-grch38">COPD locus evidence table: 1:72,350,001-73,700,000 (GRCh38)</h1><div class="summary"><p><strong>Nearest gene:</strong> LRRIQ3 | <strong>PoPS prioritized:</strong> NEGR1 | <strong>FLAMES/MAGMA/ABC prioritized:</strong> NA
+<strong>Lead variant:</strong> rs12142152 (1:73,189,630, PIP=0.322) | <strong>Credible set size:</strong> 237 variants (ABF finemapping)</p><p><strong>Locus/region note:</strong> This 1.35 Mb window is a genuine gene desert (confirmed via Ensembl
+overlap query by the researcher) — no protein-coding gene lies inside the region itself.
+LRRIQ3 sits ~840 kb from the lead variant, past the region's centromeric boundary; NEGR1
+sits ~70 kb telomeric of the region's start, also outside the window. FPGT-TNNI3K is
+immediately adjacent to (3' of) LRRIQ3. The 237-variant credible set contains no
+missense, splice-donor, or splice-acceptor variant; nearly all variants are
+intergenic/upstream/downstream of a 7SK snRNA pseudogene (RN7SKP19) or non-coding, and one
+very-low-PIP variant is nearest a keratin pseudogene (KRT8P21). Per pipeline scope, no
+variant-by-variant literature search was performed beyond the lead variant; a targeted
+PubMed search on the lead variant rsID (rs12142152) returned zero results.</p></div>
+
+
+<h2 id="evidence-table">Evidence table</h2>
+<div class="evidence-table-wrapper"><table class="evidence-table">
+<thead>
+<tr>
+<th>Candidate gene</th>
+<th>Evidence type</th>
+<th>Claim</th>
+<th>Source (PMID/DOI)</th>
+<th>Skeptic verdict</th>
+<th>Verified date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="gene">LRRIQ3</td>
+<td>Statistical genetics (GWAS)</td>
+<td>rs640561 (intergenic, near LRRIQ3, same broader locus as lead variant but not identical to it) reached genome-wide significance for problematic opioid use (POU) in a 23andMe GWAS (n=132,113); POU showed strong positive genetic correlation with smoking initiation (rg=0.63), alcohol dependence (rg=0.74), major depressive disorder (rg=0.44), and chronic pain (rg=0.42)</td>
+<td>Sanchez-Roige et al. 2021, Mol Psychiatry, PMID 34728798, DOI 10.1038/s41380-021-01335-3</td>
+<td><span class="tag-warning">WEAKENED</span> (gene-specificity not established — see audit)</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">LRRIQ3</td>
+<td>Statistical genetics (GWAS replication)</td>
+<td>Independent replication attempt of rs640561 in a persistent-opioid-use-after-surgery cohort found only a nominal association (p=0.015), substantially weaker than OPRM1 (p=8.7e-7) — limited independent replication of the LRRIQ3-region signal</td>
+<td>Annis et al. 2024, Genet Epidemiol, PMID 39385445, DOI 10.1002/gepi.22588</td>
+<td><span class="tag-warning">WEAKENED</span> (same gene-specificity caveat; also shows fragility of replication)</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">LRRIQ3</td>
+<td>Statistical genetics (conditional FDR / eQTL-adjacent)</td>
+<td>Conditional FDR analysis (MDD vs. chronic pain GWAS) found SNPs associated specifically with MDD in the same gene-dense chr1 region containing LINC01360, LRRIQ3, FPGT, and FPGT-TNNI3K; several SNPs associated with brain/CNS expression of "nearby genes" (not LRRIQ3-specific)</td>
+<td>Johnston et al. 2019, Transl Psychiatry, PMID 31748543, DOI 10.1038/s41398-019-0613-4</td>
+<td><span class="tag-warning">WEAKENED</span> — this source itself undercuts LRRIQ3-specificity by naming multiple co-located candidate genes (see audit)</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">LRRIQ3</td>
+<td>Rare-variant / structural (neurodevelopmental)</td>
+<td>Homozygous truncating variant in LRRIQ3 identified as one of 52 novel, unreplicated candidate genes via exome sequencing of consanguineous intellectual-disability families</td>
+<td>Reuter et al. 2017, JAMA Psychiatry, PMID 28097321, DOI 10.1001/jamapsychiatry.2016.3798</td>
+<td>Reasonably supported as reported, but low weight (single unreplicated rare-variant report, not lung-relevant)</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">LRRIQ3</td>
+<td>Comparative genomics (context only, non-human)</td>
+<td>LRRIQ3 is part of a duplicated autosomal segment on supernumerary B chromosomes of Siberian roe deer</td>
+<td>Trifonov et al. 2013, BMC Biology, PMID 23915065, DOI 10.1186/1741-7007-11-90</td>
+<td><span class="tag">Verified</span> as reported; explicitly noted as a curiosity with no bearing on human lung biology</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">LRRIQ3</td>
+<td>Immunology (incidental, non-pulmonary)</td>
+<td>LRRIQ3 expression regulated downstream of SPHK2 knockdown in an osteoarthritis fibroblast-like-synoviocyte model (joint disease, not COPD/lung)</td>
+<td>Zheng et al. 2024, J Inflamm Res, PMID 39416266, DOI 10.2147/JIR.S476077</td>
+<td><span class="tag">Verified</span> as reported; incidental finding, not COPD/lung-relevant</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">NEGR1</td>
+<td>Statistical genetics / neurobiology</td>
+<td>NEGR1 transcript and protein levels significantly elevated in dorsolateral prefrontal cortex of schizophrenia patients vs. controls</td>
+<td>Karis et al. 2018, Front Mol Neurosci, PMID 29434535, DOI 10.3389/fnmol.2018.00008</td>
+<td><span class="tag">Verified</span> as reported; CNS-tissue context, not lung</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">NEGR1</td>
+<td>Statistical genetics (cross-trait GWAS)</td>
+<td>Cross-trait GWAS analysis identified NEGR1 as one of seven "key genes" with shared genetic architecture between smoking-behavior GWAS and major depressive disorder GWAS, enriched in limbic/GABAergic/dopaminergic neuron and synaptic pathways</td>
+<td>Wang et al. 2025, J Affect Disord, PMID 39842668, DOI 10.1016/j.jad.2025.01.093</td>
+<td><span class="tag">Verified</span> as reported; direct literature link between NEGR1 and smoking-behavior genetics (supports prior #1)</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">NEGR1</td>
+<td>Statistical genetics / structural biology (review)</td>
+<td>NEGR1 originally identified as a GWAS risk gene for obesity/BMI; more recent evidence implicates NEGR1 in major depressive disorder and other psychiatric disorders via cross-talk with cytokine-receptor signaling; Negr1-knockout mice show psychiatric-relevant (not pulmonary) behavioral phenotypes</td>
+<td>Noh et al. 2020, Exp Neurobiol, PMID 32122104, DOI 10.5607/en.2020.29.1.1</td>
+<td><span class="tag">Verified</span> as reported; cytokine cross-talk is CNS-context only, tissue-mismatched to COPD-relevant airway immunology</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">NEGR1</td>
+<td>Structural/developmental (neurodevelopmental)</td>
+<td>NEGR1 and other IgLON family cell-adhesion molecules are shed from the neuronal cell surface by metalloproteinases (ADAMs/MMPs) to promote cortical neurite outgrowth</td>
+<td>Sanz et al. 2015 (J Biol Chem, online Dec 2014), PMID 25538237, DOI 10.1074/jbc.M114.628438</td>
+<td><span class="tag">Verified</span> as reported; researcher explicitly declined to over-interpret the metalloproteinase/COPD-protease overlap as pulmonary-relevant — appropriate restraint</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">NEGR1</td>
+<td>Structural/developmental (CNS injury, immune-adjacent)</td>
+<td>IgLON-family paralog neurotractin/kilon (related to NEGR1) is induced on reactive astrocytes after entorhinal cortex lesion, illustrating an IgLON role in CNS injury response</td>
+<td>Schäfer et al. 2005, Mol Cell Neurosci, PMID 15946856, DOI 10.1016/j.mcn.2005.04.010</td>
+<td><span class="tag">Verified</span> as reported; CNS-glial context, not peripheral/pulmonary immune biology</td>
+<td>2026-09-11</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="notes-on-evidence-strength-read-together-with-skeptic-verdicts-above">Notes on evidence strength (read together with skeptic verdicts above)</h2>
+<ul>
+<li>No verified citation in this table establishes lung-structural, airway-epithelial, or
+COPD-relevant immune (neutrophil/T-cell/macrophage) biology for either LRRIQ3 or NEGR1.
+The one citation that would have provided this (a suggestive DLCO GWAS hit for NEGR1)
+was <strong>excluded</strong> as CLAIM_MISMATCH — see audit appendix.</li>
+<li>The LRRIQ3-region GWAS evidence (opioid use, chronic pain/MDD) is built on a different
+variant (rs640561) than this locus's lead variant (rs12142152), and the strongest
+supporting source (Johnston et al.) itself names multiple co-located candidate genes
+(LINC01360, LRRIQ3, FPGT, FPGT-TNNI3K) rather than pinpointing LRRIQ3 — see audit
+appendix for the skeptic's full reasoning on why gene-specificity is NOT established.</li>
+<li>All verified evidence for both genes is neurobehavioral/psychiatric/addiction in nature.
+This pattern, taken together with the (unverified, database-only) Open Targets
+colocalization pattern in the summary below, is consistent with biological prior #1
+(smoking-mediated/neurobehavioral pathways) — but the skeptic emphasizes this rests on
+an <em>absence</em> of pulmonary evidence rather than a <em>positive</em> smoking-mechanism finding at
+the gene level (Wang et al. 2025 for NEGR1 is the closest thing to a positive
+smoking-specific gene-level finding).</li>
+</ul>
+<h2 id="open-targets-summary-structured-database-lookup--not-a-verified-literature-citation-not-reviewed-by-citation-verifier-or-red-team-skeptic">Open Targets summary (structured database lookup — NOT a verified literature citation; not reviewed by citation-verifier or red-team-skeptic)</h2>
+<div class="evidence-table-wrapper"><table class="evidence-table">
+<thead>
+<tr>
+<th>Gene</th>
+<th>L2G score (this locus)</th>
+<th>Colocalization (COPD-phecode credible set)</th>
+<th>Genetic constraint (gnomAD)</th>
+<th>Aggregated COPD association score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="gene">LRRIQ3 (ENSG00000162620)</td>
+<td>0.0804 — the only gene Open Targets' L2G model ever resolves at the lead variant's 43 registered credible sets, but this identical score recurs across all 43 phenotypically unrelated traits (depression, ADHD, food-liking, COPD, etc.), suggesting a static distance-based feature rather than trait-specific molecular evidence (flagged as uninformative by red-team-skeptic)</td>
+<td>The COPD-phecode ("Chronic airway obstruction") credible set at this locus colocalizes strongly with age-of-smoking-initiation (h4=0.92) and smoking-status-ever-vs-never (h4=0.81), and with numerous psychiatric traits (depression/MDD h4~0.81-0.94, bipolar h4=0.88, schizophrenia h4~0.72-0.73, ADHD h4~0.73, anxiety h4=0.73, PTSD-PRS h4=0.89 but inconsistent across PTSD definitions); near-null colocalization with FEV1 (h4=0.023) and with the "chronic bronchitis" PheCode (h4=0.061)</td>
+<td>No LoF constraint: oe=1.26 (90% CI 1.00-1.60) — tolerant</td>
+<td>0.030 (genetic_association datatype score 0.049)</td>
+</tr>
+<tr>
+<td class="gene">NEGR1 (ENSG00000172260)</td>
+<td>Never the L2G-preferred target at this locus (L2G always resolves to LRRIQ3 instead)</td>
+<td>Not gene-specific (colocalization in Open Targets is keyed to the variant/trait credible set, not to a candidate gene); same locus-level pattern above applies regardless of which gene is causal</td>
+<td>LoF-constrained: oe=0.20 (90% CI 0.11-0.43) — intolerant, unlike LRRIQ3</td>
+<td>0.222 (genetic_association datatype score 0.365) — likely reflects NEGR1's very large general GWAS footprint (BMI, psychiatric traits), not COPD-specific causal evidence</td>
+</tr>
+<tr>
+<td class="gene">RN7SKP19 / RN7SKP195 / RN7SKP196 (7SK snRNA pseudogenes)</td>
+<td>No data available (misc_RNA biotype; not L2G-evaluated)</td>
+<td>No data available</td>
+<td>No constraint data</td>
+<td>No disease-association data (count=0)</td>
+</tr>
+<tr>
+<td class="gene">KRT8P21 (keratin pseudogene)</td>
+<td>No data available</td>
+<td>No data available</td>
+<td>No constraint data</td>
+<td>No disease-association data (count=0)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Full Open Targets query detail: see <code>evidence_tables/_status/1_72350001-73700000/opentargets.md</code>.</p>
+<h2 id="prioritized-gene">Prioritized gene</h2>
+<p><strong>Prioritized gene: NONE with confidence above LOW — best-supported single pick is LRRIQ3, confidence LOW.</strong></p>
+<p>This locus does not permit a confident single-gene call, and that should not be
+obscured. The credible set (237 variants) contains no coding or splice variant, the
+associated interval is a genuine gene desert, and both candidate genes (LRRIQ3, PoPS's
+NEGR1) sit well outside the window (840 kb and 70 kb away respectively), with no
+gene-specific eQTL colocalization evidence for either one anywhere in this dossier. The
+Open Targets L2G model nominally favors LRRIQ3, but red-team-skeptic's critique — which I
+find persuasive — shows this is very likely a distance-based artifact (the identical 0.08
+score recurs across 43 unrelated traits) rather than trait-specific resolution, so it
+cannot be treated as a real tie-breaker. The strongest gene-level literature for LRRIQ3
+(opioid use / chronic pain GWAS via rs640561) comes from a source (Johnston et al. 2019)
+that itself names multiple co-located candidate genes (LINC01360, FPGT, FPGT-TNNI3K) in
+the same gene-dense region, so it does not establish LRRIQ3-specificity either.</p>
+<p>I am naming <strong>LRRIQ3</strong> as the nominal top pick only because (i) it is the Open Targets
+L2G-preferred gene even if that preference is weak/likely-artifactual, and (ii) it has a
+directly-relevant (if not gene-uniquely-resolved) verified GWAS association with an
+opioid/pain/psychiatric-behavior phenotype cluster at essentially the same locus. The
+runner-up, <strong>NEGR1</strong>, has equally strong (arguably stronger, via Wang et al. 2025)
+verified smoking-behavior-adjacent genetic evidence and is a genuinely LoF-constrained
+gene (unlike LRRIQ3), but was never L2G-preferred and its only would-be pulmonary-specific
+evidence (a suggestive DLCO GWAS hit) was excluded on citation-verification grounds (see
+audit appendix) — leaving NEGR1 with zero verified pulmonary evidence.</p>
+<p>What would resolve this tie: gene-specific eQTL/pQTL colocalization for LRRIQ3, NEGR1,
+and FPGT-TNNI3K in lung and/or brain tissue at this exact credible set; a successfully
+verified full-text confirmation of the Sakornsakolpat DLCO finding (or a fresh
+DLCO/FEV1/COPD GWAS lookup) for NEGR1; and, ideally, an independent literature or
+functional check on FPGT-TNNI3K, which was not evaluated as a candidate in this review
+despite being named alongside LRRIQ3 in the strongest cited source.</p>
+<p>Independent of which gene is causal, the convergent pattern across the Open Targets
+colocalization (near-null FEV1/chronic-bronchitis h4, strong smoking-initiation/status h4)
+and the gene-level literature (both candidates dominated by psychiatric/addiction/behavioral
+findings, one with a direct smoking-behavior genetic link) is consistent with biological
+prior #1: this COPD GWAS signal more likely reflects a neurobehavioral/smoking-mediated
+pathway than direct pulmonary structural or COPD-intrinsic immune biology. Per
+red-team-skeptic's critique, this conclusion currently rests more on an <em>absence</em> of
+pulmonary evidence than on a <em>positive</em>, gene-level smoking mechanism (with the partial
+exception of the verified NEGR1-smoking-behavior cross-trait GWAS finding), and the study
+team should weigh it accordingly.</p>
+
+        </div>
+    </div>
+</body>
+</html>

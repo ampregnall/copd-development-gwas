@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidence table — locus 4:29,200,001-29,350,000 (chr4:29.2-29.35 Mb, GRCh38)</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br>Dashboard
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-title">Overview</div>
+            <a class="nav-link" href="../index.html">🏠 Home</a>
+            <a class="nav-link" href="../methods.html">🔬 Methods</a>
+        </div>
+
+        <div class="sidebar-section">
+            <div class="sidebar-title">Chromosomes</div>
+            <a class="nav-link active" href="../CHR1.html">CHR1</a>
+            <a class="nav-link" href="../CHR2.html">CHR2</a>
+            <a class="nav-link" href="../CHR3.html">CHR3</a>
+            <a class="nav-link" href="../CHR4.html">CHR4</a>
+            <a class="nav-link" href="../CHR5.html">CHR5</a>
+            <a class="nav-link" href="../CHR6.html">CHR6</a>
+            <a class="nav-link" href="../CHR7.html">CHR7</a>
+            <a class="nav-link" href="../CHR8.html">CHR8</a>
+            <a class="nav-link" href="../CHR9.html">CHR9</a>
+            <a class="nav-link" href="../CHR10.html">CHR10</a>
+            <a class="nav-link" href="../CHR11.html">CHR11</a>
+            <a class="nav-link" href="../CHR12.html">CHR12</a>
+            <a class="nav-link" href="../CHR13.html">CHR13</a>
+            <a class="nav-link" href="../CHR14.html">CHR14</a>
+            <a class="nav-link" href="../CHR15.html">CHR15</a>
+            <a class="nav-link" href="../CHR16.html">CHR16</a>
+            <a class="nav-link" href="../CHR17.html">CHR17</a>
+            <a class="nav-link" href="../CHR18.html">CHR18</a>
+            <a class="nav-link" href="../CHR19.html">CHR19</a>
+            <a class="nav-link" href="../CHR20.html">CHR20</a>
+            <a class="nav-link" href="../CHR21.html">CHR21</a>
+            <a class="nav-link" href="../CHR22.html">CHR22</a>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div class="content-card">
+            
+
+<h1 id="evidence-table--locus-429200001-29350000-chr4292-2935-mb-grch38">Evidence table — locus 4:29,200,001-29,350,000 (chr4:29.2-29.35 Mb, GRCh38)</h1><div class="summary"><p><strong>Lead/credible-set variant:</strong> rs76849161 (PIP=0.99940697, 4:29,275,597, intron_variant /
+non_coding_transcript_variant of LINC02472, MODIFIER impact). Candidate genes per internal
+pipeline: nearest gene = "intergenic"; FLAMES/MAGMA/PoPS/ABC all NA. Only the credible-set
+annotation resolves to a gene symbol: LINC02472.</p><p>This locus is a <strong>gene desert</strong>: only two lncRNAs overlap the queried window (LINC02472,
+which contains the credible-set variant, and an unnamed/uncharacterized lncRNA
+ENSG00000248176 that only partially overlaps and has no credible-set variant of its own —
+not further characterized, consistent with pipeline scope rules). The nearest
+protein-coding gene, PCDH7, lies ~1.43 Mb away and is not nominated as a candidate by any
+prioritization method; it is included below only as background context, not as a
+competing formal candidate.</p></div>
+
+
+<div class="evidence-table-wrapper"><table class="evidence-table">
+<thead>
+<tr>
+<th>Candidate gene</th>
+<th>Evidence type</th>
+<th>Claim</th>
+<th>Source (PMID/DOI)</th>
+<th>Skeptic verdict</th>
+<th>Verified date</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="gene">LINC02472</td>
+<td>Genomic containment</td>
+<td>rs76849161 (PIP=0.999) is an intron_variant/non_coding_transcript_variant within LINC02472 (4:29,214,253-29,291,886, GRCh38); this is the sole basis for candidacy — no independent supporting evidence identified.</td>
+<td>Locus input file / Ensembl REST (database lookup, not a peer-reviewed literature claim)</td>
+<td><span class="tag-hold">HOLDS</span> as an honest containment fact; skeptic notes intronic containment in a lncRNA is weak causal evidence on its own (not necessarily evidence of transcript function)</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">LINC02472</td>
+<td>Statistical genetics (off-topic/tangential)</td>
+<td>LINC02472 appears incidentally in a large gene list of a gastric-cancer metabolome-GWAS study (associated with a plasma metabolite, Phosphoribosyl-ATP); no COPD/lung/smoking/immune relevance.</td>
+<td>Zhang Y et al. 2023, Int J Mol Sci 24(20):15259. PMID 37894938, DOI 10.3390/ijms242015259</td>
+<td>VERIFIED (citation accurate); skeptic did not separately re-critique this tangential citation beyond noting it is off-topic</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">LINC02472</td>
+<td>Variant-level literature/database check</td>
+<td>rs76849161 has zero PubMed hits and no GWAS Catalog entry (any trait) — no published characterization exists outside this internal GWAS pipeline.</td>
+<td>PubMed E-utilities search; GWAS Catalog REST API (database lookups, not literature citations)</td>
+<td>VERIFIED (both absences independently confirmed by citation-verifier)</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">LINC02472</td>
+<td>Expression (database lookup)</td>
+<td>GTEx v10: ~1.15 TPM in testis only; ~0.0 TPM in lung, whole blood, spleen, and all other 53 sampled tissues.</td>
+<td>GTEx Portal API v2 (database lookup, not a peer-reviewed citation)</td>
+<td>Skeptic: weak-to-moderate evidence against a lung role, not dispositive — lncRNA expression is often tissue-restricted/disease-state-induced and poorly captured by bulk GTEx from non-diseased donors</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">PCDH7 (context only, ~1.43 Mb from credible-set variant; not a formal candidate)</td>
+<td>Statistical genetics</td>
+<td>PCDH7 (rs7664851) is a suggestive (not genome-wide-significant) locus for single-breath DLCO (P=3.03E-06) in COPD-enriched cohorts (COPDGene, NETT, GenKOLS, TESRA); abstract also reports a nominal COPD case-control association near PCDH7.</td>
+<td>Sakornsakolpat P et al. 2019, Am J Respir Cell Mol Biol 60(5):523-531. PMID 30694715, DOI 10.1165/rcmb.2018-0384OC</td>
+<td><span class="tag-warning">WEAKENED</span>VERIFIED, but  as evidence for this specific locus — skeptic notes no LD/colocalization check was done between rs7664851 and rs76849161; at 1.43 Mb these are more likely independent, coincidentally nearby signals than the same causal signal</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">PCDH7 (context only)</td>
+<td>Structural/oncology (off-topic)</td>
+<td>PCDH7 promoter recurrently hypermethylated in NSCLC tumor tissue vs matched normal lung, not smoking-status-specific — a cancer-tissue epigenetic finding, not a COPD/airway-remodeling finding.</td>
+<td>Karlow JA et al. 2023, Genomics Proteomics Bioinformatics 21(5):991-1013. PMID 37742993, DOI 10.1016/j.gpb.2023.03.006</td>
+<td>VERIFIED; correctly weighted by researcher/skeptic as tangential to COPD biology</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">PCDH7 (context only)</td>
+<td>Statistical genetics / behavioral pleiotropy</td>
+<td>Colocalization of association signal between schizophrenia and smoking-related traits identified at PCDH7 (among other loci).</td>
+<td>Al-Soufi L, Costas J 2023, Psychol Med 53(14):6806-6816. PMID 36876478, DOI 10.1017/S0033291723000326</td>
+<td>VERIFIED; skeptic: this is trait-level evidence about PCDH7's own independent GWAS signal and should NOT be transferred to a smoking-mediation interpretation of rs76849161/LINC02472 without a shared-signal (LD/coloc) check, which has not been done</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">PCDH7 (context only)</td>
+<td>Statistical genetics / behavioral pleiotropy</td>
+<td>PCDH7 was one of three genome-wide-significant genes in gene-based analysis of childhood aggression (P=2.0E-06); previously implicated in GWAS of educational attainment/adventurousness; childhood aggression is genetically correlated with smoking phenotypes at the trait level (rg 0.46-0.60), not locus-specifically.</td>
+<td>Ip HF et al. 2021, Transl Psychiatry 11(1):413. PMID 34330890, DOI 10.1038/s41398-021-01480-x</td>
+<td>VERIFIED; same caveat as above — behavioral/smoking pleiotropy at PCDH7 is not shown to be the same signal as rs76849161</td>
+<td>2026-09-11</td>
+</tr>
+<tr>
+<td class="gene">PCDH7 (context only)</td>
+<td>Off-topic/tangential</td>
+<td>PCDH7 methylation appears incidentally near a maternal-lead-exposure-associated differentially methylated region in an autism-risk pregnancy cohort; no lung/immune/smoking-specific claim.</td>
+<td>Aung MT et al. 2021, Epigenetics 17(3):253-268. PMID 33794742, DOI 10.1080/15592294.2021.1897059</td>
+<td>VERIFIED; off-topic, no further weight given</td>
+<td>2026-09-11</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Note on the red-team-skeptic stage for this locus:</strong> the skeptic's WebSearch tool budget
+was exhausted before it could run any independent searches (0 searches completed). Its
+critique above is therefore a critique of the researcher's own reported findings and
+internal logical consistency, not an independently re-verified adversarial search. This is
+disclosed so the reader can weight the "Skeptic verdict" column accordingly for this locus.</p>
+<h2 id="open-targets-summary-structured-database-lookup--not-a-verified-literature-citation-not-passed-through-citation-verifier-or-red-team-skeptic">Open Targets summary (structured database lookup — not a verified literature citation; not passed through citation-verifier or red-team-skeptic)</h2>
+<div class="evidence-table-wrapper"><table class="evidence-table">
+<thead>
+<tr>
+<th>Gene</th>
+<th>L2G / genetic-association evidence (COPD, MONDO_0005002)</th>
+<th>Colocalization</th>
+<th>Genetic constraint</th>
+<th>Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="gene">LINC02472 (ENSG00000248338)</td>
+<td>count = 0 (no evidence rows)</td>
+<td>None found</td>
+<td>Not computed (non-coding RNA; constraint metrics not applicable)</td>
+<td>0 disease associations of any kind in Open Targets (all datatypes/diseases); no tractability data. Genomic location chr4:29,214,253-29,291,886, contains the credible-set variant.</td>
+</tr>
+<tr>
+<td class="gene">PCDH7 (ENSG00000169851; context only, ~1.43 Mb away, not a formal candidate)</td>
+<td>count = 0 for COPD specifically</td>
+<td>None found for COPD</td>
+<td>mis z=1.91 (oe=0.86), lof oe=0.30 (obs 16 vs exp 53.4) — some constraint against LoF variants; syn z=-1.12 (oe=1.08)</td>
+<td>188 disease associations overall (other datatypes/diseases, e.g. oncology-related; unrelated to this locus)</td>
+</tr>
+</tbody>
+</table></div>
+<p>Open Targets query methodology: <code>search_entities</code> to resolve Ensembl IDs; <code>target.genomicLocation</code>,
+<code>target.geneticConstraint</code>, <code>target.tractability</code>, <code>target.associatedDiseases</code>, and
+<code>target.evidences(efoIds: ["MONDO_0005002"], datasourceIds: ["ot_genetics_portal", "gwas_credible_sets"])</code> queried directly via the Open Targets GraphQL API. All queries
+executed successfully and returned genuine empty results (not tool/query errors) where
+noted as count=0 — this is a real absence-of-evidence finding for LINC02472, not a lookup
+failure.</p>
+<h2 id="prioritized-gene-synthesis">Prioritized-gene synthesis</h2>
+<p><strong>Prioritized gene: LINC02472 — Confidence: INSUFFICIENT</strong></p>
+<p>This locus does not support a confident gene-level call, and that absence of resolution is
+itself the finding. The statistical fine-mapping is excellent (rs76849161, PIP=0.999,
+essentially the entire credible set on one variant), but every independent line of
+biological/functional evidence is null: FLAMES/MAGMA/PoPS/ABC prioritization methods all
+returned NA for this locus; LINC02472, the only gene the credible-set variant physically
+falls within, has zero Open Targets disease associations of any kind (not just for COPD),
+zero L2G/genetic-association evidence, no genetic constraint or tractability data
+(expected for a non-coding RNA, but still uninformative), no on-topic PubMed literature
+(its only PubMed hit is an incidental, off-topic gastric-cancer metabolomics gene-list
+mention), no GWAS Catalog entry for the variant itself, and near-zero GTEx expression in
+lung or immune tissue (detectable only in testis). As the red-team-skeptic emphasized,
+physical containment of a noncoding intronic variant within a lncRNA transcript is weak
+causal evidence on its own — it establishes proximity, not function — and the credible-set
+variant could in principle be a distal regulatory element for a gene outside this ~150kb
+window (a recognized pattern at gene-desert loci), which cannot currently be tested here
+because no ABC/Hi-C/eQTL colocalization data exist for this region.</p>
+<p>The only other gene considered, PCDH7 (~1.43 Mb away), is not a formally prioritized
+candidate by any method in the input pipeline. It does have a real, verified, if merely
+suggestive (not genome-wide-significant), DLCO/nominal-COPD association (Sakornsakolpat
+2019) and notable behavioral/smoking-trait pleiotropy elsewhere in the genome-wide
+literature (childhood aggression, schizophrenia-smoking colocalization). However, as the
+skeptic stressed, no LD or colocalization analysis links PCDH7's associated variant
+(rs7664851) to rs76849161, and at 1.43 Mb apart these are far more likely to be two
+independent, coincidentally nearby signals than a single shared causal mechanism. PCDH7's
+smoking-related pleiotropy therefore cannot be invoked to argue this locus operates through
+a smoking-mediated pathway without that shared-signal check, which has not been done.</p>
+<p><strong>Runner-up:</strong> PCDH7 (very low confidence, distance-limited, unconfirmed shared signal).
+<strong>What would resolve this call:</strong> (1) LD/colocalization analysis between rs76849161 and
+rs7664851 (PCDH7's DLCO signal) to test whether they represent the same or independent
+signals; (2) chromatin conformation (Hi-C/ABC) or eQTL colocalization data for the
+rs76849161 credible-set region, to test whether this regulatory element targets LINC02472,
+PCDH7, or some other gene; (3) disease-state or airway-specific single-cell/bulk expression
+data for LINC02472 (smoke-exposed or COPD-affected lung tissue specifically, not healthy
+bulk GTEx) to test whether its testis-restricted expression in healthy donors understates a
+context-specific lung role. Until then, this locus should be carried forward as
+<strong>functionally uncharacterized</strong> rather than confidently assigned to LINC02472 — the study
+team should weigh whether to treat LINC02472 as a placeholder label for "the gene desert
+containing this fine-mapped signal" rather than a mechanistically supported candidate.</p>
+
+        </div>
+    </div>
+</body>
+</html>
