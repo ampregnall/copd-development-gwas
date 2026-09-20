@@ -19,6 +19,7 @@ body{
     overflow:hidden;
     background:var(--bg);
     color:var(--text);
+    margin: 0;
 }
 
 #sidebar{
@@ -77,7 +78,7 @@ body{
     padding:40px;
     border-radius:12px;
     box-shadow:0 4px 10px rgba(0,0,0,.08);
-    max-width:1200px;
+    width: 100%;
     margin:auto;
 }
 
@@ -246,4 +247,286 @@ code {
     padding: 2px 5px;
     border-radius: 3px;
     font-family: monospace;
+}
+
+/* ── Files Section ─────────────────────────────────────────────────── */
+
+.files-section {
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background-color: #f8f9fb;
+  border: 1px solid #e2e6ea;
+  border-radius: 8px;
+}
+
+.files-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #343a40;
+  margin: 0 0 0.75rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Placeholder message shown when no locus is selected */
+.files-placeholder-msg {
+  font-size: 0.875rem;
+  color: #868e96;
+  font-style: italic;
+}
+
+/* Container for the actual links */
+.files-links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.files-locus-label {
+  font-size: 0.8rem;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.files-locus-label strong {
+  color: #343a40;
+}
+
+.files-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+/* Base file link button style */
+.file-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid transparent;
+}
+
+/* Evidence Table variant */
+.file-link--evidence {
+  background-color: #e7f3ff;
+  color: #0969da;
+  border-color: #b6d4fe;
+}
+
+.file-link--evidence:hover {
+  background-color: #cfe2ff;
+  box-shadow: 0 1px 4px rgba(9, 105, 218, 0.2);
+}
+
+/* Audit Report variant */
+.file-link--audit {
+  background-color: #fff3e0;
+  color: #b45309;
+  border-color: #fcd34d;
+}
+
+.file-link--audit:hover {
+  background-color: #ffe8b2;
+  box-shadow: 0 1px 4px rgba(180, 83, 9, 0.2);
+}
+
+/* Utility: hidden */
+.hidden {
+  display: none !important;
+}
+
+.summary {
+    margin-bottom: 18px;
+}
+
+.evidence-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+}
+
+.evidence-table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.evidence-table th,
+.evidence-table td {
+    padding: 12px 14px;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.evidence-table thead th {
+    background: #f8fafc;
+    color: #1e293b;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.evidence-table tbody tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+.evidence-table .gene {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.tag {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    background: #e7f3ff;
+    color: #0969da;
+}
+
+.tag-warning {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    background: #fff3e0;
+    color: #b45309;
+}
+
+.tag-hold {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    background: #5f5e5c;
+    color: #b2b6c1;
+}
+
+@media (max-width: 800px) {
+    .content-card {
+        padding: 20px;
+    }
+
+    .evidence-table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+/* ── Evidence Table & Content Enhancements ───────────────────────── */
+
+/* Upgraded Summary Box */
+.summary {
+    background: linear-gradient(to right, #f0f7ff, #ffffff);
+    border-left: 4px solid var(--accent);
+    padding: 20px 24px;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 30px;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #334155;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+/* Polished Data Tables */
+.evidence-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.evidence-table thead th {
+    background-color: #f1f5f9;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+    padding: 16px 14px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.evidence-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.evidence-table tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+.evidence-table td {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #475569;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.evidence-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Optimal Column Proportions */
+.evidence-table th:nth-child(3),
+.evidence-table td:nth-child(3) {
+    width: 35%;
+    min-width: 250px;
+}
+
+.evidence-table th:nth-child(4),
+.evidence-table td:nth-child(4) {
+    width: 20%;
+    font-size: 0.85rem;
+}
+
+/* Tag Refinements */
+.tag {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border: 1px solid #b6d4fe;
+    box-shadow: 0 1px 2px rgba(9, 105, 218, 0.1);
+}
+
+/* Content Typography & Nested Lists */
+.content-card h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.content-card p {
+    color: #334155;
+    font-size: 1.05rem;
+}
+
+.content-card ul {
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.content-card ul ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: circle;
+    padding-left: 20px;
+    border-left: 2px solid #e2e8f0;
+}
+
+.content-card li {
+    margin-bottom: 12px;
+    color: #334155;
+    line-height: 1.6;
 }
