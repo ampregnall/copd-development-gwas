@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chromosome 19</title>
+    <title>Chromosome 11</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -31,7 +31,7 @@
     <a class="nav-link" href="CHR8.html">CHR8</a>
     <a class="nav-link" href="CHR9.html">CHR9</a>
     <a class="nav-link" href="CHR10.html">CHR10</a>
-    <a class="nav-link" href="CHR11.html">CHR11</a>
+    <a class="nav-link active" href="CHR11.html">CHR11</a>
     <a class="nav-link" href="CHR12.html">CHR12</a>
     <a class="nav-link" href="CHR13.html">CHR13</a>
     <a class="nav-link" href="CHR14.html">CHR14</a>
@@ -39,7 +39,7 @@
     <a class="nav-link" href="CHR16.html">CHR16</a>
     <a class="nav-link" href="CHR17.html">CHR17</a>
     <a class="nav-link" href="CHR18.html">CHR18</a>
-    <a class="nav-link active" href="CHR19.html">CHR19</a>
+    <a class="nav-link" href="CHR19.html">CHR19</a>
     <a class="nav-link" href="CHR20.html">CHR20</a>
     <a class="nav-link" href="CHR21.html">CHR21</a>
     <a class="nav-link" href="CHR22.html">CHR22</a>
@@ -48,7 +48,7 @@
 
     <div id="main-content">
         <div id="display-area" class="content-card">
-            <h1>Chromosome 19</h1>
+            <h1>Chromosome 11</h1>
 
             <div class="controls">
 
@@ -68,7 +68,7 @@
             </div>
 
             <div class="image-container">
-                <img id="plotImage" src="" alt="Regional Association plot for Chromosome 19" style="display: none;" onerror="handleImageError()">
+                <img id="plotImage" src="" alt="Regional Association plot for Chromosome 11" style="display: none;" onerror="handleImageError()">
                 <div id="placeholder" class="placeholder-text">
                     Select a locus to view.
                 </div>
@@ -110,12 +110,22 @@
 <script>
     // Configuration of plots available for each item
     const dataset = {
-        "chr19": [
-            { id: 1, name: "19:7350001-7550000", filename: "plots/chr19-7350001-7550000.png" },
-            { id: 2, name: "19:33150001-33300000", filename: "plots/chr19-33150001-33300000.png" },
-            { id: 3, name: "19:40700001-41050000", filename: "plots/chr19-40700001-41050000.png" },
-            { id: 4, name: "19:44800001-45000000", filename: "plots/chr19-44800001-45000000.png" },
-            { id: 5, name: "19:54200001-54350000", filename: "plots/chr19-54200001-54350000.png" }
+        "chr11": [
+            { id: 1, name: "11:1150001-1450000", filename: "plots/chr11-1150001-1450000.png" },
+            { id: 2, name: "11:16150001-16450000", filename: "plots/chr11-16150001-16450000.png" },
+            { id: 3, name: "11:28500001-28750000", filename: "plots/chr11-28500001-28750000.png" },
+            { id: 4, name: "11:35050001-35250000", filename: "plots/chr11-35050001-35250000.png" },
+            { id: 5, name: "11:38650001-39050000", filename: "plots/chr11-38650001-39050000.png" },
+            { id: 6, name: "11:43500001-43950000", filename: "plots/chr11-43500001-43950000.png" },
+            { id: 7, name: "11:57550001-58000000", filename: "plots/chr11-57550001-58000000.png" },
+            { id: 8, name: "11:64050001-64300000", filename: "plots/chr11-64050001-64300000.png" },
+            { id: 9, name: "11:76350001-76650000", filename: "plots/chr11-76350001-76650000.png" },
+            { id: 10, name: "11:86300001-86500000", filename: "plots/chr11-86300001-86500000.png" },
+            { id: 11, name: "11:95700001-96000000", filename: "plots/chr11-95700001-96000000.png" },
+            { id: 12, name: "11:107100001-107550000", filename: "plots/chr11-107100001-107550000.png" },
+            { id: 13, name: "11:112900001-113200000", filename: "plots/chr11-112900001-113200000.png" },
+            { id: 14, name: "11:113250001-113650000", filename: "plots/chr11-113250001-113650000.png" },
+            { id: 15, name: "11:115050001-115300000", filename: "plots/chr11-115050001-115300000.png" }
         ]
     };
 
@@ -138,7 +148,7 @@
 
     // Populate plot dropdown based on selected item
     function updatePlotOptions() {
-        const plots = dataset["chr19"] || [];
+        const plots = dataset["chr11"] || [];
         
         plotSelect.innerHTML = '';
         plots.forEach((plot, index) => {
@@ -154,14 +164,14 @@
     // Load and display the current selected plot image
     function displayPlot() {
         const plotIndex = parseInt(plotSelect.value, 10);
-        const plots = dataset["chr19"] || [];
+        const plots = dataset["chr11"] || [];
 
         if (plots && plots[plotIndex]) {
             const currentPlot = plots[plotIndex];
             const plotFileKey = currentPlot.filename
                 .replace(/^plots\//, '')
                 .replace(/\.png$/, '')
-                .replace('chr1-', ''); // Remove "chr1" prefix if present
+                .replace('chr11-', ''); // Remove "chr11" prefix if present
             plotImage.src = currentPlot.filename;
             plotImage.style.display = 'block';
             placeholder.style.display = 'none';
@@ -212,12 +222,12 @@
      */
     function getEvidenceTablePath(plotFileKey) {
     // e.g. "LOC001" → "files/LOC001_evidence_table.html"
-    return `tables/19_${plotFileKey}.html`;
+    return `tables/11_${plotFileKey}.html`;
     }
 
     function getAuditReportPath(plotFileKey) {
     // e.g. "LOC001" → "files/LOC001_audit_report.html"
-    return `audits/19_${plotFileKey}_audit_report.html`;
+    return `audits/11_${plotFileKey}_audit_report.html`;
     }
 
     /**
