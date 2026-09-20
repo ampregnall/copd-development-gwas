@@ -1,5 +1,7 @@
 # COPD locus literature review — agentic pipeline
 
+[Visit Webpage](https://ampregnall.github.io/copd-development-gwas/)
+
 Traceable, multi-agent literature review for COPD GWAS locus gene prioritization, built
 on Claude Code subagents + hooks.
 
