@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 13:55050001-58150000 (nearest gene LOC124903233)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link active" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link" href="../CHR15.html">CHR15</a>
+<a class="nav-link" href="../CHR16.html">CHR16</a>
+<a class="nav-link" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 13:55050001-58150000 (nearest gene LOC124903233)</h1>
+<p>This file preserves everything excluded from the main evidence table (`evidence_tables/13_55050001-58150000.md`), plus the full CONTESTED/<span class="tag-warning">WEAKENED</span> reasoning from the red-team-skeptic, for traceability. Source stage files: `evidence_tables/_status/13_55050001-58150000/{opentargets,researcher,verified_citations,critique}.md`.</p>
+<h2>Excluded citations (RETRACTED / NOT_FOUND / CLAIM_MISMATCH)</h2>
+<h3>1. PMID 30863170 — RETRACTED</h3>
+<h3>2. PMID 32066663 — CLAIM_MISMATCH</h3>
+<p>No NOT_FOUND verdicts were returned — all 12 citations submitted for verification corresponded to real, locatable papers (including one 2026-dated publication, PMID 42047911, which the verifier explicitly confirmed was genuine and not a hallucinated future-dated citation).</p>
+<p>---</p>
+<h2>CONTESTED / WEAKENED gene verdicts (red-team-skeptic, verbatim reasoning preserved)</h2>
+<h3>LOC124903233 — CONTESTED</h3>
+<h3>LINC02335 — CONTESTED</h3>
+<h3>PCDH17 — WEAKENED, bordering CONTESTED</h3>
+<p>**Overclaiming check (skeptic):** "The researcher's writeup, as summarized, does not appear to overtly claim 'PCDH17 causes COPD'... But the framing of PCDH17 as 'the only one with constraint data' and the most literature-rich gene carries an implicit risk that a reader could conclude PCDH17 is the best-supported candidate at this locus, when in fact none of its literature bears on lung or COPD biology and it is the furthest gene from the credible set. I'd flag this as a moderate overclaiming risk in downstream synthesis... 'most literature found' ≠ 'most relevant literature found.'"</p>
+<p>---</p>
+<h2>Locus-level flag (red-team-skeptic, verbatim)</h2>
+<p>"I recommend this locus be flagged to the study team as **lacking a credible candidate gene**. Basis: - All computational prioritization methods (FLAMES/MAGMA/PoPS/ABC) returned NA upstream — this locus started with no gene-level support. - Open Targets returned zero COPD evidence for all three candidates. - No spirometric, smoking, or lung-structural evidence exists for any candidate. - The two genes with any positional claim to the credible set (LOC124903233, LINC02335) have zero functional or disease literature of any kind, and LOC124903233's own coordinates fall outside the stated window — worth a data-QC check upstream. - PCDH17, while richly studied in oncology and neuropsychiatry, sits &gt;1.3 Mb outside the credible set and has no pulmonary biology; its inclusion reflects 'only protein-coding gene in a wide window' rather than genuine locus-to-gene evidence. - The sole variant-level phenotype link for the lead SNP failed citation verification, leaving this locus with essentially no verified external phenotype association at all.</p>
+<p>This is a case where the biological priors don't so much get contradicted as go unanswered — there simply isn't enough evidence in any domain (smoking, spirometry, immune) to adjudicate a mechanism, and the honest conclusion is that this locus needs either better fine-mapping/functional data (eQTL/colocalization in lung tissue, chromatin interaction data for LINC02335) or should be down-weighted/deprioritized in the final gene-prioritization output rather than assigned to PCDH17 by default."</p>
+<h2>Skeptic's stated limitation</h2>
+<h2>Orchestrator's own search-budget note</h2>
+</div>
+</div>
+</body>
+</html>

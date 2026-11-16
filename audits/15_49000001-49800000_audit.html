@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 15:49000001-49800000 (nearest genes FAM227B, GALK2)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link active" href="../CHR15.html">CHR15</a>
+<a class="nav-link" href="../CHR16.html">CHR16</a>
+<a class="nav-link" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 15:49000001-49800000 (nearest genes FAM227B, GALK2)</h1>
+<p>This file is the audit/traceability companion to `evidence_tables/15_49000001-49800000.md`. It preserves excluded citations, contested/weakened gene verdicts, and the full verbatim red-team-skeptic critique, so a reviewer can see what was screened out or downweighted and why, without needing this file to evaluate the evidence table itself.</p>
+<h2>Excluded citations (RETRACTED / NOT_FOUND / CLAIM_MISMATCH)</h2>
+<p>None. The citation-verifier reviewed 24 citations for this locus and returned 23 VERIFIED plus 1 VERIFIED-WITH-CAVEAT (PMID 39092217, Chen et al. — the paper and its general 74-gene MR scope were confirmed to exist, but the verifier could not directly quote SECISBP2L's specific inclusion in that gene list from the abstract alone; full text was available but not checked line-by-line). Zero citations were <span class="tag-warning">RETRACTED</span>, NOT_FOUND, or CLAIM_MISMATCH for this locus. Full verbatim verifier output is preserved in `evidence_tables/_status/15_49000001-49800000/verified_citations.md`.</p>
+<h2>Genes flagged CONTESTED or WEAKENED by red-team-skeptic</h2>
+<p>The red-team-skeptic did not mark any gene at this locus as CONTESTED in the strict sense ("a specific paper actively arguing against it or for a different gene"). It did, however, mark two genes' key evidence as <span class="tag-warning">WEAKENED</span> (interpretation-level concerns about overreach), which materially affected the final prioritization call in the evidence table. Verbatim reasoning preserved below (also in `evidence_tables/_status/15_49000001-49800000/critique.md`):</p>
+<h3>FAM227B — WEAKENED</h3>
+<h3>DTWD1 — WEAKENED (the critique's strongest pushback)</h3>
+<h3>FGF7 — HOLDS, with one characterization correction</h3>
+<h3>SECISBP2L, GALK2, COPS2 — HOLDS</h3>
+<h2>Search-coverage caveat disclosed by red-team-skeptic</h2>
+<p>The red-team-skeptic's web search budget was exhausted (200/200) before it could run any independent contradiction-search query for this locus. Its critique is therefore a desk review of the researcher's own findings and the orchestrator-supplied Open Targets context, not a literature search in its own right. It explicitly recommends a follow-up search — specifically to identify the original discovery GWAS behind PMID 38886662's "DTWD1" mention, and to check whether DTWD1 and FAM227B are in high LD in prior COPD GWAS — before treating the DTWD1-vs-FAM227B prioritization call as settled. This caveat is carried through to the "Prioritized gene" section of the evidence table, which is marked confidence LOW accordingly.</p>
+<h2>Additional candidate gene identified outside the input file's prioritization methods</h2>
+<p>COPS2 (COP9 signalosome subunit 2) lies physically within the locus boundaries (15:49,106,068-49,155,661) per an Ensembl REST region lookup performed by the researcher, but is not flagged by nearest-gene, MAGMA, PoPS, ABC, or any credible-set variant in the locus input file. It was added to the researched candidate set for completeness only. Both of its citations (PMID 30503783, PMID 28423737) are tangential (an unrelated psychiatric GWAS naming it only as one of several positional candidates near a haplotype, and an unrelated hepatocellular-carcinoma pathway study). The researcher's own disposition: "not a plausible candidate based on current evidence; noted for completeness only." No further action was taken on COPS2 in this pipeline run; it was not queried against Open Targets by the orchestrator (that lookup was completed before COPS2 was identified by the researcher).</p>
+<h2>Variant-level coverage note</h2>
+<p>No dedicated literature exists for the lead variant rs12232354 (zero PubMed hits under that rsID). A GWAS Catalog lookup confirmed its physical location and intron_variant consequence but did not resolve trait-association specifics with the tools available to the researcher. This is disclosed as an open/inconclusive item rather than treated as a confirmed absence of GWAS-Catalog-level trait association.</p>
+<h2>Full verbatim subagent outputs (for complete traceability)</h2>
+<ul><li>Researcher's full findings: `evidence_tables/_status/15_49000001-49800000/researcher.md`</li><li>Citation-verifier's full findings: `evidence_tables/_status/15_49000001-49800000/verified_citations.md`</li><li>Red-team-skeptic's full critique: `evidence_tables/_status/15_49000001-49800000/critique.md`</li><li>Orchestrator's Open Targets structured lookup: `evidence_tables/_status/15_49000001-49800000/opentargets.md`</li></ul>
+</div>
+</div>
+</body>
+</html>

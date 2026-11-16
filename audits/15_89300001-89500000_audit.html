@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 15:89300001-89500000 (nearest gene POLG)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link active" href="../CHR15.html">CHR15</a>
+<a class="nav-link" href="../CHR16.html">CHR16</a>
+<a class="nav-link" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 15:89300001-89500000 (nearest gene POLG)</h1>
+<p>This appendix records excluded citations and contested/weakened gene verdicts, with the red-team-skeptic's reasoning preserved verbatim, for full traceability. It is kept separate from `evidence_tables/15_89300001-89500000.md` so that evidence tables can be shared without also sharing this audit trail.</p>
+<h2>Excluded citations</h2>
+<p>No citation returned by the researcher was marked <span class="tag-warning">RETRACTED</span>, NOT_FOUND, or CLAIM_MISMATCH by citation-verifier. All 9 citations produced by the researcher for this locus were VERIFIED at the level of existence, non-retraction, and accurate claim correspondence. There is therefore no "hard exclusion" appendix of failed citations for this locus.</p>
+<p>One citation carries an important **scope caveat** rather than a failure, and is recorded here for transparency even though it remains in the evidence table:</p>
+<p>- **Sakornsakolpat P, Prokopenko D, Lamontagne M, et al. Nature Genetics, 2019.** PMID 30804561 / DOI 10.1038/s41588-018-0342-2. <span class="tag">VERIFIED</span> as an existing paper accurately reporting 82 COPD GWAS loci (UK Biobank + ICGC). However, citation-verifier could NOT confirm from the abstract/available text whether this specific 15q26.1 (~89.3-89.5 Mb) locus is among the 82 reported loci — this would require access to supplementary tables not available to the verifier. This citation should be used in synthesis only as general background on the existence of this major prior GWAS, not as evidence that this specific locus was independently replicated by it. The researcher itself flagged this as unconfirmed rather than asserting either way.</p>
+<h2>Contested / weakened gene verdicts (red-team-skeptic reasoning, verbatim)</h2>
+<h3>ACAN — CONTESTED</h3>
+<p>"This is the most serious problem in the whole set. ACAN's gene body (88.80-88.88 Mb) lies 430-500 kb outside the stated locus window (89.30-89.50 Mb) — it is not physically in this LD block by any conventional definition. Open Targets shows zero `gwas_credible_sets`/L2G evidence for ACAN-COPD (only weak literature-mining scores of 0.02-0.14), which directly contradicts the MAGMA/PoPS prioritization for this locus. This is not merely 'weak supporting evidence' — it is an independent gene-prioritization pipeline (Open Targets' L2G, purpose-built for exactly this causal-gene-assignment task) actively failing to reproduce the MAGMA/PoPS signal. Combined with zero PubMed literature connecting ACAN to lung/airway biology (multiple targeted negative searches) and a biology mismatch (cartilage/skeletal dysplasia vs. lung obstruction), this cannot be waved through as merely 'weak.' The physical-distance anomaly itself suggests either (a) a locus-definition/window artifact in the input pipeline (ACAN may be reflecting a separate, adjacent independent association signal that got merged into this window's MAGMA gene-set test), or (b) a long-range regulatory hypothesis (enhancer for ACAN sitting in this window) that has no chromatin/Hi-C/eQTL evidence offered here.</p>
+<p><span class="tag-warning">CONTESTED</span> — Open Targets' L2G zero-score for COPD is credible, independently-sourced contradicting evidence against the MAGMA/PoPS-driven ACAN prioritization (this Open Targets record was provided as database context, not literature, so it doesn't need citation-verifier treatment, but should be flagged to synthesis-lead as the basis for downgrading ACAN sharply — likely below POLG despite the flashier prioritization scores). Recommend synthesis-lead explicitly interrogate why PoPS/MAGMA assigned ACAN to this window given the physical distance, rather than accepting the prioritization at face value."</p>
+<h3>POLG — WEAKENED</h3>
+<p>"The 'nearest gene' label is doing more work than the data supports: all three credible-set variants sit in an intergenic gap ~65 kb+ from POLG's coding sequence, and the lead variant's annotation (splice_region/non-coding-transcript-exon) is most consistent with hitting an unannotated lncRNA, not POLG itself. No COPD/TWAS/colocalization/spirometry literature was found for POLG at all, and its dominant monogenic phenotype (Alpers, MNGIE, PEO — Hayhurst 2018) is neuro-hepatic, not pulmonary — biologically discordant with a lung-obstruction mechanism. The researcher correctly bounded the Li 2025 MR finding to IPF and did not extend it to COPD — this is the right call and should not be reinterpreted by synthesis-lead as supportive of COPD causality; IPF is a restrictive fibrotic disease with a distinct genetic architecture (e.g., MUC5B, TERT) from obstructive COPD, and 'Grade 1 MR for IPF' is not transferable evidence. The Open Targets COPD score (0.406) is itself derived from `gwas_credible_sets` evidence — i.e., it likely just reflects this same locus's credible set being nearest to POLG by genomic proximity, not an independent line of evidence, so it shouldn't be read as corroboration. The Loughran 2020 POLGARF finding adds a genuine complication: the POLG transcript locus encodes two distinct proteins via an overlapping ORF, so even if a regulatory variant here affects 'POLG' expression, the functionally relevant hit could be POLGARF (nucleolar/secreted, uncharacterized in lung) rather than the mitochondrial polymerase. Researcher's own 'weak/uncertain' characterization is accurate and not overclaimed.</p>
+<p><span class="tag-warning">WEAKENED</span> — the case rests on physical proximity alone; the credible set doesn't touch POLG's coding sequence, there is zero direct pulmonary genetic evidence, and the one lung-disease MR hit is for a different disease that should not be conflated with COPD."</p>
+<h3>FANCI — HOLDS (recorded for completeness, not contested)</h3>
+<p>"Researcher-added, not flagged by any prioritization method. The one supporting citation (Jin 2023) uses FANCI purely as a downstream DNA-damage-response marker in a PM2.5 mouse model — not a causal test, and correctly characterized as such by the researcher ('NOT tested as a causal driver'). Core biology (Fanconi anemia, bone-marrow failure/cancer predisposition) is a genome-instability syndrome unrelated to airway obstruction. No overclaiming detected — the researcher's 'weak' label matches the thin evidence exactly. <span class="tag-hold">HOLDS</span> as an honestly-labeled weak candidate; no basis to either strengthen or contest it further, but also no reason to elevate it above POLG or RHCG."</p>
+<h3>RHCG — HOLDS as an accurately-labeled data gap (recorded for completeness)</h3>
+<p>"Physically the only protein-coding gene fully inside the stated window, and by raw distance the credible-set variants are roughly as close to RHCG as to POLG's coding sequence — this is a legitimate positional argument the researcher raised appropriately (as a caveat, not an assertion). However, RHCG's proposed airway-epithelial ammonia-transporter role was explicitly flagged by the researcher as background knowledge, not a located citation — a real evidence gap, honestly disclosed rather than papered over with an uncited claim. Given zero literature either way, this cannot be marked <span class="tag-warning">CONTESTED</span> or fully supported on genetic grounds — the researcher's 'weak/insufficient literature, plausible positional candidate' framing does not overreach.</p>
+<p><span class="tag-hold">HOLDS</span> as an accurately-labeled data gap, but flag for synthesis-lead: this gene's lung-epithelial biology claim needs a dedicated literature check (PubMed/Google Scholar for 'RHCG lung epithelium,' 'RHCG bronchial,' 'Rhcg knockout airway') before the locus writeup either credits or dismisses it — this was not adequately searched (zero hits across 'multiple queries' per researcher, but the specific literature likely exists in renal/dermal physiology journals that may need broader terms)." The red-team-skeptic's own independent search budget was also exhausted before this could be checked — this remains an open evidence gap for any future re-review of this locus.</p>
+<h3>POLGARF — HOLDS (correctly unassessable, recorded for completeness)</h3>
+<p>"Only the discovery paper exists; no disease association of any kind. Researcher's 'insufficient evidence to assess' is accurate and appropriately non-committal. <span class="tag-hold">HOLDS</span> — correctly labeled as unassessable, not weakened by overclaim."</p>
+<h2>Process notes / evidence gaps disclosed by the pipeline agents</h2>
+<p>- The researcher's own WebSearch budget was exhausted before it could complete a dedicated GWAS-catalog/PhenoScanner-style check for smoking-behavior GWAS overlap at this locus. It confirmed only that this locus (15q26.1, ~89.3-89.5 Mb) is genomically distinct from the CHRNA5/CHRNA3/CHRNB4 cluster (15q25.1, ~78.85-78.95 Mb), ~10 Mb away, but could not rule out an independent smoking-behavior signal at this exact locus. - The red-team-skeptic's own WebSearch budget was exhausted before it could run any of its five planned independent contradiction-search queries (Sakornsakolpat locus list, RHCG airway biology, ACAN-COPD, FANCI-lung disease, smoking-GWAS overlap). Its critique is therefore based entirely on re-analysis of the researcher's reported findings and the Open Targets structured data, not new literature. This is disclosed here rather than silently treated as a completed independent check. - No candidate gene at this locus has any FEV1/FEV1-FVC spirometric GWAS evidence reported by either the researcher or Open Targets — a notable absence under this pipeline's prior that spirometric concordance strengthens prioritization. - FANCI, RHCG, and POLGARF were added by the researcher as physically-overlapping protein-coding genes not flagged by any internal prioritization method (FLAMES/MAGMA/ PoPS/ABC); they were consequently not queried against Open Targets in the orchestrator's step-1 structured lookup (which only queried POLG and ACAN, per the locus input file's listed candidates). This is a coverage gap in the Open Targets summary, disclosed above and in the main evidence table, rather than silently omitted.</p>
+</div>
+</div>
+</body>
+</html>

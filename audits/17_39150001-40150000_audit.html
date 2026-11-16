@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 17:39150001-40150000 (nearest gene PGAP3)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link" href="../CHR15.html">CHR15</a>
+<a class="nav-link" href="../CHR16.html">CHR16</a>
+<a class="nav-link active" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 17:39150001-40150000 (nearest gene PGAP3)</h1>
+<p>This file preserves the full traceability record for this locus's evidence table: excluded citations (none in this locus — see below), every gene the red-team-skeptic marked CONTESTED with reasoning preserved verbatim, and the <span class="tag-warning">WEAKENED</span>-gene reasoning for additional transparency. See also the per-stage checkpoint files under `evidence_tables/_status/17_39150001-40150000/` (opentargets.md, researcher.md, verified_citations.md, critique.md, and the 2026-09-11 THRA-addendum files researcher_thra_addendum.md, verified_citations_thra_addendum.md, critique_thra_addendum.md) for complete unabridged subagent output.</p>
+<h2>2026-09-11 ADDENDUM: THRA added after genome-build-error correction</h2>
+<p>**Background:** The study team discovered a genome-build error in the internal MAGMA/PoPS gene-location merge file (`loci/copd-all-gene-prioritization.txt`) used to generate candidate-gene lists. A corrected re-merge surfaced THRA (thyroid hormone receptor alpha) as a candidate gene at this locus that was never evaluated in the original 13-gene review.</p>
+<p>**Step 1 — coordinate check (performed by orchestrator, not a subagent):** THRA (ENSG00000126351) was independently confirmed via Ensembl coordinates (through the Open Targets GraphQL API) to span chr17:40,058,290-40,093,867 (GRCh38). This lies entirely inside the locus's defined 1 Mb window (17:39,150,001-40,150,000), confirming THRA is a genuine physical resident of the locus and that the build-error correction is legitimate, not spurious. However, THRA does NOT overlap the locus's actual fine-mapped credible-set span: the nearest credible-set variant is rs7224129 (17:39,919,173, PIP=0.00062, annotated to ORMDL3 as downstream_gene_variant), approximately 139 kb from THRA's start coordinate. No credible-set variant is annotated to THRA. This places THRA in an evidentiary category similar to CSF3/PSMD3 from the original review (window-resident, no credible-set variant), though physically closer to the credible-set cluster (~139 kb vs. CSF3/PSMD3's ~300-450 kb). Because THRA does plausibly belong at this locus (window overlap confirmed), the pipeline proceeded to full researcher/citation-verifier/red-team-skeptic evaluation rather than stopping at the coordinate check.</p>
+<p>**Step 1b — Open Targets structured lookup (performed by orchestrator):** THRA has the single highest COPD-association score of any gene queried at this locus (0.252, vs. GSDMB 0.192 and ORMDL3 0.131), essentially no asthma-association score (unlike every other high-COPD-scoring gene here), a notable "bronchopulmonary dysplasia" top-hit (0.259, its single highest score across 1836 diseases), and strong LOF constraint (gnomAD lof oe=0.276, 90% CI 0.179-0.439). This structured database context (NOT a verified literature claim) motivated the full researcher dispatch — see full detail in `evidence_tables/_status/17_39150001-40150000/opentargets.md`.</p>
+<p>**Steps 2-4 — researcher, citation-verifier, red-team-skeptic:** All 13 citations returned by the THRA-focused researcher dispatch were <span class="tag">VERIFIED</span> by citation-verifier (no retractions, no NOT_FOUND, no CLAIM_MISMATCH — see `verified_citations_thra_addendum.md`). The red-team-skeptic then critiqued THRA and explicitly assessed whether it changes the original ORMDL3-vs-GSDMB tension (see full verbatim critique below and in `critique_thra_addendum.md`).</p>
+<p>**Outcome:** THRA is marked <span class="tag-warning">CONTESTED</span> (see below) and does NOT change the original prioritized-gene call. ORMDL3 remains the prioritized gene, confidence LOW, unchanged from the original review. See `evidence_tables/17_39150001-40150000.md` Prioritized gene section for full reasoning.</p>
+<h2>Excluded citations (RETRACTED / NOT_FOUND / CLAIM_MISMATCH)</h2>
+<p>None. All 38 citations from the original review, and all 13 citations from the THRA addendum (51 total), were verified by citation-verifier with a <span class="tag">VERIFIED</span> verdict — no retractions, no not-found, no claim mismatches. Full verifier output is in `evidence_tables/_status/17_39150001-40150000/verified_citations.md` and `evidence_tables/_status/17_39150001-40150000/verified_citations_thra_addendum.md`.</p>
+<h2>Citation-verifier disclosure</h2>
+<p>The citation-verifier's own report noted it verified all 38 original citations via PubMed metadata/abstracts, with no independent caveats or partial-confidence flags raised for any individual citation. For the THRA addendum, the citation-verifier separately verified all 13 new citations via PubMed abstracts, again with no caveats raised — each claim was checked against the actual abstract content (e.g., confirming that Wu et al. 2017, PMID 27864993, correctly implicates TSH-R rather than THRA, and that the four RTHα case-series papers report no pulmonary phenotype).</p>
+<h2>Red-team-skeptic search-budget disclosure (applies to the entire critique below, verbatim)</h2>
+<blockquote>Both contradiction searches I attempted (GSDMB/ORMDL3 vs. COPD-asthma Mendelian randomization; CSF3/PSMD3 fine-mapping/LD to the credible set) failed — this session's web search budget was already exhausted (0/0 successful for me). I performed zero independent searches. Everything below is an analytical critique of the researcher's own findings and citations as given, plus applied priors and general domain knowledge — it is not backed by fresh literature I pulled myself. This means my "CONTESTED" calls below are argued from what's already in the record (including the researcher's own self-flagged gaps and internal contradictions across the gene write-ups), not from new adversarial papers I found. No gene in this set received an independent contradiction-search pass from me. Synthesis-lead should weight this critique as internal-consistency/overreach review only, and treat the "should this locus's asthma-vs-COPD independence be checked against a dedicated MR study" question as still open and worth a targeted follow-up search before final write-up.</blockquote>
+<p>**THRA addendum search-budget disclosure (verbatim, separate critique pass):** Search-budget disclosure: My two attempted contradiction-searches for THRA ("THRA COPD emphysema GWAS" and "THRA 17q12-21 asthma COPD fine-mapping") both failed — this session's web-search budget (200/200) was already exhausted before I could run them. So my critique below rests entirely on the researcher's reported findings and the original locus review; I could not independently verify or extend the contradiction search for THRA. This should be disclosed to synthesis-lead as a genuine gap, not treated as a clean pass.</p>
+<h2>Genes marked CONTESTED (reasoning preserved verbatim from red-team-skeptic)</h2>
+<h3>PGAP3 — CONTESTED</h3>
+<h3>JUP — CONTESTED</h3>
+<h3>IKZF3 — CONTESTED</h3>
+<h3>ERBB2 — CONTESTED</h3>
+<h3>STARD3 — CONTESTED</h3>
+<h3>ZPBP2 — CONTESTED</h3>
+<h3>PNMT — CONTESTED</h3>
+<h3>GSDMA — CONTESTED</h3>
+<h3>PSMD3 — CONTESTED</h3>
+<h3>THRA — CONTESTED (added 2026-09-11 addendum)</h3>
+<h2>Genes marked WEAKENED (reasoning preserved verbatim, included for full transparency even though the pipeline only mandates verbatim preservation for CONTESTED)</h2>
+<h3>KRT15 — WEAKENED</h3>
+<h3>GSDMB — WEAKENED (this is the important one)</h3>
+<h3>ORMDL3 — WEAKENED</h3>
+<h3>CSF3 — WEAKENED (addresses prompt point b directly)</h3>
+<h2>Cross-cutting points from the red-team-skeptic (verbatim, original critique)</h2>
+<blockquote>(a) GSDMB/ORMDL3 vs. asthma: Not adequately distinguished in the current write-up for GSDMB (see WEAKENED critique above) — the "deepest mechanistic literature" framing overstates COPD-specificity when the underlying functional characterization is asthma-outcome literature. ORMDL3 has a better (but still incomplete) case for genuine smoke-specific pulmonary biology independent of the asthma story, though causal-gene assignment within the shared regulatory block remains unresolved by the credible set as presented.  (b) CSF3 inclusion: Should be flagged to synthesis-lead as unverified-to-locus (see WEAKENED critique) — compelling gene-level biology, unconfirmed LD/positional relevance to this specific credible set.  (c) Balantic 2013: Currently used as supporting context rather than a headline claim in the researcher's ORMDL3 write-up, which is appropriate, but I'd flag explicitly that it should not be elevated to "human COPD genetic validation" in synthesis — it's underpowered, marginal, unadjusted for smoking, and conflates two phenotype comparisons.  (d) PGAP3 fair treatment: Yes — researcher and I agree PGAP3 is fairly treated as likely non-causal (CONTESTED) despite topping the positional/ABC ranking; this is a well-reasoned exception to "nearest/top-ranked gene wins."  Thoroughness flag for synthesis-lead: No independent contradiction search was completed by me for any gene this session (search budget exhausted before either of my two attempts returned results). The LD relationship between CSF3/PSMD3 signals and the rs1495100 credible set, and a dedicated look for an asthma-vs-COPD Mendelian randomization / genetic-correlation study at 17q21 (which would directly test whether the COPD signal is fully explained by asthma liability), are the two most valuable follow-up searches before finalizing this locus — I recommend the researcher or a fresh search pass address these specifically rather than treating the current write-up as final on those two questions.</blockquote>
+<h2>Open follow-up items flagged by this audit (not yet performed)</h2>
+<ol><li>LD/r² check between rs1495100 (and other high-PIP credible-set variants) and the PSMD3-CSF3 neutrophil-count signal (Okada et al. 2010, rs4794822) and the CSF3 promoter variant (He et al. 2008, -1719T) — needed to determine whether CSF3/PSMD3 belong in this locus's candidate-gene list at all, or represent a separate co-resident signal.</li><li>A dedicated search for an asthma-vs-COPD Mendelian randomization or genetic-correlation study at 17q21 to test whether this locus's COPD GWAS association is fully mediated by asthma liability, or represents an independent adult/smoking-driven signal — this was recommended but not completed by the red-team-skeptic (search budget exhausted) and was outside the researcher's original variant-level task scope.</li><li>**(Added 2026-09-11)** Direct access to the Sakornsakolpat et al. 2019 (PMID 30804561) supplementary gene tables to confirm or refute whether THRA was among the up-to-17 candidate effector genes that paper's own pipeline implicated at the 17q21.1 locus — the THRA-addendum researcher could not resolve this from the accessible main-text/abstract.</li><li>**(Added 2026-09-11)** A THRA-specific lung-tissue eQTL/colocalization query, and tracing the Open Targets "bronchopulmonary dysplasia" (0.259) and COPD (0.252) association scores for THRA back to their underlying data sources — neither could be corroborated in the primary literature by the THRA-addendum researcher, and the red-team-skeptic flagged this as a genuine anomaly (possibly a genuine novel signal, possibly a database/text-mining artifact) that remains unresolved.</li></ol>
+</div>
+</div>
+</body>
+</html>

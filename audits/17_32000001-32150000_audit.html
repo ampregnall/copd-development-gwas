@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 17:32000001-32150000 (nearest gene LRRC37B)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link" href="../CHR15.html">CHR15</a>
+<a class="nav-link" href="../CHR16.html">CHR16</a>
+<a class="nav-link active" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 17:32000001-32150000 (nearest gene LRRC37B)</h1>
+<p>This appendix records citations excluded from the evidence table, genes marked <span class="tag-warning">CONTESTED</span> (or flagged as incompletely evaluable) by the red-team-skeptic, and process caveats disclosed during the pipeline, with reasoning preserved verbatim where applicable. See `evidence_tables/17_32000001-32150000.md` for the main evidence table.</p>
+<h2>Excluded citations</h2>
+<p>**None.** All 26 citations returned by the researcher were checked by citation-verifier and came back VERIFIED (0 <span class="tag-warning">RETRACTED</span>, 0 NOT_FOUND, 0 CLAIM_MISMATCH). See `evidence_tables/_status/17_32000001-32150000/verified_citations.md` for the full per-citation verdict list. A subset of 5 UTP6-related PMIDs (42150138, 40917497, 40445397, 37659689, 32524281) were verified as existing/non-retracted but were not used as evidence-table rows because the researcher characterized them as incidental general ribosome-biogenesis findings with no specific claim relevant to lung, COPD, or immune biology attached — they are omitted from the evidence table for relevance, not for any verification failure.</p>
+<h2>Genes flagged CONTESTED or otherwise disputed by red-team-skeptic</h2>
+<h3>ASIC2 — CONTESTED</h3>
+<p>Direct answer given: "Should ASIC2 be ruled out? Yes, effectively — it fails physical overlap with the window, has zero colocalization support, and its supporting functional paper is in the wrong lung compartment (vascular, not airway/parenchymal). Its status as the 'MAGMA/PoPS winner' should be treated as a likely window/LD-based artifact rather than genuine biological prioritization."</p>
+<h3>COPRS — CONTESTED (flagged as incompletely searched, not as contradicted)</h3>
+<p>The researcher's own note on this gap (from `researcher.md`): "I was unable to independently verify COPRS's precise molecular function via a reliable, accessible database source in this session (GeneCards fetch was blocked by a 403 error; NCBI Gene page was blocked by a CAPTCHA wall)... I found no citable literature for this gene beyond the Open Targets lookup provided in the task input."</p>
+<p>**Action taken:** COPRS is omitted from the evidence table (no citation exists to place in a row) but is retained in the Open Targets summary and explicitly named in the Prioritized Gene section's "what would resolve this" list as requiring a follow-up literature search attempt before the study team treats it as ruled out.</p>
+<h2>Other evidence-quality caveats disclosed during the pipeline (not CONTESTED genes, but material to interpretation)</h2>
+<p>- **LRRC37B, SUZ12** — <span class="tag-warning">WEAKENED</span> by red-team-skeptic: strong/moderate Open Targets spirometry-trait colocalization (7/9 and 6/9 of 9 credible sets respectively) but no COPD-, spirometry-, or smoking-specific published literature; LRRC37B's only substantive mechanistic literature is neurodevelopmental (cortical neuron excitability, PMID 38134874), and SUZ12's is broad/nonspecific PRC2-chromatin essentiality (T-cell differentiation, hematopoiesis, tumor immunology) plus one lung-*cancer* (not COPD) carcinogenesis paper (PMID 40211119) where SUZ12 is a co-recruited generic PRC2 component, not a SUZ12-specific driver. - **UTP6** — WEAKENED: colocalization present but weaker/less consistent (max L2G 0.327); literature is exclusively general ribosome-biogenesis housekeeping biochemistry with no lung/COPD/immune relevance. - **RHOT1** — split verdict, SUPPORTED-for-mechanism / WEAKENED-for-genetics: "Genetics and mechanism disagree here and both should be visible in the final writeup," per red-team-skeptic. Statistical/positional support is the weakest of the group (single L2G appearance at 0.053, near-zero literature-only OT COPD score, gene body mostly outside the stated window), but functional evidence is causal, in vivo, and cell-type-specific (PMID 31593750, PMID 35366248), explicitly framed by its own authors around COPD. - **VILMIR** (lncRNA; not a locus-file candidate gene) — flagged as speculative: the lead credible-set variant physically falls within its transcript body (independently verified via Ensembl by the researcher), and its published biology is a lung-epithelium-specific interferon/antiviral mechanism (PMID 40130878, PMID 41378895) plausibly relevant to COPD viral-exacerbation susceptibility — but no publication ties VILMIR to this GWAS locus or to COPD; per red-team-skeptic, this should be read as "a hypothesis worth stating as such ...rather than as supporting evidence."</p>
+<h2>Process caveats disclosed by subagents</h2>
+<p>- **Search-budget exhaustion during red-team critique:** the red-team-skeptic subagent reported its WebSearch budget was exhausted before it could run any independent contradiction searches (it attempted "RHOT1/COPD-mitochondria" and "ASIC2/COPD-GWAS" searches). Its critique above is therefore based on internal consistency/logic review of the researcher's already-verified findings, not on independently found contradicting literature. Per the skeptic's own disclosure: "any confidence statements below should be read as 'unrebutted by what the researcher found,' not 'actively checked against opposing literature.'" This caveat applies to every gene at this locus, not only one, and should be weighed by the study team accordingly. - **Researcher database-access failures:** GeneCards (403 error) and NCBI Gene (CAPTCHA wall) were inaccessible during the researcher's session, blocking independent functional characterization of COPRS specifically (see above). - **Open Targets is a structured database lookup, not literature:** all L2G/colocalization/ constraint figures cited throughout this locus's evidence table, Open Targets summary, and this audit were pulled directly by the orchestrator via the Open Targets GraphQL API and were not passed through citation-verifier or red-team-skeptic (per pipeline design — see `evidence_tables/_status/17_32000001-32150000/opentargets.md` for the full structured lookup output). - **Locus-file MAGMA/PoPS vs. physical-overlap discrepancy:** the researcher independently verified via Ensembl that ASIC2 (the locus file's stated MAGMA/PoPS-prioritized gene) does not physically fall within the stated 17:32,000,001-32,150,000 window (sitting chr17:33,013,087-34,174,964, ~0.9-1 Mb centromeric of the window's far edge). This is reported as a discrepancy for the study team's awareness of how the upstream MAGMA/PoPS gene-window/LD-extension methodology may differ from the strict credible-set boundary used to define this locus file, not as an error attributable to this literature-review pipeline.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 15:84900001-85050000 (nearest gene SLC28A1)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link active" href="../CHR15.html">CHR15</a>
+<a class="nav-link" href="../CHR16.html">CHR16</a>
+<a class="nav-link" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 15:84900001-85050000 (nearest gene SLC28A1)</h1>
+<p>This appendix records every citation excluded from the evidence table (`evidence_tables/15_84900001-85050000.md`) for verdict reasons (<span class="tag-warning">RETRACTED</span> / NOT_FOUND / CLAIM_MISMATCH), every gene examined but not carried into the evidence table, and the red-team-skeptic's reasoning verbatim, for full traceability.</p>
+<h2>Excluded citations (CLAIM_MISMATCH)</h2>
+<p>Both excluded citations concern **SEC11A**, a gene lying entirely outside the 84,900,001-85,050,000 locus window (84,669,529-84,716,466, GRCh38) and not overlapped by any credible-set variant. The researcher flagged SEC11A's lung relevance as "speculative extrapolation" from an oncology mechanism (TGF-α/EGFR secretion via SPC18), not evidence-based.</p>
+<ol><li>**Oue N, Naito Y, Hayashi T, et al. "Signal peptidase complex 18, encoded by SEC11A, contributes to progression via TGF-α secretion in gastric cancer."** Oncogene. 2013;33(30):3918-26. PMID 23995782, DOI 10.1038/onc.2013.364. - Verdict: **CLAIM_MISMATCH** - Reason (citation-verifier): The paper's abstract confirms SPC18/SEC11A promotes TGF-α secretion in gastric cancer cells, but the researcher's claim additionally asserted this occurs via "EGFR-pathway-driven cell proliferation" — the abstract/results reviewed do not explicitly demonstrate that the proliferative effect is mediated through the EGFR pathway specifically, only that TGF-α secretion and cell growth are affected.</li></ol>
+<ol><li>**Shigematsu Y, Oue N, et al. "SEC11A Expression Is Associated with Basal-Like Bladder Cancer and Predicts Patient Survival."** Pathobiology. 2019;86(4):208-216. PMID 31163419, DOI 10.1159/000497206. - Verdict: **CLAIM_MISMATCH** - Reason (citation-verifier): The paper confirms SPC18/SEC11A upregulation in basal-like bladder cancer and its role as an independent prognostic classifier, but the researcher's claim that this operates "via [the] same TGF-α/EGFR mechanism" was not demonstrated in this paper's results section — the TGF-α/EGFR link is mentioned only as background from other studies, not shown here.</li></ol>
+<p>Note: the other two SEC11A citations (Yamamoto et al. 2020, PMID 32564026; Kim SW 2022, PMID 35953114) were <span class="tag">VERIFIED</span>, but SEC11A as a whole was still not carried into the evidence table because it lies outside the locus window, is not overlapped by any credible-set variant, and has zero lung/COPD-specific literature — see "Genes examined and excluded" below. Its citation set showing a 50% CLAIM_MISMATCH rate is itself flagged by the red-team-skeptic as a pattern worth noting: "It suggests a mechanism-first, evidence-second framing was applied here... which the researcher appropriately caught and labeled 'speculative extrapolation.'"</p>
+<h2>Genes examined and excluded from the evidence table</h2>
+<p>None of the genes below were marked <span class="tag-warning">CONTESTED</span> by the red-team-skeptic (see "CONTESTED determination" below for why), but none were carried into the main evidence table either, for the reasons given.</p>
+<h3>ALPK3 (84,817,176-84,875,708, GRCh38 — outside the locus window, no credible-set overlap)</h3>
+<h3>ZNF592 (84,748,348-84,806,445, GRCh38 — outside the locus window, no credible-set overlap)</h3>
+<h3>SEC11A (84,669,529-84,716,466, GRCh38 — outside the locus window, no credible-set overlap)</h3>
+<h2>CONTESTED determination (red-team-skeptic, verbatim)</h2>
+<blockquote>No gene at this locus should be marked CONTESTED — I found no credible, independently-sourced literature actively arguing against any of these genes or naming a specific alternative causal gene at this locus (and my own attempt to search for such contradicting evidence was blocked by exhausted search budget, so this is an absence-of-search-completed situation, not a clean negative). Do not read "not CONTESTED" as "supported."</blockquote>
+<h2>Red-team-skeptic's search-budget limitation (verbatim, applies to the whole locus)</h2>
+<blockquote>I attempted a baseline contradiction-search pass across all five candidate genes (SLC28A1 lung-function GWAS, PDE8A COPD/lung-function, rs80058540 direct lookup, and a locus-coordinate sweep for alternate gene calls), but the session's web-search budget was exhausted before any of these returned results. So the critique below is based entirely on re-analysis of the researcher's own reported findings and verifier verdicts, not on new independent search. This is a real coverage gap — I could not run even the minimal 1-2 query contradiction pass required by protocol for any of the five genes at this locus. Flagging this explicitly to synthesis-lead: no independent contradiction-search was completed for SLC28A1, PDE8A, ALPK3, ZNF592, or SEC11A — if search capacity becomes available before final synthesis, this locus should get the baseline pass it's currently missing, particularly (a) whether 15:84.9-85.05Mb appears in prior published COPD/spirometry GWAS (Sakornsakolpat 2019, Shrine 2019, or newer multi-ancestry COPD meta-analyses) under a different candidate-gene name, and (b) whether GSCAN's supplementary table actually lists this locus as genome-wide significant for any smoking trait (the Liu 2019 citation was used as undifferentiated "background" without confirming locus-level overlap).</blockquote>
+<p>This limitation was not remediated before finalizing this locus (per pipeline instructions, the orchestrator does not perform additional literature search itself); it is preserved here as an explicit caveat for the study team.</p>
+<h2>Red-team-skeptic's bottom-line assessment (verbatim)</h2>
+<blockquote>This locus does not have a well-supported candidate gene. Every gene examined lacks COPD, spirometric, TWAS, colocalization, or MR evidence in Open Targets or PubMed. SLC28A1 wins only by default (nearest gene, credible set now confirmed intronic rather than intergenic) with zero functional/disease evidence. PDE8A has an attractive mechanistic story but weaker physical proximity and zero genetic evidence. ALPK3/ZNF592/SEC11A are appropriately excluded. I'd recommend the synthesis explicitly state "no compelling causal gene identified at this locus" rather than naming SLC28A1 or PDE8A as a preferred candidate — manufacturing a front-runner here would overstate what the evidence supports. This also means the locus is a candidate for the "thoroughness" flag: before finalizing, someone should check whether this exact locus has appeared (under any gene label) in prior published COPD/spirometry/smoking GWAS papers' supplementary tables, since that check was not done by the researcher and could materially change the picture.</blockquote>
+<h2>Researcher's independent annotation discrepancy (not a literature claim — flagged for pipeline maintainers)</h2>
+<p>The researcher's independent Ensembl REST re-check found that the lead variant rs80058540 and, by genomic coordinates, all 11 credible-set variants fall inside the SLC28A1 gene body and are annotated "intron_variant" (not "intergenic_variant" as recorded in `loci/15_84900001-85050000.md`). This is UN<span class="tag">VERIFIED</span> (a database re-check, not run through citation-verifier since it is not a literature claim) and is flagged here for reconciliation by whoever maintains the locus-input-file generation pipeline (`scripts/build_loci_from_tables.py` per that file's own header).</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 16:51950001-52250000 (nearest gene TOX3)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link" href="../CHR15.html">CHR15</a>
+<a class="nav-link active" href="../CHR16.html">CHR16</a>
+<a class="nav-link" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 16:51950001-52250000 (nearest gene TOX3)</h1>
+<p>This file contains everything excluded from the main evidence table (`evidence_tables/16_51950001-52250000.md`), preserved for traceability: RETRACTED / NOT_FOUND / CLAIM_MISMATCH citations, and every gene the red-team-skeptic marked <span class="tag-warning">CONTESTED</span>, with reasoning preserved verbatim from the checkpoint files.</p>
+<h2>Excluded citations</h2>
+<h3>PMID 30643258 — CLAIM_MISMATCH</h3>
+<h2>Genes marked CONTESTED</h2>
+<h3>C16orf97 (=LINC02911) — CONTESTED</h3>
+<blockquote>The single PubMed hit under this symbol (Dong et al. 2016, olfaction in African-American older adults, PMID 27878761) is about a different phenotype in a different population and does not itself validate the C16orf97=LINC02911 identity claim used to route MAGMA/PoPS prioritization here. More importantly, the locus background note that LINC02911's coordinates (52,005,486-52,078,516) almost entirely overlap the span the pipeline separately assigned to "LINC00919" is a serious structural problem that the researcher's literature search did not surface or resolve — if these are the same regulatory region under two catalog names (NCBI/RefSeq vs Ensembl/GENCODE), then treating "C16orf97/LINC02911" and "LINC00919" as two distinct pieces of corroborating credible-set evidence double-counts a single signal, and the "MAGMA/PoPS-prioritized gene" claim may just be re-describing the LINC00919-annotated PIP mass under a different name. This needs direct coordinate/annotation reconciliation (not literature search) before any weight is placed on "C16orf97 is prioritized by MAGMA/PoPS" as if it were independent evidence layered on top of the LINC00919 credible-set mass. I'm marking this CONTESTED not because I found a paper arguing against it, but because the pipeline's own background section already surfaces a naming-collision problem the researcher's writeup doesn't address or caveat.</blockquote>
+<p>**Orchestrator's direct follow-up (Ensembl REST coordinate lookup, structured database, not literature):** confirmed the coordinate overlap is real and essentially total. Ensembl's "LINC00919" gene body (ENSG00000260268) spans chr16:52,005,425-52,085,177 (GRCh38); NCBI RefSeq's LINC02911/C16orf97 spans chr16:52,005,486-52,078,516 -- the entire LINC02911/C16orf97 span (~73 kb) sits inside the Ensembl LINC00919 gene body. This upgrades the naming-collision concern from "plausible, unresolved" to "confirmed by direct coordinate lookup": C16orf97/ LINC02911 and the credible-set gene "LINC00919" are very likely the same underlying genomic feature described under two different gene-model catalogs, not two independently converging lines of evidence.</p>
+<p>**Red-team-skeptic follow-up (second pass, after independent literature re-search):**</p>
+<blockquote>The naming-collision issue from the prior pass is unresolved (no literature disambiguating LINC02911 vs. LINC00919 vs. Ensembl coordinates was found). This pass adds a concrete illustration of the LD/nearest-gene-bias concern: GWAS Catalog's own automated "mapped gene" annotation for rs17201148 is C16orf97, even though the SNP is physically intronic to LINC02180 — i.e., the very structured database the researcher relied on for gene-mapping evidence is itself inconsistent about which gene "owns" this variant. Literature search adds only one tangential nicotine-dependence pleiotropy hit (PMID 33144568, not independently verified, off-topic keyword overlap only), no direct support.</blockquote>
+<p>**Status: remains <span class="tag-warning">CONTESTED</span>.** Not excluded from the main table (its one literature citation, PMID 27878761, was independently VERIFIED by citation-verifier as a real, accurately-described finding), but flagged prominently in the evidence table's "skeptic verdict" column and in the Prioritized Gene section given the unresolved double-counting risk this creates for the overall MAGMA/PoPS-vs-credible-set convergence narrative at this locus.</p>
+<h2>Additional context not fitting the RETRACTED/NOT_FOUND/CLAIM_MISMATCH/CONTESTED categories,</h2>
+<p>- **Red-team-skeptic's first pass was compromised by an exhausted session-wide WebSearch budget** and returned zero independent contradiction-search coverage, producing only an internal-consistency critique. This was disclosed explicitly by the subagent and is recorded in full in `evidence_tables/_status/16_51950001-52250000/critique.md`. The orchestrator dispatched a second red-team-skeptic pass instructed to use WebFetch against PubMed E-utilities / Europe PMC / GWAS Catalog REST endpoints directly (bypassing the exhausted WebSearch tool), which did complete a full independent contradiction search across all four candidate genes plus locus-level and true-nearest-gene (CASC22) checks, and additionally surfaced the one new citation (PMID 32099002) that was subsequently verified and added to the main evidence table. Both critique passes are preserved verbatim in critique.md. - **TOX3 vs. TOX paralog distinction:** the researcher explicitly and correctly avoided conflating TOX3 with its paralog TOX, which has well-documented CD8+ T-cell exhaustion biology in the immunology literature. No evidence was found that TOX3 shares this specific function. Red-team-skeptic confirmed this was handled correctly and is not itself a red flag. - **Fine-mapping-noise alternative hypothesis:** both red-team-skeptic passes explicitly flagged that, given the low maximum PIP (0.139) across a diffuse ~50-variant credible set, all-noncoding variant consequences, and the near-total absence of independent locus-specific/COPD-specific literature for any of the four candidate genes, the possibility that this signal represents fine-mapping noise or an unresolved LD signal without a single identifiable causal gene deserves consideration alongside any gene-specific biological narrative. This alternative was not conclusively ruled in or out by this review and is carried forward into the Prioritized Gene section of the main evidence table as an open consideration for the study team.</p>
+</div>
+</div>
+</body>
+</html>

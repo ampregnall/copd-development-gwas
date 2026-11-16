@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 16:6000001-6150000 (nearest gene RBFOX1)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link" href="../CHR15.html">CHR15</a>
+<a class="nav-link active" href="../CHR16.html">CHR16</a>
+<a class="nav-link" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 16:6000001-6150000 (nearest gene RBFOX1)</h1>
+<p>This appendix records every citation excluded from the evidence table (RETRACTED / NOT_FOUND / CLAIM_MISMATCH) and every gene/claim the red-team-skeptic marked <span class="tag-warning">CONTESTED</span>, with reasoning preserved verbatim from the citation-verifier and red-team-skeptic subagents. A reviewer should consult this file alongside `evidence_tables/16_6000001-6150000.md` to understand what was checked and rejected, not just what survived.</p>
+<h2>Excluded citations (CLAIM_MISMATCH)</h2>
+<h3>1. Liu M, Jiang Y, Wedow R, et al. "Association studies of up to 1.2 million individuals yield new insights into the genetic etiology of tobacco and alcohol use." Nature Genetics, 2019. PMID: 30643251; DOI: 10.1038/s41588-018-0307-5.</h3>
+<h3>2. Sakornsakolpat P, Prokopenko D, Lamontagne M, et al. "Genetic landscape of chronic obstructive pulmonary disease identifies heterogeneous cell-type and phenotype associations." Nature Genetics, 2019. PMID: 30804561; DOI: 10.1038/s41588-018-0342-2.</h3>
+<h3>3. Shrine N, Guyatt AL, Erzurumluoglu AM, et al. "New genetic signals for lung function highlight pathways and chronic obstructive pulmonary disease associations across multiple ancestries." Nature Genetics, 2019. PMID: 30804560; DOI: 10.1038/s41588-018-0321-7.</h3>
+<p>No <span class="tag-warning">RETRACTED</span> or NOT_FOUND citations were identified at this locus — all 14 citations checked were real, non-retracted papers; 3 of the 14 (plus the flagship smoking GWAS citation counted above) were CLAIM_MISMATCH, i.e., the paper exists but does not support the specific claim attributed to it.</p>
+<h2>CONTESTED / WEAKENED verdicts from red-team-skeptic (verbatim)</h2>
+<h3>Claim: RBFOX1 has a direct pulmonary/structural lung mechanism</h3>
+<h3>Claim: RBFOX1's COPD association is smoking-behavior-mediated</h3>
+<h3>Claim: RBFOX1 has meaningful immune/inflammatory-pathway relevance to COPD</h3>
+<h3>Claim: RBFOX1 is the only plausible candidate gene at this locus</h3>
+<h2>Alternative explanations flagged by red-team-skeptic (not previously considered by researcher)</h2>
+<ol><li>**Winner's-curse/LD-artifact false positive:** "RBFOX1 is one of the largest genes in the genome (~1.7 Mb), sits in a gene-poor, low-recombination region, and MAGMA and ABC both failed to prioritize any gene here — a notable disagreement with FLAMES/PoPS... Large genes have disproportionately more 'COPD-associated' intronic SNPs simply by virtue of covering more genomic real estate and more measured variants, independent of causal mechanism... a scattershot pleiotropy pattern that is at least as consistent with a statistical/LD magnet effect as with true multi-organ pleiotropy."</li></ol>
+<ol><li>**Uncharacterized lung-specific isoform/splicing function:** "RBFOX-family paralogs (RBFOX2 in particular) do have described roles in epithelial/mesenchymal splicing programs, so a lung-relevant RBFOX1 isoform is not biologically implausible, merely unstudied. This is a real 'absence of evidence, not evidence of absence' case."</li></ol>
+<ol><li>**Brain sQTL colocalization as a distinct hypothesis (not yet literature-confirmed):** The Open Targets CommonMind DLPFC brain-splicing-QTL cluster overlapping this locus "is a specific, testable mechanism... but it is database context, unconfirmed in peer-reviewed literature, and should not be casually merged into the smoking-mediation narrative as if it were verified support. It's a hypothesis-generating hint, not evidence."</li></ol>
+<h2>Process caveat</h2>
+<p>The red-team-skeptic's WebSearch tool calls returned "budget exhausted" errors before returning any results, so **no independent contradiction-search was performed** for this locus — the critique above is based entirely on the researcher's findings and the citation-verifier's verdicts, not on independent literature re-search by the skeptic. This should be treated as a residual gap in review depth for RBFOX1 specifically, should additional search budget become available in a future pass.</p>
+</div>
+</div>
+</body>
+</html>

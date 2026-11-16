@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 17:49200001-49450000 (nearest gene ZNF652)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link" href="../CHR15.html">CHR15</a>
+<a class="nav-link" href="../CHR16.html">CHR16</a>
+<a class="nav-link active" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 17:49200001-49450000 (nearest gene ZNF652)</h1>
+<p>This file records everything excluded from the main evidence table (`evidence_tables/17_49200001-49450000.md`) and the full reasoning behind gene-level critique verdicts, preserved verbatim from the pipeline's checkpointed subagent outputs.</p>
+<h2>Excluded citations (verdict CLAIM_MISMATCH)</h2>
+<p>All three citations below were reported by the researcher as the likely primary-literature source of ZNF652's Open Targets FEV1 genetic-association signal. The citation-verifier confirmed each paper exists and matches the stated cohort/signal-count description, but could NOT confirm that ZNF652 is actually named as a hit/gene in any of them from the abstract or accessible full text (supplementary per-locus gene tables were not accessible to the verifier). They are excluded from the evidence table on that basis.</p>
+<ol><li>**Shrine N, Guyatt AL, Erzurumluoglu AM, et al.** "New genetic signals for lung function highlight pathways and chronic obstructive pulmonary disease associations across multiple ancestries." Nat Genet. 2019;51(3):481-493. PMID 30804560, DOI 10.1038/s41588-018-0321-7. Verifier reason: paper confirmed to exist and matches the stated cohort/signal-count description (UK Biobank + SpiroMeta, 400,102 individuals, 279 signals), but ZNF652 is not named in the abstract or accessible full text/methods.</li></ol>
+<ol><li>**Wain LV, Shrine N, Artigas MS, et al.** "Genome-wide association analyses for lung function and chronic obstructive pulmonary disease identify new loci and potential druggable targets." Nat Genet. 2017;49(3):416-425. PMID 28166213, DOI 10.1038/ng.3787. Verifier reason: paper confirmed to exist and matches the stated cohort/signal-count description (UK Biobank extreme-phenotype GWAS, 97 signals), but ZNF652/chr17:49.3Mb is not named in the abstract.</li></ol>
+<ol><li>**Shrine N, Izquierdo AG, Chen J, et al.** "Multi-ancestry genome-wide association analyses improve resolution of genes and pathways influencing lung function and chronic obstructive pulmonary disease risk." Nat Genet. 2023;55(3):410-422. PMID 36914875, DOI 10.1038/s41588-023-01314-0. Verifier reason: paper confirmed to exist and matches the stated cohort/signal-count description (580,869 participants, 1,020 signals, 559 genes), but ZNF652 is not named among genes in the abstract; supplementary gene list not accessible to confirm inclusion.</li></ol>
+<p>No citations were rated <span class="tag-warning">RETRACTED</span> or NOT_FOUND for this locus. Full verifier output for all 20 citations checked (17 VERIFIED, 3 CLAIM_MISMATCH) is preserved in `evidence_tables/_status/17_49200001-49450000/verified_citations.md`.</p>
+<h2>Red-team-skeptic critique — IMPORTANT SEARCH-COVERAGE DISCLOSURE</h2>
+<p>The red-team-skeptic subagent disclosed that its WebSearch budget (200/200) was already exhausted by earlier agents in this pipeline run before it could execute a single independent search. Verbatim: "every gene below got a zero-search pass from me. My critique is therefore limited to internal-consistency analysis of the researcher's findings and the citation-verifier's verdicts — it is not an independent check for contradicting literature." It recommended treating the "no gene reaches <span class="tag-warning">CONTESTED</span>" determination for this locus as OPEN, NOT RESOLVED, and suggested (if budget allows) re-running: (a) "17q21 ZNF652 lung function fine-mapping gene assignment", (b) "PHB1 COPD GWAS colocalization chromosome 17", (c) "GNGT2 cigarette smoke COPD" (as opposed to asthma-only).</p>
+<h2>Gene-level critique verdicts (verbatim reasoning, full detail)</h2>
+<h3>ZNF652 — WEAKENED</h3>
+<h3>UTP18 — HOLDS (artifact dismissal justified)</h3>
+<h3>FLJ40194 / ZNF652-AS1 — HOLDS (both)</h3>
+<h3>GNGT2 — WEAKENED (CONTESTED-adjacent; not flagged by internal pipeline)</h3>
+<h3>PHB1 — HOLDS (with caution against over-promotion; not flagged by internal pipeline)</h3>
+<h3>ABI3 — HOLDS (not flagged by internal pipeline)</h3>
+<h3>PHOSPHO1 — insufficiently documented to render a verdict; flagged for re-check</h3>
+<h2>Overall CONTESTED determination</h2>
+<p>No gene was formally elevated to CONTESTED status based on the record as reviewed, but per the search-coverage disclosure above this determination rests on a zero-independent-search critique session and should NOT be treated as a clean bill of health. The closest candidate for CONTESTED status is ZNF652's own FEV1 claim, whose three supporting citations were rejected as CLAIM_MISMATCH — a literature-traceability failure internal to the researcher's own citation chain, not an external paper arguing against ZNF652. This was called <span class="tag-warning">WEAKENED</span> rather than CONTESTED, but is flagged as the single highest-priority item for follow-up verification in any future re-run of this locus with a fresh search budget.</p>
+<h2>Other pipeline-relevant notes preserved from the researcher</h2>
+<p>- Region gene enumeration via Ensembl REST (GRCh38, 17:49,200,000-49,450,000) surfaced four additional protein-coding genes not flagged by the internal pipeline: GNGT2, ABI3, PHOSPHO1, and PHB1 (all researched above). SPOP (~150kb telomeric, outside the locus) was noted as relevant context for the PHB1/ZNF652 shared-enhancer finding but is not itself a candidate gene at this locus. - No PubMed literature or resolvable GWAS Catalog trait was found linking any candidate gene at this locus (ZNF652, UTP18, FLJ40194, ZNF652-AS1, GNGT2, ABI3, PHOSPHO1, PHB1) to smoking initiation, cigarettes-per-day, or smoking cessation. The dominant non-pulmonary phenotype identified in the literature and GWAS Catalog for this locus's lead variant/ZNF652 region is blood pressure/hypertension, not smoking behavior.</p>
+</div>
+</div>
+</body>
+</html>
