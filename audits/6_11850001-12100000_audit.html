@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 6:11850001-12100000 (nearest gene HIVEP1)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link active" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link" href="../CHR15.html">CHR15</a>
+<a class="nav-link" href="../CHR16.html">CHR16</a>
+<a class="nav-link" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 6:11850001-12100000 (nearest gene HIVEP1)</h1>
+<p>This appendix lists excluded citations (RETRACTED / NOT_FOUND / CLAIM_MISMATCH) and any genes marked <span class="tag-warning">CONTESTED</span>, with reasoning preserved verbatim. Not intended for distribution alongside the evidence table to end users who only need the clean evidence — kept separately per pipeline design.</p>
+<h2>Excluded citations</h2>
+<div class="evidence-table-wrapper"><table class="evidence-table"><thead><tr><th>Citation</th><th>Verdict</th><th>Reason</th></tr></thead><tbody><tr><td class="gene">Butt AQ, Miggin SM. "WITHDRAWN: Modulation of TLR3, TLR4 and TLR7 mediated IFN-β, Rantes and TNFα production by HIVEP1." J Biol Chem. 2014. PMID 24719322, DOI 10.1074/jbc.M113.516062</td><td><span class="tag-warning">RETRACTED</span></td><td>Citation-verifier confirmed: "PubMed record explicitly states 'The manuscript was withdrawn by the author'; title includes 'WITHDRAWN' prefix; cannot be used as supporting evidence." This would otherwise have been the single most directly lung-innate-immune-relevant HIVEP1 paper (TLR3/4/7-mediated IFN-β/RANTES/TNFα modulation) — its withdrawal is a meaningful loss to the HIVEP1 immune case, not a neutral omission, and is flagged as such in the red-team critique below.</td></tr></tbody></table></div>
+<p>No citations received a NOT_FOUND or CLAIM_MISMATCH verdict in this locus's verification pass (23 of 24 submitted citations were <span class="tag">VERIFIED</span>; see `evidence_tables/_status/6_11850001-12100000/verified_citations.md` for the full per-citation verdict list, including the one preprint/published pair, citations 23-24, both VERIFIED).</p>
+<h2>Genes marked CONTESTED</h2>
+<p>None. Both candidate genes (HIVEP1 and ADTRP) were rated **<span class="tag-warning">WEAKENED</span>** by red-team-skeptic, not CONTESTED — no paper identified in this review actively names a different gene as correct at this locus or explicitly refutes either candidate. WEAKENED verdicts and full reasoning are preserved verbatim below.</p>
+<h2>Full red-team-skeptic critique (verbatim)</h2>
+<h3>Search disclosure (from red-team-skeptic)</h3>
+<p>Before critiquing, the skeptic flagged a coverage problem: the WebSearch tool reported the session's search budget (200/200) was already exhausted before it could run a single query. It attempted four targeted searches (HIVEP1 vs. COPD/FEV1, ADTRP vs. COPD/emphysema, smoking-initiation GWAS for HIVEP1, and direct lookup of the lead variant/region for smoking traits) — all four failed with zero results returned. **This critique is therefore based entirely on close reading of the researcher/verifier record as provided, with no independent contradiction-search performed for either gene.** This is disclosed explicitly rather than presented as if it had independent search backing. Open gaps flagged for follow-up if search budget allows elsewhere in the pipeline: (a) HIVEP1/ADTRP vs. FEV1/FEV1-FVC/COPD GWAS Catalog and PheWAS lookups, (b) GSCAN/smoking-initiation summary stats at this exact locus, (c) any paper proposing an alternative gene at 6p24.1 for a respiratory phenotype, (d) LD between rs169713 (HIVEP1/VT) or rs6903956 (ADTRP/CAD) and this locus's actual credible set.</p>
+<h3>HIVEP1 — WEAKENED</h3>
+<p>The positional/statistical case is genuinely the strongest part of the record: nearest gene, PoPS- and ABC-prioritized, highest L2G score by a wide margin (0.657 vs. 0.083), several credible-set variants (including rs9470768) sitting in HIVEP1 introns, and strong LoF intolerance (oe=0.167). That combination is reasonable grounds for calling HIVEP1 the likely *effector gene* at this locus — a "which gene" question distinct from "what mechanism."</p>
+<p>But the inference chain overreaches once it moves from "likely effector gene" to "COPD-relevant pulmonary/inflammatory gene":</p>
+<ol><li>**Zero COPD/spirometry literature.** Per prior #2, this absence should be treated as a meaningful gap, not neutral. There is no FEV1/FEV1-FVC concordance offered anywhere, which is exactly the kind of orthogonal pulmonary-trait support the priors say should exist before treating a COPD hit as reflecting pulmonary biology.</li><li>**The VT/PE evidence is being asked to do work it can't support.** rs169713 (the well-replicated VT/PE variant) is explicitly *not* shown to be identical to, or in LD with, any variant in this COPD credible set. Citing five VT/PE papers next to a COPD locus analysis creates an impression of convergent evidence for "HIVEP1 as a vascular/ inflammatory disease gene" that is stronger than what's actually shown — it's the same gene, a different signal, unknown LD relationship. This is a classic regional-pleiotropy trap and should be labeled as speculative gene-level pleiotropy, not locus-level concordance. The researcher's own framing already partially hedges this ("raises the alternative hypothesis...not directly tested by any paper found") — that hedge should be preserved and amplified in synthesis, not dropped.</li><li>**Immune/mechanistic evidence is real but entirely non-lung** (sepsis monocytes, NASH-liver Th17/CD4 knockout, M2 macrophage CAGE screen, M. tuberculosis macrophage response, LPS leukocyte/exercise studies). Under prior #3, this is nonspecific immune biology — plausible that an NF-κB-regulating, broadly-expressed transcription factor also matters in lung tissue, but that's an extrapolation, not a demonstrated lung-specific finding. Appropriately, one retracted paper (Butt &amp; Miggin) that would have been the most directly relevant (TLR3/4/7, IFN-β/RANTES/TNFα) was correctly excluded — its absence further thins an already indirect immune case.</li><li>**Smoking-mediation is unresolved, not ruled out.** The researcher flagged the smoking-GWAS search as incomplete due to budget limits. This should not be read as "no smoking link" — it's an open question that materially affects prior #1's applicability here.</li><li>Somatic HIVEP1-ALK fusion (NSCLC) is correctly bracketed as irrelevant (oncologic, not germline).</li></ol>
+<p>**Net:** the statistical fine-mapping case for HIVEP1 being the gene at this locus is solid; the case for a specific pulmonary or COPD-relevant inflammatory mechanism is not established by any of the cited literature. Synthesis should present these as two separate claims with very different confidence levels, not one blended claim.</p>
+<h3>ADTRP — WEAKENED (more severely than HIVEP1, not CONTESTED)</h3>
+<p>ADTRP is a considerably weaker candidate on every axis given: single-method prioritization (FLAMES only; not flagged by MAGMA/PoPS/ABC), lowest L2G score (0.083), LoF-tolerant (oe=0.732, contrast with HIVEP1's 0.167), and — most importantly — its gene body sits ~43kb outside both the locus boundary and the entire credible-set span. No credible-set variant is near it. FLAMES relies on a different (often wider/expression-based) window than PoPS/ABC, so a lone FLAMES hit for a gene physically outside the fine-mapped interval is exactly the kind of "LD/nearest-gene-adjacent but not actually implicated" signal the priors ask us to be suspicious of.</p>
+<p>The literature offered doesn't rescue this: ADTRP's best-established GWAS association is CAD via rs6903956 — again a different variant, not shown to be in LD with this credible set, and one paper in the record (Chang et al. 2017) explicitly found rs6903956 was *not* associated with coagulation factor levels after adjustment including smoking, which if anything argues against a straightforward smoking-mediated or coagulation mechanism for that CAD signal. The Beas-2b bronchial epithelial cell-line finding (Hudlikar et al., garlic compound modulating ADTRP under cigarette-smoke-condensate exposure) is being offered as the one "lung-relevant" data point, but it is an in vitro transcriptomic exposure-response effect, not a genetic association with disease — it shows ADTRP expression can move under smoke exposure in one cell line, not that germline variation at ADTRP causes COPD or alters lung function. Framing it as supporting evidence for ADTRP's COPD relevance would be overclaiming; it's circumstantial at best. The Kee et al. 2021 review is explicit that ADTRP's known biology has no pulmonary phenotype.</p>
+<p>No paper actively names a different gene as correct at this specific locus or explicitly refutes ADTRP, so it is NOT marked <span class="tag-warning">CONTESTED</span> — but "insufficient/weak evidence, does not survive the locus-boundary check" is the accurate characterization, and it should be ranked well below HIVEP1 in any synthesis, essentially as a candidate that fails the basic "is this variant/gene actually in the credible set" test from the LD/nearest-gene-bias prior.</p>
+<h3>Cross-cutting points for synthesis</h3>
+<p>- **Total absence of COPD/FEV1 literature for both genes is itself important information**, not a wash. It means this locus currently has no gene with a demonstrated pulmonary mechanism — the entire prioritization rests on statistical fine-mapping (HIVEP1) plus indirect/non-lung biology. That's a legitimate way to nominate a likely causal gene, but confidence in *any* mechanistic story (inflammatory, vascular, or smoking-behavioral) should stay low until spirometric or lung-tissue evidence turns up. - **A plausible alternative hypothesis not tested by any cited paper:** given that both HIVEP1 (VT/PE) and ADTRP (CAD) show independent cardiovascular/thrombotic associations at this same cytogenetic region (6p24.1) via different variants, the locus could reflect shared genetic architecture with COPD's cardiovascular comorbidity (COPD cohorts are frequently enriched for vascular disease) rather than a lung-intrinsic mechanism. This is distinct from smoking-mediation (prior #1) — it's a vascular-pleiotropy confound — and deserves explicit mention alongside the smoking caveat rather than being collapsed into it. - **Recommendation:** HIVEP1 can reasonably be called the more likely effector gene at this locus on statistical/positional grounds (nearest gene, PoPS, ABC, L2G, constraint), but synthesis should not describe this as "HIVEP1 drives COPD via inflammation" — the mechanism is undetermined, and a vascular/thrombotic-pleiotropy or unresolved smoking-behavior explanation remains equally live given the current evidence. ADTRP should be treated as a weak, likely non-causal candidate given its physical exclusion from the credible-set span and single-method support. - Flagging for thoroughness: the smoking-GWAS search for HIVEP1 was left incomplete by the researcher due to a budget limit, and the skeptic was unable to supplement it due to its own budget exhaustion. This specific gap should be closed before a final determination is made, since it bears directly on whether prior #1 (smoking-mediation) applies here.</p>
+<h3>Verdicts (from red-team-skeptic)</h3>
+<p>- HIVEP1: <span class="tag-warning">WEAKENED</span> (not CONTESTED) — strong statistical/positional case, but pulmonary/COPD mechanism is unestablished; VT/PE and immune literature are real but not COPD/lung-specific and involve a different variant (rs169713) than this locus's credible set. - ADTRP: WEAKENED (not CONTESTED) — physically outside the locus and credible-set span, single-method (FLAMES-only) prioritization, lowest L2G score, LoF-tolerant, no COPD/lung literature; best evidence (CAD via rs6903956, a different variant) is cardiometabolic, and the one lung-cell-line finding is an in vitro exposure effect, not a genetic association.</p>
+<h2>Known residual gaps carried forward (not resolved by this pipeline run)</h2>
+<ol><li>Neither the researcher nor the red-team-skeptic completed a dedicated smoking-initiation/cigarettes-per-day/cessation GWAS lookup for HIVEP1 or ADTRP — both hit tool-budget (WebSearch) exhaustion before finishing this check. Absence of a confirmed smoking-trait association should be read as "not yet checked," not "ruled out."</li><li>No LD/colocalization analysis was performed between this locus's credible-set lead variant (rs55968946) and either HIVEP1's VT/PE variant (rs169713) or ADTRP's CAD variant (rs6903956) — whether the COPD signal, the VT/PE signal, and the CAD signal at 6p24.1 represent the same or independent haplotypes is unresolved by literature review alone.</li><li>No FEV1/FEV1-FVC or direct COPD GWAS Catalog/PheWAS hit was found for either gene.</li></ol>
+</div>
+</div>
+</body>
+</html>

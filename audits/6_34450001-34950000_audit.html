@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 6:34450001-34950000 (nearest gene ILRUN)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link active" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link" href="../CHR15.html">CHR15</a>
+<a class="nav-link" href="../CHR16.html">CHR16</a>
+<a class="nav-link" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 6:34450001-34950000 (nearest gene ILRUN)</h1>
+<p>This file preserves everything excluded from the main evidence table (`evidence_tables/6_34450001-34950000.md`) plus the process caveats needed to interpret it critically. Nothing here should be handed out alongside the evidence table without this context.</p>
+<h2>Excluded citations (non-VERIFIED verdicts)</h2>
+<div class="evidence-table-wrapper"><table class="evidence-table"><thead><tr><th>#</th><th>Citation</th><th>Claimed for</th><th>Verdict</th><th>Reason</th></tr></thead><tbody><tr><td class="gene">25</td><td>Yong et al. (2026), bioRxiv preprint, DOI 10.64898/2026.05.20.726457 (PMID as supplied: 42239383)</td><td>ANKS1A</td><td>CLAIM_MISMATCH</td><td>Researcher claimed the paper shows ANKS1A functions in "EGFR/EphA-receptor signaling" at synapses. Citation-verifier located abstract content stating ANKS1A functions in "EGFR signaling at active synapses" with **no mention of EphA-receptor** pathway — the EphA-receptor portion of the claim is not supported by the source. Orchestrator additionally flags: this citation carried an unusual PMID (42,239,383 — unusually high for the 2026 PubMed indexing range) and a non-standard DOI prefix (10.64898, not a recognized registrant prefix such as bioRxiv's 10.1101), which was called out explicitly in the verifier dispatch prompt. The verifier's search located bioRxiv content under the DOI and returned CLAIM_MISMATCH rather than NOT_FOUND, but the PMID/DOI irregularity itself was not independently resolved. Regardless of which explanation is correct, the citation is excluded from the evidence table because it did not reach a <span class="tag">VERIFIED</span> verdict.</td></tr></tbody></table></div>
+<p>No citations were marked <span class="tag-warning">RETRACTED</span> or NOT_FOUND. 27 of 28 citations returned VERIFIED.</p>
+<h2>Genes marked CONTESTED by the red-team-skeptic (excluded from the evidence table)</h2>
+<h3>PACSIN1</h3>
+<p>Skeptic verdict verbatim: "**<span class="tag-warning">CONTESTED</span>** — the gene's own defining characterization argues against lung relevance, and the sole 'immune' citation is not actually about PACSIN1 biology. Recommend exclusion from the candidate list rather than carrying it forward as a weak positive."</p>
+<p>Full reasoning: "The foundational citation (Wasiak 2001) itself states PACSIN1 is **neuron-specific**, explicitly contrasting it with the broadly-expressed paralog PACSIN2 (which is the one showing brain-vs-lung differential expression) — this is intrinsic evidence *against* lung/COPD relevance, not merely absence of support. The second citation (Ngo 2025) uses the Pacsin1 promoter purely as a genetic driver/marker to target pDCs; it demonstrates nothing about PACSIN1 function and is not evidence for this gene at all — it is citation padding that happens to contain the gene's name."</p>
+<p>Citations discussed (both individually VERIFIED by citation-verifier, but the skeptic judges the gene-level case <span class="tag-warning">CONTESTED</span> because the citations argue against, or are irrelevant to, PACSIN1's candidacy): - Wasiak S et al. (2001), J Biol Chem, PMID 11352907, DOI 10.1074/jbc.M100591200 — states PACSIN1 is neuron-specific, unlike its paralog PACSIN2 which shows brain-vs-lung tissue-specific binding differences. - Ngo C et al. (2025), Nature Immunology, PMID 41023479, DOI 10.1038/s41590-025-02288-3 — uses the Pacsin1 promoter only as a plasmacytoid-dendritic-cell genetic marker/driver in a mouse pDC-depletion study; the paper's finding concerns pDC biology, not PACSIN1 function.</p>
+<p>PACSIN1 has no COPD/lung-function genetic evidence (researcher found none) and no prioritization-method support (nearest/MAGMA/PoPS/ABC all silent, no credible-set variant).</p>
+<h3>TAF11</h3>
+<p>Skeptic verdict verbatim: "**<span class="tag-warning">CONTESTED</span>** — the one available citation, read accurately, is evidence *against* TAF11 being the mediator gene in its own source study, and the disease context (RA-ILD) doesn't transfer to COPD. Should not be carried forward as supporting evidence; if kept, must be reframed as a null/negative result."</p>
+<p>Full reasoning: "General TFIID subunit; the single citation (Liu 2024) is a Mendelian-randomization screen in **rheumatoid arthritis → interstitial lung disease** (not COPD) in which TAF11 was one of nine *unvalidated* candidate mediator genes, and the study's own validated/prioritized gene was **SLAMF1**, not TAF11. Citing this as support for TAF11 misrepresents what the source paper concluded — the paper itself deprioritized TAF11 relative to another gene, in a different disease."</p>
+<p>Citation discussed (VERIFIED by citation-verifier as an accurate representation of the paper's content, but the skeptic judges the gene-level inferential use of it <span class="tag-warning">CONTESTED</span>): - Liu M et al. (2024), International Immunopharmacology, PMID 39260308, DOI 10.1016/j.intimp.2024.113082 — identifies TAF11 as one of nine candidate blood-eQTL mediator genes in an RA→interstitial-lung-disease MR screen; the paper's own validated mediator was SLAMF1, not TAF11.</p>
+<p>TAF11 has no COPD/lung-function genetic evidence, no prioritization-method support, and no credible-set variant annotated to it.</p>
+<h2>SPDEF — flagged but not excluded (borderline call, kept in evidence table with caveats)</h2>
+<p>The skeptic did not give SPDEF a clean CONTESTED verdict, instead: "<span class="tag-warning">WEAKENED</span>, bordering on CONTESTED as a locus-specific claim — the gene-level mechanism is real and strong, but its attachment to *this* signal is unsupported by any statistical-genetic or regulatory-mapping evidence, and the one purpose-built method that could have supported a long-range link (ABC) instead pointed elsewhere (SNRPC). Should not be prioritized above ILRUN/BLTP3A on genetic grounds; if included, must be labeled as 'biological candidate by proximity only.'"</p>
+<p>SPDEF was therefore kept in the main evidence table (all its rows individually marked "<span class="tag-warning">WEAKENED</span>/bordering CONTESTED") rather than moved fully to this exclusion appendix, since the skeptic's verdict stopped short of an outright CONTESTED for the gene as a whole. A reviewer applying a stricter threshold may reasonably choose to treat SPDEF's rows as excluded entirely; the orchestrator's judgment call here is preserved for transparency.</p>
+<h2>Process caveats affecting this locus's evidence base</h2>
+<ol><li>**Red-team-skeptic's WebSearch budget was exhausted before the critique task began** (reported by the agent as "200 of 200" already used). It substituted two targeted WebFetch/PubMed queries (for ILRUN and SPDEF only, both returning zero contradicting or additional hits) and performed **no independent search pass at all** for SNRPC, BLTP3A, PACSIN1, ANKS1A, or TAF11 — its critique of those five genes rests entirely on re-scrutinizing the researcher's own citations and the Open Targets structured-data context, not on independent verification of completeness. Any literature the researcher might have missed for those five genes would not have been caught by this critique pass.</li><li>**PoPS-prioritized "C6orf106" is not a fourth candidate gene** — it resolves to the same Ensembl gene ID (ENSG00000196821) as ILRUN and is treated throughout as PoPS support for ILRUN, not a separate gene.</li><li>**Four candidate genes (SPDEF, PACSIN1, ANKS1A, TAF11) were identified by the researcher independently of the input pipeline's four prioritization methods**, by enumerating all protein-coding genes physically overlapping the 6:34,450,001-34,950,000 region via Ensembl REST API. None of them has a credible-set variant annotated to it in the locus's own fine-mapping output, and none was queried against Open Targets (which was run only against the three pipeline-flagged genes before the researcher dispatch). Their absence from Open Targets querying reflects a scoping decision made before the researcher's region-enumeration finding was known, not a null database result.</li><li>**Colocalization detail** (per-QTL-study H4/PP4 values) beyond the aggregate Open-Targets L2G-style credible-set score was not resolvable through the GraphQL schema fields explored for this locus — noted as a data-completeness gap in the Open Targets summary, not a negative finding.</li></ol>
+</div>
+</div>
+</body>
+</html>
