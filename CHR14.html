@@ -112,11 +112,11 @@
     const dataset = {
         "chr14": [
             { id: 1, name: "14:46700001-47000000", filename: "plots/chr14-46700001-47000000.png" },
-            { id: 2, name: "14:68800001-69400000", filename: "plots/chr14-68800001-69400000.png" },
+            { id: 2, name: "14:68800001-68950000", filename: "plots/chr14-68800001-68950000.png" },
             { id: 3, name: "14:69850001-70000000", filename: "plots/chr14-69850001-70000000.png" },
             { id: 4, name: "14:76900001-77200000", filename: "plots/chr14-76900001-77200000.png" },
             { id: 5, name: "14:78850001-79250000", filename: "plots/chr14-78850001-79250000.png" },
-            { id: 6, name: "14:94100001-94500000", filename: "plots/chr14-94100001-94500000.png" },
+            { id: 6, name: "14:94150001-94500000", filename: "plots/chr14-94150001-94500000.png" },
             { id: 7, name: "14:99100001-99350000", filename: "plots/chr14-99100001-99350000.png" }
         ]
     };
@@ -219,7 +219,7 @@
 
     function getAuditReportPath(plotFileKey) {
     // e.g. "LOC001" → "files/LOC001_audit_report.html"
-    return `audits/14_${plotFileKey}_audit.md`;
+    return `audits/14_${plotFileKey}_audit.html`;
     }
 
     /**

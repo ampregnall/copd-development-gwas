@@ -111,7 +111,7 @@
     // Configuration of plots available for each item
     const dataset = {
         "chr4": [
-            { id: 1, name: "4:2750001-3600000", filename: "plots/chr4-2750001-3600000.png" },
+            { id: 1, name: "4:2750001-3450000", filename: "plots/chr4-2750001-3450000.png" },
             { id: 2, name: "4:5100001-5300000", filename: "plots/chr4-5100001-5300000.png" },
             { id: 3, name: "4:7750001-8050000", filename: "plots/chr4-7750001-8050000.png" },
             { id: 4, name: "4:17250001-17450000", filename: "plots/chr4-17250001-17450000.png" },
@@ -120,7 +120,7 @@
             { id: 7, name: "4:66100001-67250000", filename: "plots/chr4-66100001-67250000.png" },
             { id: 8, name: "4:81150001-81500000", filename: "plots/chr4-81150001-81500000.png" },
             { id: 9, name: "4:88750001-89250000", filename: "plots/chr4-88750001-89250000.png" },
-            { id: 10, name: "4:105500001-106050000", filename: "plots/chr4-105500001-106050000.png" },
+            { id: 10, name: "4:105550001-106050000", filename: "plots/chr4-105550001-106050000.png" },
             { id: 11, name: "4:111200001-111650000", filename: "plots/chr4-111200001-111650000.png" },
             { id: 12, name: "4:139850001-140150000", filename: "plots/chr4-139850001-140150000.png" },
             { id: 13, name: "4:144250001-144900000", filename: "plots/chr4-144250001-144900000.png" },
@@ -225,7 +225,7 @@
 
     function getAuditReportPath(plotFileKey) {
     // e.g. "LOC001" → "files/LOC001_audit_report.html"
-    return `audits/4_${plotFileKey}_audit.md`;
+    return `audits/4_${plotFileKey}_audit.html`;
     }
 
     /**

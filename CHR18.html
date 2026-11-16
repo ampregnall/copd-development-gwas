@@ -111,7 +111,7 @@
     // Configuration of plots available for each item
     const dataset = {
         "chr18": [
-            { id: 1, name: "18:37450001-37750000", filename: "plots/chr18-37450001-37750000.png" },
+            { id: 1, name: "18:37450001-37700000", filename: "plots/chr18-37450001-37700000.png" },
             { id: 2, name: "18:52750001-53450000", filename: "plots/chr18-52750001-53450000.png" },
             { id: 3, name: "18:55400001-55650000", filename: "plots/chr18-55400001-55650000.png" },
             { id: 4, name: "18:79700001-79900000", filename: "plots/chr18-79700001-79900000.png" }
@@ -216,7 +216,7 @@
 
     function getAuditReportPath(plotFileKey) {
     // e.g. "LOC001" → "files/LOC001_audit_report.html"
-    return `audits/18_${plotFileKey}_audit.md`;
+    return `audits/18_${plotFileKey}_audit.html`;
     }
 
     /**
