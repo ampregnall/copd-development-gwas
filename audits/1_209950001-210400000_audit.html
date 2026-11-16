@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 1:209950001-210400000 (nearest gene SYT14)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link active" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link" href="../CHR15.html">CHR15</a>
+<a class="nav-link" href="../CHR16.html">CHR16</a>
+<a class="nav-link" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 1:209950001-210400000 (nearest gene SYT14)</h1>
+<p>This file preserves everything excluded from the final evidence table, plus the full red-team critique, for traceability. Not intended for distribution alongside the evidence table without review.</p>
+<h2>Excluded citations</h2>
+<h3>1. "Shrine N et al., Nat Genet 2019, PMID 31649364" — NOT_FOUND (fabricated/wrong PMID)</h3>
+<h3>2. Stefani S et al., Front Integr Neurosci 2020, PMID 32973469 — CLAIM_MISMATCH</h3>
+<h2>Genes marked CONTESTED / WEAKENED by red-team-skeptic</h2>
+<p>No gene at this locus was marked <span class="tag-warning">CONTESTED</span> (i.e., "wrong gene entirely"). The red-team-skeptic explicitly found the gene-identity case for SYT14 solid (four independent prioritization methods converge, Open Targets L2G at the exact lead variant consistently favors SYT14 over the only plausible neighbor SERTAD4 by a wide margin across five GWAS traits) and did not contest gene assignment.</p>
+<p>However, the skeptic issued an overall verdict of **<span class="tag-warning">WEAKENED</span>** for the researcher's directional biological conclusion (smoking-behavior-mediated COPD mechanism). Full reasoning preserved verbatim from the red-team-skeptic dispatch:</p>
+<blockquote>The statistical gene-identity case for SYT14 at this locus is solid (four converging prioritization methods, no ambiguous neighbor). But the researcher's directional biological conclusion — "neurobehavioral/smoking-mediated, not direct lung biology" — overreaches the verified evidence in three ways: (1) it treats an unconfirmed aggregator-only GSCAN attribution as load-bearing support for a smoking-specific mechanism when the same colocalization data are at least as consistent with generic non-lung, non-smoking-specific pleiotropy (reproductive timing, refractive error, LDL); (2) it substitutes a fabricated/wrong citation (Shrine PMID 31649364) for an actual check of lung-function GWAS evidence, so the Prior-2 spirometry question hasn't actually been answered, only defaulted to "absent"; and (3) it extrapolates "no lung biology" from a literature footprint so sparse (9 total papers) that absence of lung papers is only weak evidence, especially given a documented mouse/human tissue-expression contradiction (Fukuda vs. Doi) that undermines confidence in any single-species expression claim for this gene, including an implicit "not expressed in lung" assumption. A more accurate framing for synthesis-lead: gene identity is well-supported; direct lung mechanism is unstudied/unknown rather than ruled out; and the "smoking-mediated" framing is one plausible but unconfirmed hypothesis among several equally-supported non-lung pleiotropic hypotheses at this locus, not a settled alternative explanation. I found no new contradicting evidence beyond what's already in the record (my own searches were blocked by exhausted budget), so I am not marking anything as CONTESTED with new external evidence — but I recommend synthesis-lead treat the "smoking-mediated" conclusion as substantially less certain than presented, and flag for follow-up: (a) a real Shrine et al./lung-function-GWAS check, (b) a direct GTEx/HPA lung-expression pull for SYT14, and (c) an independent SERTAD4 literature check, before finalizing this locus.</blockquote>
+<h2>Full red-team-skeptic critique (verbatim)</h2>
+<p>See `evidence_tables/_status/1_209950001-210400000/critique.md` for the complete critique text, including additional points on: - The skeptic's own search budget being exhausted before it could run independent contradiction searches (GTEx/lung expression for SYT14; SERTAD4 COPD/lung-function literature) — flagged as a genuine coverage gap in this review, not a checked-and-clear result. - The Fukuda (2003, mouse: heart/testis-restricted, brain-absent) vs. Doi (2011, human: brain/cerebellum-enriched) tissue-expression contradiction for SYT14 itself. - The observation that the lead variant's Open Targets colocalization spans five pleiotropic, non-lung traits (age at first birth x2, refractive error, age of smoking initiation, LDL cholesterol) at H4~0.99 to each other, none obviously more biologically central to COPD than any other. - A recommendation that SERTAD4 (the L2G runner-up at the lead variant, score ~0.10-0.11 vs. SYT14's ~0.39-0.45) was never independently searched for lung/COPD literature — a thoroughness gap, though judged unlikely to overturn SYT14 as the causal gene.</p>
+<h2>Data-availability caveats (not exclusions, but material to interpretation)</h2>
+<ul><li>Open Targets has **no COPD, FEV1, or FEV1/FVC disease association recorded for SYT14 at all** (0 of 267 total disease associations), and **no COPD/lung-function GWAS signal registered at the exact lead variant** rs7527845 in its credible-set catalog. Per pipeline instructions, this absence is reported explicitly rather than omitted — it may reflect a true absence of pulmonary effect, or may simply reflect that the COPD GWAS underlying this internal pipeline has not yet been integrated into Open Targets. Both readings remain open.</li><li>An Open Targets entity search on the lead rsID also returned a second target, ATP13A2 (ENSG00000159363). This was verified via genomic-location query to sit at chr1:16,985,958-17,011,928 — approximately 193 Mb away from this locus (1:209,950,001-210,400,000) — and was confirmed to be a search-index artifact, not a genuine candidate gene. It was excluded from all downstream research and does not appear in the evidence table.</li><li>The researcher's WebSearch budget was exhausted before it could (a) independently re-enumerate all protein-coding genes in the physical locus window beyond SYT14/SERTAD4, and (b) directly query GTEx/Human Protein Atlas for SYT14 lung-expression data. The red-team-skeptic's own follow-up search budget was separately exhausted (reported 200/200 used) before it could attempt independent contradiction searches. Both gaps are disclosed here rather than silently absorbed into the confidence rating; they are the basis for marking the Prioritized Gene section's confidence as LOW rather than MODERATE or HIGH.</li></ul>
+</div>
+</div>
+</body>
+</html>
