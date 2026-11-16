@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 10:122300001-122600000 (nearest gene HTRA1)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link active" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link" href="../CHR15.html">CHR15</a>
+<a class="nav-link" href="../CHR16.html">CHR16</a>
+<a class="nav-link" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 10:122300001-122600000 (nearest gene HTRA1)</h1>
+<p>This file preserves everything excluded from, or contested within, the final evidence table at `evidence_tables/10_122300001-122600000.md`, plus the full reasoning chain, for reviewer traceability. All citations referenced here were run through citation-verifier; none were RETRACTED or NOT_FOUND — all 27 citations gathered across this locus's review were VERIFIED (see `evidence_tables/_status/10_122300001-122600000/verified_citations.md` for full verbatim verifier output). There is therefore no "rejected citation" appendix for this locus — the exclusions below are red-team-skeptic's CONTESTED/<span class="tag-warning">WEAKENED</span> gene-level verdicts, not citation rejections.</p>
+<h2>Genes marked CONTESTED by red-team-skeptic</h2>
+<h3>HTRA1 — CONTESTED</h3>
+<h3>PLEKHA1 — WEAKENED</h3>
+<h3>PPAPDC1A/PLPP4 — WEAKENED</h3>
+<h3>ARMS2 — WEAKENED</h3>
+<h3>DMBT1 — HOLDS (correctly deprioritized)</h3>
+<h3>BTBD16 — HOLDS (correctly deprioritized)</h3>
+<h2>Structural issues flagged by red-team-skeptic (locus-wide, not gene-specific)</h2>
+<p>**(a) Locus-membership uncertainty.** Verbatim: "The researcher could not confirm that this region is actually among Sakornsakolpat 2019's 82 reported COPD loci or Shrine 2019's 279 lung-function signals — the only evidence is the negative inference from Open Targets' own missing credible set. If this signal isn't genuinely genome-wide-significant in either source GWAS, the entire 'which gene is causal' exercise may be moot. Flag for synthesis-lead: confirm locus membership in the source GWAS tables before treating this as an established COPD hit."</p>
+<p>**(b) LD-block gene assignment is unresolved even for the disease this locus is famous for.** The skeptic searched independently for COPD-specific ARMS2/HTRA1/PLEKHA1 causal-gene literature, COPD-AMD shared genetic architecture, and smoking-GWAS membership, finding: no paper anywhere argues for or against a specific gene at this locus for COPD specifically (the causal-gene debate that exists is entirely about AMD); a COPD→AMD comorbidity study (Bair et al. 2021, PMID 34302051, <span class="tag">VERIFIED</span>) that is epidemiological, not genetic-pleiotropy, evidence and should not be used to argue for shared germline causality at this locus; and a book chapter (Kortvely &amp; Ueffing 2016, PMID 26427389, VERIFIED) making explicit that AMD risk haplotypes at 10q26 affect ARMS2 expression specifically, not HTRA1 — a point the original researcher's write-up did not surface despite already citing the underlying primary papers (Fritsche 2008, Kanda 2007) for ARMS2. On smoking-mediation: neither the GSCAN paper nor further searches could confirm or deny whether this locus is a smoking-behavior locus — an unresolved evidence gap, not a resolved negative finding.</p>
+<h2>Citations NOT used in the final evidence table's per-row claims but retained for context</h2>
+<p>The following <span class="tag">VERIFIED</span> citations informed the locus-wide narrative/prioritized-gene synthesis but were not given their own evidence-table row because they establish general background (GWAS paper scope, general PLEKHA1/TAPP1 biochemistry with no lung content, or general HTRA1 review content) rather than a locus-specific claim: - Hjæresen et al. 2026, Prog Neurobiol, PMID 41932381 (general HTRA1 review) — included in table. - Wullschleger et al. 2011, PMID 21204784, and Marshall et al. 2002, PMID 12101241 (general PLEKHA1/TAPP1 PI3K biochemistry, no lung/immune content) — included in table as a single combined row. - Kenney et al. 2013, PMID 23302509 (mitochondrial haplogroup AMD risk, ARMS2 context) — included in table.</p>
+<h2>Full stage-by-stage checkpoint files (raw, unedited subagent output)</h2>
+<ul><li>Open Targets structured lookup: `evidence_tables/_status/10_122300001-122600000/opentargets.md`</li><li>Researcher findings (all genes, all domains): `evidence_tables/_status/10_122300001-122600000/researcher.md`</li><li>Citation verification (27 citations, all <span class="tag">VERIFIED</span>): `evidence_tables/_status/10_122300001-122600000/verified_citations.md`</li><li>Red-team critique (full per-gene verdicts and locus-wide flags): `evidence_tables/_status/10_122300001-122600000/critique.md`</li></ul>
+<h2>Bottom line for reviewers</h2>
+<p>No citation was rejected (<span class="tag-warning">RETRACTED</span>/NOT_FOUND/CLAIM_MISMATCH) at this locus — the entire evidentiary complication here is that the *strongest* verified literature (the AMD mechanistic and causal-gene literature) is for a different disease at the same genomic locus, and it does not unambiguously support HTRA1 over its neighbors ARMS2 and PLEKHA1. Treat the "Prioritized gene" call in the main evidence table as provisional pending an LD lookup between this locus's lead variant and the classic AMD variants, and pending confirmation of whether this locus is genuinely genome-wide-significant in the published COPD/lung-function GWAS.</p>
+</div>
+</div>
+</body>
+</html>

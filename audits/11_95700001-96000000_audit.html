@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 11:95700001-96000000 (nearest gene MTMR2)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link active" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link" href="../CHR15.html">CHR15</a>
+<a class="nav-link" href="../CHR16.html">CHR16</a>
+<a class="nav-link" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 11:95700001-96000000 (nearest gene MTMR2)</h1>
+<p>Excluded citations and <span class="tag-warning">CONTESTED</span> gene reasoning, preserved for traceability. Full raw subagent outputs are in `evidence_tables/_status/11_95700001-96000000/` (opentargets.md, researcher.md, verified_citations.md, critique.md).</p>
+<h2>Excluded citations</h2>
+<h3>RETRACTED</h3>
+<p>**Lee JJ et al., "Gene discovery and polygenic prediction from a genome-wide association study of educational attainment in 1.1 million individuals," Nat Genet, 2018.** PMID 30038396, PMC6393768, DOI 10.1038/s41588-018-0147-3.</p>
+<p>- Researcher's claim: cited as a plausible (not gene-confirmed) source of the educational-attainment locus-to-gene (L2G) signal reported by Open Targets for CEP57 at this locus. - **Citation-verifier verdict: <span class="tag-warning">RETRACTED</span>**, with justification: "PubMed metadata confirms retraction on August 1, 2018. Paper exists but is withdrawn from literature." - **Orchestrator flag (important):** This verdict is surprising and should be treated with suspicion pending independent human re-verification. This is a widely known, extremely heavily cited (&gt;3,000 citations) social-science-genomics GWAS ("EA3") that, to the orchestrator's and red-team-skeptic's knowledge, remains an active, non-retracted paper in the literature as of each agent's respective knowledge. The verifier's own stated retraction date (August 1, 2018) is suspiciously identical to the paper's original publication date — a pattern consistent with the verifier having misread or misattributed a PubMed metadata field (e.g. confusing a "received"/"published" date field with an actual retraction notice) rather than having found a genuine retraction notice. - **Red-team-skeptic's independent comment (verbatim):** "I'm confident, from general knowledge, that Lee JJ et al. 2018 Nat Genet ... is a landmark, extremely heavily-cited (&gt;3,000 citations), **non-retracted** paper — it remains foundational in the EA/cognition GWAS literature as of my knowledge cutoff. The orchestrator's suspicion is well-founded: a 'retraction date identical to publication date' is a classic signature of a metadata-parsing error ... not a real retraction. I'd recommend this specific verifier call be sent back for manual re-check rather than trusted." - **Disposition:** Per pipeline rules, the orchestrator does not overrule the citation-verifier's verdict, so this citation is excluded from the verified evidence table (`evidence_tables/11_95700001-96000000.md`) regardless of this suspicion. This exclusion is not load-bearing for any conclusion in the evidence table: the citation was only ever used as an unconfirmed, gene-unspecific "plausible source" of a locus-level educational-attainment signal already independently corroborated (for the whole FAM76B/MTMR2/CEP57 block, not CEP57 specifically) by the VERIFIED Sanna et al. 2020 citation. **A human reviewer should independently check PubMed/Retraction Watch for PMID 30038396 before treating this exclusion as settled**, and consider re-running citation verification on this specific PMID if a manuscript depends on it.</p>
+<h2>CONTESTED / WEAKENED gene-level reasoning</h2>
+<p>No gene at this locus was marked outright CONTESTED (i.e., actively disputed as non-credible) by the red-team-skeptic. Two genes were marked **<span class="tag-warning">WEAKENED</span>** relative to how the researcher initially framed them; two were marked **HOLDS**. Full reasoning preserved verbatim from the critique:</p>
+<h3>MTMR2 — WEAKENED</h3>
+<h3>MAML2 — WEAKENED, bordering on unsupported</h3>
+<h3>CEP57 — HOLDS (as LD/credible-set passenger)</h3>
+<h3>FAM76B — HOLDS (as weakest candidate)</h3>
+<h2>Other process notes</h2>
+<p>- The red-team-skeptic reported its own web-search budget was exhausted before it could independently re-search for contradicting literature beyond what was provided, and flagged this explicitly: "my web-search budget was exhausted before I could independently re-search for contradicting literature (MTMR2/MAML2 lung-function GWAS, retraction-status confirmation), so this critique relies on the provided evidence dossier plus general domain knowledge. This is itself worth flagging to the synthesis lead as an incomplete independent-verification pass." A future re-run of this locus, or a manuscript relying on this table, should consider a supplementary independent literature check given this acknowledged limitation. - No credible-set variant-by-variant literature search was performed beyond the lead variant (rs10765776) and the one missense variant (rs3824874) — this is by pipeline design (see "Scope: genes are the unit of evidence" in the orchestration instructions), not a gap. - The researcher found zero direct PubMed hits for both rs10765776 and rs3824874 under their rsIDs; all variant-level trait association evidence for this locus comes from the Open Targets structured database lookup, not from verified primary literature.</p>
+</div>
+</div>
+</body>
+</html>
