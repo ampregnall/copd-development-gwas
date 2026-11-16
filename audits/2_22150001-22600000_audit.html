@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 2:22150001-22600000 (Gene Desert)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link" href="../CHR1.html">CHR1</a>
+<a class="nav-link active" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link" href="../CHR15.html">CHR15</a>
+<a class="nav-link" href="../CHR16.html">CHR16</a>
+<a class="nav-link" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 2:22150001-22600000 (Gene Desert)</h1>
+<p>This file lists everything excluded from the main evidence table, plus the full CONTESTED and <span class="tag-warning">WEAKENED</span> reasoning, for reviewer traceability. See `evidence_tables/2_22150001-22600000.md` for the evidence table itself.</p>
+<h2>Excluded citations (CLAIM_MISMATCH verdict from citation-verifier)</h2>
+<ol><li>**Gong Z, Wu D, Ku Y, et al.** "Lipid-lowering drug targets associated with risk of respiratory disease: a Mendelian randomization study." BMC Pulm Med. 2025;25(1):71. PMID 39934773, DOI 10.1186/s12890-025-03527-x. Researcher's original claim: "genetically proxied APOB inhibition (mimicking mipomersen) was associated with increased asthma risk... while LDLR was the significant COPD drug-target hit, not APOB." **Why excluded:** citation-verifier found the paper's abstract actually reports APOB was PROTECTIVE for asthma (OR 0.86), the opposite direction from the claim as stated. The LDLR-as-COPD-drug-target-hit portion of the claim was independently correct, but because the APOB-asthma directionality was reversed, the citation as a whole is excluded from the evidence table per pipeline rules (a corrected-directionality version could potentially be re-submitted in a future pass, but is not carried forward here).</li></ol>
+<ol><li>**Delporte C, Van Antwerpen P, Vanhamme L, et al.** "Low-density lipoprotein modified by myeloperoxidase in inflammatory pathways and clinical studies." Mediators Inflamm. 2013;2013:971579. PMID 23983406, DOI 10.1155/2013/971579. Researcher's original claim: review "discussed in relation to comorbid conditions including COPD." **Why excluded:** citation-verifier confirmed the mechanistic content (myeloperoxidase- oxidized LDL/ApoB-100, macrophage foam-cell formation, TNF-alpha/IL-8 induction) but found no evidence the review specifically discusses COPD or respiratory disease comorbidity as claimed. Excluded because the COPD-relevance link in the claim is unsupported, even though the underlying mechanistic biology is real.</li></ol>
+<p>No citations received a <span class="tag-warning">RETRACTED</span> or NOT_FOUND verdict at this locus (14 of 16 citations were VERIFIED; see `evidence_tables/_status/2_22150001-22600000/verified_citations.md` for the full verifier output, including two minor publication-year discrepancies noted by the verifier — PMID 37073353 (Liu Z et al., TDRD in teleost fish: verifier found 2022 vs. researcher-stated 2021) and PMID 39491753 (Seah C et al., cervical myelopathy TWAS: verifier found 2025 vs. researcher-stated 2024) — that did not affect the substance of either claim and were marked VERIFIED regardless).</p>
+<h2>Genes marked CONTESTED by red-team-skeptic</h2>
+<h3>APOB</h3>
+<h2>Genes/framing marked WEAKENED by red-team-skeptic</h2>
+<h3>LINC01830</h3>
+<h2>Genes that HOLD (skeptic found no issue)</h2>
+<p>- **TDRD15:** "No positive claim is being overreached — germline/testis-restricted piRNA-pathway gene with no lung mechanism, correctly downgraded by the researcher, and the one 'hit' (a different lncRNA, LINC01822, near a differently-named TDRD15 region in a psychiatric drug-response study) is honestly flagged as a coincidental naming/region overlap rather than same-locus evidence." <span class="tag-hold">HOLDS</span> as a "not a plausible candidate" call. - **KLHL29:** "Similarly appropriately hedged — the researcher explicitly notes the IL-17 pathway enrichment in the periodontitis study applies to the gene set, not KLHL29 specifically, which is the correct guard against overclaiming a mechanism that isn't there. Distance (~1 Mb) and total absence of lung-relevant evidence are accurately represented." HOLDS.</p>
+<h2>Process caveats disclosed by subagents (for reviewer awareness)</h2>
+<p>- **Researcher:** WebSearch quota was exhausted mid-task; relied primarily on PubMed/bioRxiv MCP tools plus two WebFetch attempts (both 404s on GWAS Catalog REST endpoints) for the remainder of the research. The psychiatric/behavioral-trait-cluster lead flagged by Open Targets at the lead variant could NOT be independently corroborated against primary GWAS Catalog publications for this reason. - **Red-team-skeptic:** Web-search budget was exhausted before any independent contradiction search could be run (both attempted queries — "rs7599976 GWAS" and "LINC01830 lung OR COPD" — failed with a budget-exhausted error). The skeptic's critique is therefore based entirely on internal re-analysis of the researcher's own verified findings, not on independent literature re-search. No gene at this locus received an independent search pass from the skeptic. If tighter confidence is needed, an independent re-run of the skeptic step (or a manual check) would be warranted. - **Orchestrator (this pipeline run):** an Open Targets colocalisation query for molecular-QTL evidence at the lead variant returned a response too large to parse economically within the scope of the structured-lookup step and was not completed; colocalisation evidence at this locus should be treated as "not checked," not "absent." A search-entity lookup for the lead variant also surfaced SLC5A7 (~86 Mb away on the same chromosome) as an apparently spurious/unrelated hit; this was investigated and ruled out as a candidate, not adopted as one.</p>
+</div>
+</div>
+</body>
+</html>

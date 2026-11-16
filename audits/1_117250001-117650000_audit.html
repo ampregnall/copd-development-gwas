@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 1:117250001-117650000 (nearest gene MAN1A2)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link active" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link" href="../CHR15.html">CHR15</a>
+<a class="nav-link" href="../CHR16.html">CHR16</a>
+<a class="nav-link" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 1:117250001-117650000 (nearest gene MAN1A2)</h1>
+<p>This file documents excluded citations and CONTESTED/<span class="tag-warning">WEAKENED</span> gene-level judgments, with reasoning preserved verbatim from citation-verifier and red-team-skeptic. Not intended for distribution alongside the evidence table without this context.</p>
+<h2>Excluded citations</h2>
+<h3>CLAIM_MISMATCH</h3>
+<ol><li>**Soremekun et al. 2021**, "Genome-Wide Association and Mendelian Randomization Analysis Reveal the Causal Relationship Between White Blood Cell Subtypes and Asthma in Africans," Frontiers in Genetics, PMID 34925446, PMC8674726, DOI 10.3389/fgene.2021.749415. - Originally proposed by the researcher (with explicit uncertainty flagged) as possible evidence linking LINC01525 to a white-blood-cell-subtype/asthma association in an African-ancestry GWAS/MR study. - **Citation-verifier verdict (verbatim):** "CLAIM_MISMATCH. Full-text review confirms the five novel genes reported are FLG-AS1, HMGN3P1, and MGST3 (plus others with corrupted formatting) — LINC01525 is NOT mentioned anywhere in this paper. The researcher's tentative claim linking LINC01525 to this study is incorrect and must be EXCLUDED from the evidence table." - **Red-team-skeptic comment (verbatim):** "The rejected Soremekun citation ... is a meaningful red flag pattern, not just a discarded citation. It suggests that when evidence for a gene is this thin, there is elevated risk of citation hallucination/mismatch being introduced to manufacture apparent support. This should be explicitly escalated to synthesis-lead as a caution about the evidence-thinness of this candidate ... Flag explicitly that this gene's 'evidence base' was one hallucinated citation away from having zero substantive content." - **Disposition:** Excluded entirely from the evidence table. LINC01525's only remaining substantive citation is Gong et al. 2022 (PMID 36045381), which is verified but entirely unrelated to lung/COPD biology (prostate-cancer gene-fusion partner).</li></ol>
+<h3>Unconfirmed inclusion (not excluded, but flagged — not a clean VERIFIED)</h3>
+<ol><li>**Tan et al. 2024**, "A multi-ancestry cerebral cortex transcriptome-wide association study identifies genes associated with smoking behaviors," Molecular Psychiatry, PMID 38816585, DOI 10.1038/s41380-024-02605-6. - **Citation-verifier verdict (verbatim):** "<span class="tag">VERIFIED</span> for the reported claims (719 genes, 249 fine-mapped, PSMA4/IREB2/CHRNA3 known, TSPAN3/ANK2 novel); CANNOT VERIFY whether MAN1A2 specifically is named — abstract does not mention MAN1A2, and full supplementary gene list was not accessible. Treat as general smoking-TWAS methodology context only, NOT as MAN1A2-specific evidence, pending supplementary-table confirmation." - **Disposition:** Retained in the evidence table but explicitly labeled as methodology-only context, not MAN1A2-specific evidence. Do not treat this as confirming a MAN1A2-smoking-initiation genetic association in primary literature.</li></ol>
+<h2>Gene-level CONTESTED/WEAKENED judgments (red-team-skeptic, verbatim)</h2>
+<p>No gene at this locus was marked CONTESTED (i.e., no directly contradicting literature was identified) — but the red-team-skeptic explicitly notes this reflects incomplete independent search coverage (its own WebSearch budget was exhausted before any contradiction-search queries could be run), not a confirmed absence of contradicting evidence. Several genes were marked <span class="tag-warning">WEAKENED</span>:</p>
+<h3>MAN1A2 — WEAKENED</h3>
+<p>"Real proximity/LD anchoring and real pleiotropy, but the 'developmental ciliation biology' and 'smoking-mediated' narratives both overreach what's confirmed (knockout-vs- hypomorph mismatch; database-only smoking claim with no primary-literature confirmation), and the absence of FEV1/FEV1-FVC and COPD-specific genetic-association evidence is not adequately foregrounded as a concern."</p>
+<p>Specific sub-points raised: - "Smoking-mediation hypothesis is asserted from a structured database, not literature ... at present the 'MAN1A2 acts via smoking-behavior neurobiology' framing is an inference drawn from an aggregator score with no traceable primary-literature backing. It should be reported as a plausible, testable hypothesis ... not as an established mediation pathway." - "Ningappa mouse-ciliation study is a homozygous-null developmental/neonatal phenotype, not adult COPD biology ... MAN1A2 has oe=0.324 (moderately LoF-constrained), and the credible-set variants here are all intronic/UTR MODIFIER-impact — i.e., regulatory/ hypomorphic at most, not null alleles. Extrapolating from a complete knockout's lethal respiratory-failure phenotype to the effect of common noncoding regulatory variants is a substantial leap in effect size and developmental timing that should not be allowed to read as mechanistic support for adult airflow obstruction." - "No FEV1/FEV1-FVC evidence at all — a genuine warning sign under Prior 2 ... compounded by zero COPD genetic_association/L2G rows in Open Targets despite this gene sitting directly under a genome-wide-significant COPD lead variant." - "Alternative hypothesis not addressed: MAN1A2 as a generic pleiotropic eQTL/pQTL hub rather than a COPD-causal gene ... consistent with it being a 'promiscuous' local-eQTL gene picked up wherever a strong cis-eQTL exists, independent of tissue-specific disease mechanism."</p>
+<h3>PTGFRN — WEAKENED</h3>
+<p>"Bordering on 'should not be retained as a candidate gene for this locus at all,' since it fails the most basic test (physical/credible-set overlap) before any biological evidence is even considered."</p>
+<p>Specific sub-points raised: - "Physically outside the locus and credible set (360-473kb away), supported only by PoPS ... PoPS is a genome-wide network/pathway-similarity method explicitly designed to nominate genes without regard to physical proximity to the credible set — it is the converse failure mode of 'nearest-gene bias': here a statistical-similarity method is pulling in a gene with zero physical or fine-mapping linkage to this locus's actual credible-set variants." - "The Colin 2011 citation using a Calu-6 lung-cancer xenograft is correctly caveated by the researcher as a tumor-angiogenesis model, not COPD-relevant ... but worth flagging that 'Calu-6' (a lung-derived cell line) could easily be misread downstream as 'lung evidence' if the caveat is dropped in later synthesis."</p>
+<h3>LINC01525 — WEAKENED</h3>
+<p>"The only near-claim of relevance (Soremekun) was fabricated/mismatched and correctly stripped; what remains is essentially no evidence. Flag explicitly that this gene's 'evidence base' was one hallucinated citation away from having zero substantive content."</p>
+<h3>VPS25P1 — HOLDS (as non-candidate)</h3>
+<p>"No claim is being overreached here because essentially no claim is being made — the researcher's implicit conclusion (this is not a serious candidate) is well supported by the total absence of evidence rather than contradicted by it."</p>
+<h3>TENT5C — HOLDS (as non-candidate)</h3>
+<p>"This is the cleanest example in the set of appropriately reporting a true negative without overreach."</p>
+<h2>Cross-cutting caveats raised by red-team-skeptic (verbatim, condensed)</h2>
+<ol><li>"The single highest-value unresolved fact at this locus is whether MAN1A2 actually appears in the primary GSCAN/Saunders smoking-initiation GWAS. This was not confirmed and should be resolved before any smoking-mediation narrative is written into the final synthesis."</li><li>"No gene at this locus has FEV1/FEV1-FVC support. Under Prior 2, that is a locus-wide warning sign, not just a MAN1A2-specific one."</li><li>"PTGFRN's candidacy is a methodological artifact of PoPS reaching outside the physical locus window and should probably be down-weighted more aggressively than 'PoPS- prioritized' alone conveys."</li><li>"No gene reaches <span class="tag-warning">CONTESTED</span> status on the evidence in hand, but this reflects incomplete search coverage (mine included) rather than a confirmed absence of contradicting literature — flag this as an open item rather than a resolved one." (Red-team-skeptic's own WebSearch budget was exhausted before any independent contradiction searches could be run for any gene at this locus.)</li><li>"LINC01525's fabricated citation is worth a second look by whoever curates the evidence pool for this locus, as a signal that thin-evidence genes in this pipeline are vulnerable to spurious link construction."</li></ol>
+<h2>Full researcher, verifier, and critique checkpoint files</h2>
+<ul><li>`evidence_tables/_status/1_117250001-117650000/opentargets.md`</li><li>`evidence_tables/_status/1_117250001-117650000/researcher.md`</li><li>`evidence_tables/_status/1_117250001-117650000/verified_citations.md`</li><li>`evidence_tables/_status/1_117250001-117650000/critique.md`</li></ul>
+</div>
+</div>
+</body>
+</html>

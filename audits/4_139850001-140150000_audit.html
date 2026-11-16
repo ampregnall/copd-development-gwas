@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Audit Report - Locus 4:139850001-140150000 (nearest gene MAML3)</title>
+<link href="../style.css" rel="stylesheet"/>
+</head>
+<body>
+<div id="sidebar">
+<div class="sidebar-header">
+            🧬 Agentic Gene Prioritization<br/>Dashboard
+        </div>
+<div class="sidebar-section">
+<div class="sidebar-title">Overview</div>
+<a class="nav-link" href="../index.html">🏠 Home</a>
+<a class="nav-link" href="../methods.html">🔬 Methods</a>
+</div>
+<div class="sidebar-section">
+<div class="sidebar-title">Chromosomes</div>
+<a class="nav-link" href="../CHR1.html">CHR1</a>
+<a class="nav-link" href="../CHR2.html">CHR2</a>
+<a class="nav-link" href="../CHR3.html">CHR3</a>
+<a class="nav-link active" href="../CHR4.html">CHR4</a>
+<a class="nav-link" href="../CHR5.html">CHR5</a>
+<a class="nav-link" href="../CHR6.html">CHR6</a>
+<a class="nav-link" href="../CHR7.html">CHR7</a>
+<a class="nav-link" href="../CHR8.html">CHR8</a>
+<a class="nav-link" href="../CHR9.html">CHR9</a>
+<a class="nav-link" href="../CHR10.html">CHR10</a>
+<a class="nav-link" href="../CHR11.html">CHR11</a>
+<a class="nav-link" href="../CHR12.html">CHR12</a>
+<a class="nav-link" href="../CHR13.html">CHR13</a>
+<a class="nav-link" href="../CHR14.html">CHR14</a>
+<a class="nav-link" href="../CHR15.html">CHR15</a>
+<a class="nav-link" href="../CHR16.html">CHR16</a>
+<a class="nav-link" href="../CHR17.html">CHR17</a>
+<a class="nav-link" href="../CHR18.html">CHR18</a>
+<a class="nav-link" href="../CHR19.html">CHR19</a>
+<a class="nav-link" href="../CHR20.html">CHR20</a>
+<a class="nav-link" href="../CHR21.html">CHR21</a>
+<a class="nav-link" href="../CHR22.html">CHR22</a>
+</div>
+</div>
+<div id="main-content">
+<div class="content-card">
+<h1>Audit Report - Locus 4:139850001-140150000 (nearest gene MAML3)</h1>
+<p>This file documents everything EXCLUDED from the main evidence table (`evidence_tables/4_139850001-140150000.md`), plus the full red-team critique and citation- verifier disclosures, for traceability. It is intended for internal review, not for distribution alongside the evidence table itself.</p>
+<h2>Excluded citations (verdict: NOT_FOUND for the specific claim tested)</h2>
+<p>These three papers ARE real, peer-reviewed, non-retracted publications — citation-verifier confirmed their existence. They are excluded from the main evidence table because the specific claim the researcher flagged them for (whether this MAML3/4q31.1 locus appears among their reported genome-wide-significant loci) was checked directly by citation- verifier via full text and found NOT supported. Their absence is itself informative and is discussed in the main table's "Prioritized gene" section as a meaningful negative result, but the papers are not used as affirmative evidence FOR MAML3.</p>
+<ol><li>**Sakornsakolpat P et al.** "Genetic landscape of chronic obstructive pulmonary disease identifies heterogeneous cell-type and phenotype associations." Nat Genet. 2019. PMID 30804561, PMCID PMC6546635, DOI 10.1038/s41588-018-0342-2. Verdict: NOT_FOUND (locus-specific). Citation-verifier: "This paper identifies 82 COPD loci but MAML3 and the 4q31.1 region are not among them. The abstract and supplementary tables do not list this locus."</li></ol>
+<ol><li>**Shrine N et al.** "Multi-ancestry genome-wide association analyses improve resolution of genes and pathways influencing lung function and chronic obstructive pulmonary disease risk." Nat Genet. 2023. PMID 36914875, PMCID PMC10011137, DOI 10.1038/s41588-023-01314-0. Verdict: NOT_FOUND (locus-specific). Citation-verifier: "MAML3 and the 4q31.1 region do not appear in this multi-ancestry lung-function/COPD GWAS (1,020 signals, 559 genes), despite searching all available text and tables."</li></ol>
+<ol><li>**Liu M et al.** "Association studies of up to 1.2 million individuals yield new insights into the genetic etiology of tobacco and alcohol use." Nat Genet. 2019. PMID 30643251, PMCID PMC6358542, DOI 10.1038/s41588-018-0307-5. (GSCAN) Verdict: NOT_FOUND (locus-specific). Citation-verifier: "MAML3 and 4q31.1 region do not appear in this GSCAN smoking/alcohol GWAS (566 variants, 406 loci) for any smoking- related trait."</li></ol>
+<p>Note (per red-team-skeptic): the absence of this locus from GSCAN 2019 should NOT be read as clearing MAML3 of a smoking-mediation contribution — Open Targets' aggregate association scores show a strong smoking-initiation signal for MAML3 that likely derives from a larger/more recent smoking GWAS not checked in this pipeline. This is an open question, not a resolved one.</p>
+<h2>Genes/candidates marked CONTESTED or WEAKENED by red-team-skeptic</h2>
+<h3>CCRN4L / NOCT — CONTESTED</h3>
+<p>Supporting facts: NOCT (ENSG00000151014, chr4:139,015,414-139,045,939 GRCh38) sits ~800- 900 kb outside the stated locus boundary (4:139,850,001-140,150,000) and the credible-set variant range (139,943,603-139,982,001), separated by six other protein-coding genes (ELF2, NDUFC1, MGARP, NAA15, RAB33B, SETD7, MGST2) — none evaluated as intervening regulatory targets. NOCT has zero recorded COPD association in Open Targets (checked across all 86 diseases associated with the gene) and no COPD/spirometry/lung-function literature evidence was found by the researcher.</p>
+<h3>MAML3 — WEAKENED</h3>
+<p>Full critique detail (verbatim, all sections) is reproduced below for traceability.</p>
+<h2>Full red-team-skeptic critique (verbatim)</h2>
+<h3>Disclosure on search coverage</h3>
+<h3>MAML3</h3>
+<p>Genomic evidence base is solid on containment, weak on disease-specificity. All 20 credible-set variants sit in MAML3 introns and no other gene physically overlaps the interval — real, not a nearest-gene artifact. But the region isn't gene-desert-free either: ELF2, NDUFC1, MGARP, NAA15, RAB33B, SETD7, MGST2 sit between MAML3's body and NOCT, and none were evaluated as potential long-range regulatory targets. Unexplored alternative-gene hypothesis worth flagging, not a fatal gap, but "only MAML3 physically overlaps" shouldn't be read as "only MAML3 is mechanistically possible."</p>
+<p>The negative evidence is under-weighted in the researcher's synthesis. MAML3/4q31.1 is confirmed absent from both Sakornsakolpat 2019 (82-locus COPD GWAS) and Shrine 2023 (1,020-signal lung-function GWAS) — the two largest, most directly relevant dedicated studies for this exact phenotype class. This is a meaningful null result from adequately powered studies, functioning as quasi-contradicting evidence against a robust, replicable COPD/spirometry signal at this locus. Per prior #2, the complete absence of any FEV1/FEV1-FVC association is a real strike, not just a "gap" — it should be reported as evidence the locus fails the spirometry-concordance test, not passed over.</p>
+<p>The supporting phenotype associations are real but each one step removed from COPD, and weaker than the prose suggests: - BHR (Nieuwenhuis 2016): "nominally associated" — sub-genome-wide-significance, in an asthma-severity cohort, not COPD. - CMH (Dijkstra 2014): p=7.57e-6, also below standard genome-wide significance, and critically, this cohort is heavy smokers without COPD — an endophenotype in smokers, not a COPD case-control or spirometric result. Does not establish a smoking-independent lung effect; compatible with a gene-by-smoking-exposure interaction that only manifests in already-heavy smokers, arguably still smoking-mediated biology rather than a pure lung-intrinsic mechanism. - Aging (Timmers 2022), migraine (Gasperi 2025), GERD/smoking pleiotropy (Yan 2024): none pulmonary, and two explicitly reinforce the neurobehavioral/pleiotropy profile.</p>
+<p>Smoking-mediation case is at least as strong as the lung-biology case, possibly stronger. Open Targets shows MAML3's smoking-initiation, smoking-cessation, smoking-behavior, alcohol, cannabis-dependence, and ADHD association scores are comparable to or exceed its COPD score, all via the same gwas_credible_sets datasource — an independent statistical genetics signal, not literature the researcher had to chase down. Yet the dedicated GSCAN smoking GWAS (Liu 2019) does not show this locus. This is an unresolved contradiction the researcher flagged but didn't resolve: the Open Targets smoking association almost certainly comes from a larger/more recent smoking GWAS than GSCAN 2019 (not verified in this pipeline), meaning the "absence from GSCAN" should not be read as clearing MAML3 of smoking-mediation — if anything the broader Open Targets pattern argues the opposite.</p>
+<p>Mechanistic/developmental evidence is generic Notch biology, not MAML3-lung-specific. MamL3-single-knockout mice show no phenotype; the only phenotypes reported for maml3 specifically are cardiac (zebrafish), and the researcher's targeted search for MAML3 in airway epithelial differentiation came up empty — an honestly flagged gap. Immune evidence for MAML3 (as opposed to MAML1/MAML2) is entirely absent.</p>
+<p>Overclaiming check: individual citation-level claims from the researcher are appropriately hedged ("nominally associated," "independently replicated in aging"). The overreach is in the synthesis sentence — "two independent, at-least-partially smoking-independent lung-tissue eQTL/phenotype associations exist... supporting a genuine pulmonary role" — which elevates two sub-genome-wide-significant, phenotype-adjacent, smoker-subgroup findings to "genuine pulmonary role" while downplaying that the same locus is null in the two best-powered, most directly relevant COPD/spirometry GWAS.</p>
+<p>MAML3 verdict: <span class="tag-warning">WEAKENED</span> (see above).</p>
+<h3>CCRN4L / NOCT</h3>
+<p>The physical-distance finding is itself strong contradicting evidence against the MAGMA/PoPS prioritization, and should be treated as such rather than just "context." NOCT sits ~800-900kb from the credible set, separated by six other protein-coding genes, none of which were shown to be in an LD block or regulatory loop with the credible-set variants. A MAGMA gene-based test picking up a gene this far outside its typical annotation window (unless an unusually large window/LD structure was used, which wasn't reported) raises real doubt about whether the prioritization reflects true biology versus gene-set/pathway signal diffusion or a MAGMA window artifact. No eQTL or colocalization evidence was found linking the MAML3-locus credible-set variants to NOCT expression — that absence is the crux of the problem, and it was actively checked (Ensembl gene-content lookup), not merely unaddressed.</p>
+<p>No COPD/spirometry signal anywhere — confirmed by the researcher's own Open Targets check (86 diseases, none COPD-related) and no literature found. The one lung-relevant citation (Maragozidis 2015) is a squamous-cell lung cancer prognostic/mechanistic study, a different disease with different biology (tumor survival/cell-adhesion genes), not an airway-obstruction or inflammatory mechanism — citing it as lung-relevant risks conflating "lung tissue" with "COPD-relevant lung biology."</p>
+<p>Systemic metabolic/circadian biology is well-established but off-target for this pipeline's phenotype (liver, adipose, intestine, bone marrow — no airway, no immune cell type implicated).</p>
+<p>NOCT verdict: <span class="tag-warning">CONTESTED</span> (see above).</p>
+<h3>Locus-level notes for synthesis-lead</h3>
+<h2>Researcher's own flagged uncertainty (for completeness)</h2>
+</div>
+</div>
+</body>
+</html>
